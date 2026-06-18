@@ -2,6 +2,8 @@ import { MetadataRoute } from 'next';
 import { casinos } from '@/lib/data/casinos';
 import { blogPosts } from '@/lib/data/blog';
 
+export const dynamic = 'force-static';
+
 const BASE_URL = 'https://onlinecasinoperu.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
