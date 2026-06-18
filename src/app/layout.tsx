@@ -41,6 +41,13 @@ export const metadata: Metadata = {
     title: "Mejores Casinos Online en Perú 2026",
     description:
       "Guía independiente con los mejores casinos online para jugadores peruanos. Compara bonos, métodos de pago y reseñas expertas.",
+    url: "https://onlinecasinoperu.com",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mejores Casinos Online en Perú 2026 | CasinoPerú.com",
+    description:
+      "Guía independiente con los mejores casinos online para jugadores peruanos. Compara bonos, métodos de pago y reseñas expertas.",
   },
   icons: {
     icon: '/images/logo-icon.svg',
