@@ -92,7 +92,8 @@ export default function Header() {
                 </Link>
 
                 {item.children && openDropdown === item.label && (
-                  <div className="absolute top-full left-0 mt-1 w-52 bg-slate-800 border border-slate-700 rounded-xl shadow-2xl overflow-hidden">
+                  <div className="absolute top-full left-0 pt-1 w-52">
+                  <div className="bg-slate-800 border border-slate-700 rounded-xl shadow-2xl overflow-hidden">
                     {item.children.map((child) => (
                       <Link
                         key={child.href}
@@ -102,6 +103,7 @@ export default function Header() {
                         {child.label}
                       </Link>
                     ))}
+                  </div>
                   </div>
                 )}
               </div>
