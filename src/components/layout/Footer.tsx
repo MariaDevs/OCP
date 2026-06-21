@@ -127,6 +127,7 @@ export default function Footer() {
             <Link href="/terminos" className="hover:text-slate-300 transition-colors">Términos</Link>
             <Link href="/cookies" className="hover:text-slate-300 transition-colors">Cookies</Link>
             <Link href="/contacto" className="hover:text-slate-300 transition-colors">Contacto</Link>
+            <a href="https://kasinotilmanrekisteroitymista.com/" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300 transition-colors">Kasinot Ilman Rekisteröitymistä</a>
           </div>
         </div>
       </div>
