@@ -129,7 +129,7 @@ export default function Footer() {
             <Link href="/contacto" className="hover:text-slate-300 transition-colors">Contacto</Link>
             <a href="https://kasinotilmanrekisteroitymista.com/" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300 transition-colors">Kasinot Ilman Rekisteröitymistä</a>
             <a href="https://geekygambler.com/" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300 transition-colors">Geeky Gambler</a>
-            <a href="https://geekygambler.com/" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300 transition-colors">Online Casino Latino</a>
+            <a href="https://onlinecasinolatino.com/" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300 transition-colors">Online Casino Latino</a>
           </div>
         </div>
       </div>
