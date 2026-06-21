@@ -56,6 +56,44 @@ export function breadcrumbSchema(items: { name: string; url: string }[]) {
   };
 }
 
+export function articleSchema(post: { title: string; excerpt: string; date: string; slug: string }) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.date,
+    dateModified: post.date,
+    url: `https://onlinecasinoperu.com/blog/${post.slug}`,
+    image: 'https://onlinecasinoperu.com/og-image.png',
+    author: {
+      '@type': 'Organization',
+      name: 'OnlineCasinoPerú',
+      url: 'https://onlinecasinoperu.com',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'OnlineCasinoPerú',
+      url: 'https://onlinecasinoperu.com',
+      logo: { '@type': 'ImageObject', url: 'https://onlinecasinoperu.com/images/logo.svg' },
+    },
+    inLanguage: 'es-PE',
+  };
+}
+
+export function organizationSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'OnlineCasinoPerú',
+    url: 'https://onlinecasinoperu.com',
+    logo: 'https://onlinecasinoperu.com/images/logo.svg',
+    description: 'Guía independiente de casinos online en Perú.',
+    inLanguage: 'es-PE',
+    sameAs: [],
+  };
+}
+
 export function websiteSchema() {
   return {
     '@context': 'https://schema.org',

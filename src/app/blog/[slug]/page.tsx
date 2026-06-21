@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Clock, Calendar, ChevronRight, ArrowLeft } from 'lucide-react';
 import Breadcrumb from '@/components/ui/Breadcrumb';
 import { blogPosts } from '@/lib/data/blog';
+import { articleSchema } from '@/lib/schema';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -17,10 +18,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = blogPosts.find((p) => p.slug === slug);
   if (!post) return {};
+  const url = `https://onlinecasinoperu.com/blog/${slug}`;
   return {
     title: post.title,
     description: post.excerpt,
     alternates: { canonical: `/blog/${slug}` },
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      url,
+      type: 'article',
+      publishedTime: post.date,
+      images: [{ url: 'https://onlinecasinoperu.com/og-image.png', width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.excerpt,
+      images: ['https://onlinecasinoperu.com/og-image.png'],
+    },
   };
 }
 
@@ -30,9 +46,11 @@ export default async function BlogPostPage({ params }: Props) {
   if (!post) notFound();
 
   const related = blogPosts.filter((p) => p.slug !== slug && p.category === post.category).slice(0, 3);
+  const schema = articleSchema(post);
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <Breadcrumb items={[{ label: 'Blog', href: '/blog' }, { label: post.category, href: '/blog' }, { label: post.title }]} />
 
       <div className="mt-6 grid grid-cols-1 lg:grid-cols-3 gap-8">

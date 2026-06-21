@@ -20,10 +20,26 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const casino = getCasinoBySlug(slug);
   if (!casino) return {};
+  const title = `${casino.name} Reseña 2026 — Bono ${casino.bonus.amount}`;
+  const description = `Reseña completa y actualizada de ${casino.name}. ${casino.description} Bono de bienvenida: ${casino.bonus.amount}. Análisis de expertos.`;
+  const url = `https://onlinecasinoperu.com/casinos/${slug}`;
   return {
-    title: `${casino.name} Reseña 2026 — Bono ${casino.bonus.amount}`,
-    description: `Reseña completa y actualizada de ${casino.name}. ${casino.description} Bono de bienvenida: ${casino.bonus.amount}. Análisis de expertos.`,
+    title,
+    description,
     alternates: { canonical: `/casinos/${slug}` },
+    openGraph: {
+      title,
+      description,
+      url,
+      type: 'article',
+      images: [{ url: 'https://onlinecasinoperu.com/og-image.png', width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: ['https://onlinecasinoperu.com/og-image.png'],
+    },
   };
 }
 
