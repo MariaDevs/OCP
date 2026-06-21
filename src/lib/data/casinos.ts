@@ -4,7 +4,7 @@ export const casinos: Casino[] = [
   {
     slug: 'betsson-peru',
     name: 'Betsson Perú',
-    logo: '/images/casinos/betsson.svg',
+    logo: '/images/casinos/betsson.jpg',
     rating: 4.9,
     reviewCount: 1842,
     badge: 'top',
@@ -43,7 +43,7 @@ export const casinos: Casino[] = [
   {
     slug: '1xbet-peru',
     name: '1xBet Perú',
-    logo: '/images/casinos/1xbet.svg',
+    logo: '/images/casinos/1xbet.jpg',
     rating: 4.7,
     reviewCount: 2301,
     badge: 'recomendado',
@@ -82,7 +82,7 @@ export const casinos: Casino[] = [
   {
     slug: 'bet365-peru',
     name: 'Bet365 Perú',
-    logo: '/images/casinos/bet365.svg',
+    logo: '/images/casinos/bet365.jpg',
     rating: 4.8,
     reviewCount: 1567,
     badge: 'exclusivo',
@@ -119,7 +119,7 @@ export const casinos: Casino[] = [
   {
     slug: 'codere-peru',
     name: 'Codere Perú',
-    logo: '/images/casinos/codere.svg',
+    logo: '/images/casinos/codere.jpg',
     rating: 4.6,
     reviewCount: 934,
     badge: 'nuevo',
@@ -157,7 +157,7 @@ export const casinos: Casino[] = [
   {
     slug: 'sportaza-peru',
     name: 'Sportaza Perú',
-    logo: '/images/casinos/sportaza.svg',
+    logo: '/images/casinos/sportaza.jpg',
     rating: 4.5,
     reviewCount: 623,
     bonus: {
@@ -193,7 +193,7 @@ export const casinos: Casino[] = [
   {
     slug: 'wplay-peru',
     name: 'Wplay Perú',
-    logo: '/images/casinos/wplay.svg',
+    logo: '/images/casinos/wplay.jpg',
     rating: 4.4,
     reviewCount: 782,
     bonus: {
