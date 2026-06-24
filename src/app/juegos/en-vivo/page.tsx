@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Tv, Wifi, Globe } from 'lucide-react';
 import Breadcrumb from '@/components/ui/Breadcrumb';
 import { casinos } from '@/lib/data/casinos';
@@ -74,7 +75,9 @@ export default function LiveCasinoPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {casinos.filter((c) => c.games.liveCasino).map((c) => (
             <Link key={c.slug} href={`/casinos/${c.slug}`} className="group bg-slate-800/60 border border-slate-700 hover:border-emerald-500/50 rounded-xl p-4 transition-all flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-slate-700 flex items-center justify-center font-black text-emerald-400 flex-shrink-0">{c.name.charAt(0)}</div>
+              <div className="w-10 h-10 rounded-lg bg-slate-700 flex-shrink-0 overflow-hidden">
+                {c.logo ? <Image src={c.logo} alt={c.name} width={40} height={40} className="w-full h-full object-contain p-0.5" /> : <div className="w-full h-full flex items-center justify-center font-black text-emerald-400">{c.name.charAt(0)}</div>}
+              </div>
               <div className="flex-1">
                 <div className="font-bold text-white text-sm group-hover:text-emerald-400 transition-colors">{c.name}</div>
                 <div className="text-xs text-slate-400">{c.bonus.amount}</div>

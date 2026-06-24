@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import Breadcrumb from '@/components/ui/Breadcrumb';
 import { casinos } from '@/lib/data/casinos';
 
@@ -91,8 +92,12 @@ export default function SlotsPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {casinos.filter((c) => c.games.slots).map((casino) => (
             <Link key={casino.slug} href={`/casinos/${casino.slug}`} className="flex items-center gap-3 bg-slate-800/60 border border-slate-700 hover:border-emerald-500/50 rounded-xl p-4 transition-all group">
-              <div className="w-10 h-10 rounded-lg bg-slate-700 flex items-center justify-center font-black text-emerald-400 flex-shrink-0">
-                {casino.name.charAt(0)}
+              <div className="w-10 h-10 rounded-lg bg-slate-700 flex-shrink-0 overflow-hidden">
+                {casino.logo ? (
+                  <Image src={casino.logo} alt={casino.name} width={40} height={40} className="w-full h-full object-contain p-0.5" />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center font-black text-emerald-400">{casino.name.charAt(0)}</div>
+                )}
               </div>
               <div className="flex-1">
                 <div className="font-bold text-white text-sm group-hover:text-emerald-400 transition-colors">{casino.name}</div>

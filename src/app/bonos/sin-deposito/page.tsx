@@ -1,8 +1,10 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ExternalLink } from 'lucide-react';
 import Breadcrumb from '@/components/ui/Breadcrumb';
 import { bonuses } from '@/lib/data/bonuses';
+import { casinos } from '@/lib/data/casinos';
 
 export const metadata: Metadata = {
   title: 'Bonos Sin Depósito en Perú 2026 — Juega Gratis',
@@ -31,8 +33,8 @@ export default function NodepositPage() {
         {noDepositBonuses.length > 0 ? noDepositBonuses.map((bonus) => (
           <div key={bonus.slug} className="bg-gradient-to-r from-amber-900/20 to-slate-800/60 border border-amber-500/30 rounded-2xl p-5">
             <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
-              <div className="w-14 h-14 rounded-xl bg-slate-700 flex items-center justify-center text-2xl font-black text-amber-400 flex-shrink-0">
-                {bonus.casino.charAt(0)}
+              <div className="w-14 h-14 rounded-xl bg-slate-700 flex-shrink-0 overflow-hidden">
+                {(() => { const logo = casinos.find(c => c.name === bonus.casino)?.logo; return logo ? <Image src={logo} alt={bonus.casino} width={56} height={56} className="w-full h-full object-contain p-1" /> : <div className="w-full h-full flex items-center justify-center text-2xl font-black text-amber-400">{bonus.casino.charAt(0)}</div>; })()}
               </div>
               <div className="flex-1">
                 <div className="font-bold text-white text-lg">{bonus.casino}</div>

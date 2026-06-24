@@ -1,9 +1,11 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ExternalLink, ChevronRight, Gift } from 'lucide-react';
 import Breadcrumb from '@/components/ui/Breadcrumb';
 import StarRating from '@/components/ui/StarRating';
 import { bonuses } from '@/lib/data/bonuses';
+import { casinos } from '@/lib/data/casinos';
 
 export const metadata: Metadata = {
   title: 'Mejores Bonos de Casino Online en Perú 2026',
@@ -48,8 +50,8 @@ export default function BonusesPage() {
       <div className="space-y-4">
         {bonuses.map((bonus) => (
           <div key={bonus.slug} className="bg-slate-800/60 border border-slate-700 hover:border-emerald-500/50 rounded-2xl p-5 transition-all flex flex-col sm:flex-row gap-4 items-start sm:items-center">
-            <div className="w-14 h-14 rounded-xl bg-slate-700 flex items-center justify-center text-2xl font-black text-emerald-400 flex-shrink-0">
-              {bonus.casino.charAt(0)}
+            <div className="w-14 h-14 rounded-xl bg-slate-700 flex-shrink-0 overflow-hidden">
+              {(() => { const logo = casinos.find(c => c.name === bonus.casino)?.logo; return logo ? <Image src={logo} alt={bonus.casino} width={56} height={56} className="w-full h-full object-contain p-1" /> : <div className="w-full h-full flex items-center justify-center text-2xl font-black text-emerald-400">{bonus.casino.charAt(0)}</div>; })()}
             </div>
             <div className="flex-1">
               <div className="flex flex-wrap items-center gap-2 mb-1">

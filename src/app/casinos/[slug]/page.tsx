@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { CheckCircle2, XCircle, ExternalLink, Shield, Clock, Star, Trophy, ChevronRight, Banknote } from 'lucide-react';
 import Breadcrumb from '@/components/ui/Breadcrumb';
 import StarRating from '@/components/ui/StarRating';
@@ -70,8 +71,12 @@ export default async function CasinoReviewPage({ params }: Props) {
             {/* Header */}
             <div className="bg-slate-800/60 border border-slate-700 rounded-2xl p-6 mb-6">
               <div className="flex items-start gap-4 mb-4">
-                <div className="w-20 h-20 rounded-xl bg-slate-700 flex items-center justify-center text-3xl font-black text-emerald-400 border border-slate-600 flex-shrink-0">
-                  {casino.name.charAt(0)}
+                <div className="w-20 h-20 rounded-xl bg-slate-700 border border-slate-600 flex-shrink-0 overflow-hidden">
+                  {casino.logo ? (
+                    <Image src={casino.logo} alt={casino.name} width={80} height={80} className="w-full h-full object-contain p-1" />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center text-3xl font-black text-emerald-400">{casino.name.charAt(0)}</div>
+                  )}
                 </div>
                 <div className="flex-1">
                   <div className="flex flex-wrap items-center gap-2 mb-1">
@@ -256,8 +261,12 @@ export default async function CasinoReviewPage({ params }: Props) {
               <div className="space-y-3">
                 {casinos.filter((c) => c.slug !== casino.slug).slice(0, 3).map((c) => (
                   <Link key={c.slug} href={`/casinos/${c.slug}`} className="flex items-center gap-3 group">
-                    <div className="w-8 h-8 rounded-lg bg-slate-700 flex items-center justify-center text-xs font-black text-emerald-400 flex-shrink-0">
-                      {c.name.charAt(0)}
+                    <div className="w-8 h-8 rounded-lg bg-slate-700 flex-shrink-0 overflow-hidden">
+                      {c.logo ? (
+                        <Image src={c.logo} alt={c.name} width={32} height={32} className="w-full h-full object-contain p-0.5" />
+                      ) : (
+                        <div className="w-full h-full flex items-center justify-center text-xs font-black text-emerald-400">{c.name.charAt(0)}</div>
+                      )}
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="text-sm font-medium text-slate-200 group-hover:text-emerald-400 transition-colors truncate">{c.name}</div>
