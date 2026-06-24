@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { CheckCircle2, XCircle, ExternalLink, Shield, Clock, Banknote } from 'lucide-react';
 import { Casino } from '@/types';
 import StarRating from './StarRating';
@@ -52,9 +53,13 @@ export default function CasinoCard({ casino, rank, compact = false }: CasinoCard
 
       <div className="p-5 pt-6">
         <div className="flex items-start gap-4">
-          {/* Logo placeholder */}
-          <div className="flex-shrink-0 w-16 h-16 rounded-xl bg-slate-700 flex items-center justify-center text-2xl font-black text-emerald-400 border border-slate-600 mt-1">
-            {casino.name.charAt(0)}
+          {/* Logo */}
+          <div className="flex-shrink-0 w-16 h-16 rounded-xl bg-slate-700 border border-slate-600 mt-1 overflow-hidden">
+            {casino.logo ? (
+              <Image src={casino.logo} alt={casino.name} width={64} height={64} className="w-full h-full object-contain p-1" />
+            ) : (
+              <div className="w-full h-full flex items-center justify-center text-2xl font-black text-emerald-400">{casino.name.charAt(0)}</div>
+            )}
           </div>
 
           <div className="flex-1 min-w-0">
