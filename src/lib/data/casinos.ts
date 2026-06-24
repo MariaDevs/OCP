@@ -82,7 +82,7 @@ export const casinos: Casino[] = [
   {
     slug: 'bet365-peru',
     name: 'Bet365 Perú',
-    logo: '/images/casinos/bet365.jpg',
+    logo: '/images/casinos/bet365.png',
     rating: 4.8,
     reviewCount: 1567,
     badge: 'exclusivo',
