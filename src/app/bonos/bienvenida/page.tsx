@@ -23,7 +23,7 @@ export default function WelcomeBonusPage() {
       </div>
       <div className="space-y-4 mb-12">
         {welcomeBonuses.map((bonus, i) => (
-          <div key={bonus.slug} className="bg-slate-800/60 border border-slate-700 hover:border-emerald-500/50 rounded-2xl p-5 transition-all">
+          <div key={bonus.slug} className="bg-slate-800/60 border border-slate-700 hover:border-emerald-500/50 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(16,185,129,0.15)] rounded-2xl p-5 transition-all">
             <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
               <div className="relative">
                 <div className="w-14 h-14 rounded-xl bg-slate-700 flex-shrink-0 overflow-hidden">

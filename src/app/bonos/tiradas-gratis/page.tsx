@@ -23,7 +23,7 @@ export default function FreeSpinsPage() {
       </div>
       <div className="space-y-4 mb-12">
         {freeSpinsBonuses.length > 0 ? freeSpinsBonuses.map((bonus) => (
-          <div key={bonus.slug} className="bg-gradient-to-r from-purple-900/20 to-slate-800/60 border border-purple-500/30 rounded-2xl p-5">
+          <div key={bonus.slug} className="bg-gradient-to-r from-purple-900/20 to-slate-800/60 border border-purple-500/30 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(16,185,129,0.15)] rounded-2xl p-5 transition-all">
             <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
               <div className="w-14 h-14 rounded-xl bg-slate-700 flex-shrink-0 overflow-hidden">
                 {(() => { const logo = casinos.find(c => c.name === bonus.casino)?.logo; return logo ? <Image src={logo} alt={bonus.casino} width={56} height={56} className="w-full h-full object-contain p-1" /> : <div className="w-full h-full flex items-center justify-center text-2xl font-black text-purple-400">{bonus.casino.charAt(0)}</div>; })()}

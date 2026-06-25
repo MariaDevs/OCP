@@ -73,7 +73,7 @@ export default function BlackjackPage() {
         <h2 className="text-2xl font-black text-white mb-5">Mejores Casinos con Blackjack en Perú</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {casinos.filter((c) => c.games.blackjack).map((c) => (
-            <Link key={c.slug} href={`/casinos/${c.slug}`} className="group bg-slate-800/60 border border-slate-700 hover:border-emerald-500/50 rounded-xl p-4 transition-all flex items-center gap-3">
+            <Link key={c.slug} href={`/casinos/${c.slug}`} className="group bg-slate-800/60 border border-slate-700 hover:border-emerald-500/50 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(16,185,129,0.15)] rounded-xl p-4 transition-all flex items-center gap-3">
               <div className="w-10 h-10 rounded-lg bg-slate-700 flex-shrink-0 overflow-hidden">
                 {c.logo ? <Image src={c.logo} alt={c.name} width={40} height={40} className="w-full h-full object-contain p-0.5" /> : <div className="w-full h-full flex items-center justify-center font-black text-emerald-400">{c.name.charAt(0)}</div>}
               </div>
