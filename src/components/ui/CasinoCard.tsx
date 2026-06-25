@@ -31,7 +31,7 @@ export default function CasinoCard({ casino, rank, compact = false }: CasinoCard
   return (
     <article className={clsx(
       'relative rounded-2xl border border-slate-700/50 bg-slate-800/60 backdrop-blur-sm overflow-hidden',
-      'transition-all duration-300 hover:border-emerald-500/50 hover:shadow-[0_0_40px_rgba(16,185,129,0.08)]',
+      'transition-all duration-300 hover:border-emerald-500/50 hover:shadow-[0_8px_30px_rgba(16,185,129,0.15)] hover:-translate-y-1',
       'group'
     )}>
       {/* Rank badge */}
