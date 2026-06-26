@@ -1,12 +1,13 @@
 import { MetadataRoute } from 'next';
 import { casinos } from '@/lib/data/casinos';
-import { blogPosts } from '@/lib/data/blog';
+import { getBlogPosts } from '@/lib/content-engine';
 
 export const dynamic = 'force-static';
 
 const BASE_URL = 'https://onlinecasinoperu.com';
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const blogPosts = await getBlogPosts();
   const staticRoutes = [
     { url: BASE_URL, changeFrequency: 'daily' as const, priority: 1.0 },
     { url: `${BASE_URL}/casinos`, changeFrequency: 'daily' as const, priority: 0.9 },
