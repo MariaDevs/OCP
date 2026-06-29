@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import CasinoCard from "@/components/ui/CasinoCard";
 import { casinos } from "@/lib/data/casinos";
-import { blogPosts } from "@/lib/data/blog";
+import { getBlogPosts, categoryEmoji } from "@/lib/content-engine";
 import { paymentMethods } from "@/lib/data/payments";
 import { faqSchema } from "@/lib/schema";
 
@@ -74,7 +74,8 @@ const categories = [
   { icon: "🪙", label: "Casino Cripto", href: "/casinos?filtro=cripto", count: "10+" },
 ];
 
-export default function HomePage() {
+export default async function HomePage() {
+  const blogPosts = await getBlogPosts();
   return (
     <>
       <script
@@ -349,8 +350,8 @@ export default function HomePage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {blogPosts.slice(0, 6).map((post) => (
             <Link key={post.slug} href={`/blog/${post.slug}`} className="group bg-slate-800/60 border border-slate-700/50 hover:border-emerald-500/50 rounded-2xl overflow-hidden transition-all hover:-translate-y-1">
-              <div className="h-40 bg-gradient-to-br from-slate-700 to-slate-800 flex items-center justify-center text-5xl">
-                {post.category === "Tragamonedas" ? "🎰" : post.category === "Métodos de Pago" ? "💳" : post.category === "Legal" ? "⚖️" : post.category === "Estrategias" ? "🧠" : post.category === "Bonos" ? "🎁" : "📱"}
+              <div className="h-40 bg-gradient-to-br from-slate-700 to-slate-800 flex items-center justify-center text-5xl" aria-hidden="true">
+                {categoryEmoji(post.category)}
               </div>
               <div className="p-4">
                 <div className="flex items-center gap-2 mb-2">

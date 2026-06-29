@@ -1,5 +1,19 @@
 import { Casino } from '@/types';
 
+/**
+ * Serialize an object for safe injection into a <script type="application/ld+json">.
+ * JSON.stringify does NOT escape `<`, `>` or `&`, so a string containing
+ * "</script>" (e.g. from remote content-engine copy) would close the script
+ * element early and enable XSS. Escaping these to their \uXXXX forms keeps the
+ * JSON valid while making break-out impossible.
+ */
+export function ldJson(schema: unknown): string {
+  return JSON.stringify(schema)
+    .replace(/</g, '\\u003c')
+    .replace(/>/g, '\\u003e')
+    .replace(/&/g, '\\u0026');
+}
+
 export function casinoReviewSchema(casino: Casino, url: string) {
   return {
     '@context': 'https://schema.org',
@@ -56,7 +70,13 @@ export function breadcrumbSchema(items: { name: string; url: string }[]) {
   };
 }
 
-export function articleSchema(post: { title: string; excerpt: string; date: string; slug: string }) {
+export function articleSchema(post: {
+  title: string;
+  excerpt: string;
+  date: string;
+  slug: string;
+  image?: string;
+}) {
   return {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -65,7 +85,7 @@ export function articleSchema(post: { title: string; excerpt: string; date: stri
     datePublished: post.date,
     dateModified: post.date,
     url: `https://onlinecasinoperu.com/blog/${post.slug}`,
-    image: 'https://onlinecasinoperu.com/og-image.png',
+    image: post.image ?? 'https://onlinecasinoperu.com/og-image.png',
     author: {
       '@type': 'Organization',
       name: 'OnlineCasinoPerú',

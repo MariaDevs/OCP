@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Clock, ChevronRight } from 'lucide-react';
 import Breadcrumb from '@/components/ui/Breadcrumb';
-import { blogPosts } from '@/lib/data/blog';
+import { getBlogPosts, categoryEmoji } from '@/lib/content-engine';
 
 export const metadata: Metadata = {
   title: 'Blog de Casino Online Perú — Guías, Estrategias y Noticias',
@@ -10,17 +10,21 @@ export const metadata: Metadata = {
   alternates: { canonical: '/blog' },
 };
 
-const categoryEmojis: Record<string, string> = {
-  'Tragamonedas': '🎰',
-  'Métodos de Pago': '💳',
-  'Legal': '⚖️',
-  'Estrategias': '🧠',
-  'Bonos': '🎁',
-  'Casino Móvil': '📱',
-};
-
-export default function BlogPage() {
+export default async function BlogPage() {
+  const blogPosts = await getBlogPosts();
   const categories = [...new Set(blogPosts.map((p) => p.category))];
+
+  if (blogPosts.length === 0) {
+    return (
+      <div className="max-w-7xl mx-auto px-4 py-8">
+        <Breadcrumb items={[{ label: 'Blog' }]} />
+        <div className="mt-6 mb-8">
+          <h1 className="text-4xl font-black text-white mb-3">Blog de Casino Online Perú</h1>
+          <p className="text-slate-400">Próximamente publicaremos guías, estrategias y noticias para jugadores peruanos.</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
@@ -36,7 +40,7 @@ export default function BlogPage() {
         <span className="bg-emerald-500 text-slate-900 font-bold text-sm rounded-full px-4 py-1.5">Todos</span>
         {categories.map((cat) => (
           <button key={cat} className="bg-slate-800 border border-slate-700 hover:border-emerald-500 text-slate-300 hover:text-white font-medium text-sm rounded-full px-4 py-1.5 transition-colors">
-            {categoryEmojis[cat]} {cat}
+            {categoryEmoji(cat)} {cat}
           </button>
         ))}
       </div>
@@ -45,8 +49,8 @@ export default function BlogPage() {
       <div className="mb-8">
         <Link href={`/blog/${blogPosts[0].slug}`} className="group block bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 hover:border-emerald-500/50 rounded-2xl overflow-hidden transition-all">
           <div className="grid grid-cols-1 md:grid-cols-2">
-            <div className="h-48 md:h-full bg-gradient-to-br from-emerald-900/40 to-slate-800 flex items-center justify-center text-7xl">
-              {categoryEmojis[blogPosts[0].category] || '📰'}
+            <div className="h-48 md:h-full bg-gradient-to-br from-emerald-900/40 to-slate-800 flex items-center justify-center text-7xl" aria-hidden="true">
+              {categoryEmoji(blogPosts[0].category)}
             </div>
             <div className="p-6 md:p-8">
               <div className="flex items-center gap-2 mb-3">
@@ -69,8 +73,8 @@ export default function BlogPage() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {blogPosts.slice(1).map((post) => (
           <Link key={post.slug} href={`/blog/${post.slug}`} className="group bg-slate-800/60 border border-slate-700/50 hover:border-emerald-500/50 rounded-2xl overflow-hidden transition-all hover:-translate-y-1">
-            <div className="h-36 bg-gradient-to-br from-slate-700 to-slate-800 flex items-center justify-center text-5xl">
-              {categoryEmojis[post.category] || '📰'}
+            <div className="h-36 bg-gradient-to-br from-slate-700 to-slate-800 flex items-center justify-center text-5xl" aria-hidden="true">
+              {categoryEmoji(post.category)}
             </div>
             <div className="p-4">
               <div className="flex items-center gap-2 mb-2">

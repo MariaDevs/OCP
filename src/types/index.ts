@@ -68,12 +68,20 @@ export interface BlogPost {
   slug: string;
   title: string;
   excerpt: string;
+  /** Markdown-ish body for static posts. Empty for engine posts (use `html`). */
   content: string;
   category: string;
   author: string;
   date: string;
   readTime: number;
   image: string;
+  /** Pre-rendered, sanitized + affiliate-hardened HTML body (engine posts). */
+  html?: string;
+  /** Hero image URL from the content engine, if any. */
+  heroImage?: string | null;
+  heroImageAlt?: string | null;
+  /** Where the post came from. Static (curated) or the content engine. */
+  source?: "static" | "engine";
 }
 
 export interface PaymentMethod {
