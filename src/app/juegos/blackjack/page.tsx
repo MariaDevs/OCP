@@ -5,7 +5,7 @@ import Breadcrumb from '@/components/ui/Breadcrumb';
 import { casinos } from '@/lib/data/casinos';
 
 export const metadata: Metadata = {
-  title: 'Blackjack Online en Perú 2026 — Estrategia Básica y Mejores Casinos',
+  title: 'Blackjack Perú 2026 — Estrategia Básica y Casinos',
   description: 'Aprende a jugar blackjack online en Perú. Estrategia básica, variantes, ventaja de la casa y los mejores casinos con blackjack para peruanos en 2026.',
   alternates: { canonical: '/juegos/blackjack' },
 };

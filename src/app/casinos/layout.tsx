@@ -1,7 +1,7 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Mejores Casinos Online en Perú 2026 — Comparativa Completa',
+  title: 'Mejores Casinos Online en Perú 2026',
   description: 'Compara los mejores casinos online en Perú para 2026. Filtra por método de pago (Yape, Plin, Bitcoin), tipo de bono y licencia. Análisis independiente y actualizado.',
   alternates: { canonical: '/casinos' },
   openGraph: {

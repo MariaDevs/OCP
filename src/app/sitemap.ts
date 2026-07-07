@@ -4,7 +4,7 @@ import { getBlogPosts } from '@/lib/content-engine';
 
 export const dynamic = 'force-static';
 
-const BASE_URL = 'https://onlinecasinoperu.com';
+const BASE_URL = 'https://www.onlinecasinoperu.com';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const blogPosts = await getBlogPosts();
@@ -23,6 +23,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${BASE_URL}/juegos/ruleta`, changeFrequency: 'monthly' as const, priority: 0.7 },
     { url: `${BASE_URL}/juegos/blackjack`, changeFrequency: 'monthly' as const, priority: 0.7 },
     { url: `${BASE_URL}/juegos/en-vivo`, changeFrequency: 'weekly' as const, priority: 0.7 },
+    { url: `${BASE_URL}/juegos/baccarat`, changeFrequency: 'monthly' as const, priority: 0.7 },
+    { url: `${BASE_URL}/juegos/poker`, changeFrequency: 'monthly' as const, priority: 0.6 },
+    { url: `${BASE_URL}/cookies`, changeFrequency: 'yearly' as const, priority: 0.2 },
     { url: `${BASE_URL}/sobre-nosotros`, changeFrequency: 'monthly' as const, priority: 0.4 },
     { url: `${BASE_URL}/contacto`, changeFrequency: 'monthly' as const, priority: 0.4 },
     { url: `${BASE_URL}/privacidad`, changeFrequency: 'yearly' as const, priority: 0.3 },

@@ -22,8 +22,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const casino = getCasinoBySlug(slug);
   if (!casino) return {};
   const title = `${casino.name} Reseña 2026 — Bono ${casino.bonus.amount}`;
-  const description = `Reseña completa y actualizada de ${casino.name}. ${casino.description} Bono de bienvenida: ${casino.bonus.amount}. Análisis de expertos.`;
-  const url = `https://onlinecasinoperu.com/casinos/${slug}`;
+  const description = casino.description;
+  const url = `https://www.onlinecasinoperu.com/casinos/${slug}`;
   return {
     title,
     description,
@@ -33,13 +33,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description,
       url,
       type: 'article',
-      images: [{ url: 'https://onlinecasinoperu.com/og-image.png', width: 1200, height: 630 }],
+      images: [{ url: 'https://www.onlinecasinoperu.com/og-image.png', width: 1200, height: 630 }],
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
-      images: ['https://onlinecasinoperu.com/og-image.png'],
+      images: ['https://www.onlinecasinoperu.com/og-image.png'],
     },
   };
 }
@@ -49,7 +49,7 @@ export default async function CasinoReviewPage({ params }: Props) {
   const casino = getCasinoBySlug(slug);
   if (!casino) notFound();
 
-  const url = `https://onlinecasinoperu.com/casinos/${slug}`;
+  const url = `https://www.onlinecasinoperu.com/casinos/${slug}`;
   const schema = casinoReviewSchema(casino, url);
   const breadcrumbs = breadcrumbSchema([
     { name: 'Inicio', url: 'https://onlinecasinoperu.com' },

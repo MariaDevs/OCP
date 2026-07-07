@@ -5,7 +5,7 @@ import Breadcrumb from '@/components/ui/Breadcrumb';
 import { casinos } from '@/lib/data/casinos';
 
 export const metadata: Metadata = {
-  title: 'Tragamonedas Online en Perú 2026 — Juega Gratis o con Dinero Real',
+  title: 'Tragamonedas Online Perú 2026 — Juega y Gana',
   description: 'Las mejores tragamonedas online disponibles en Perú. Descubre los mejores RTP, las tragamonedas más populares y dónde jugarlas.',
   alternates: { canonical: '/juegos/tragamonedas' },
 };

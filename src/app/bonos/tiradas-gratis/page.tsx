@@ -7,7 +7,7 @@ import { bonuses } from '@/lib/data/bonuses';
 import { casinos } from '@/lib/data/casinos';
 
 export const metadata: Metadata = {
-  title: 'Tiradas Gratis en Casinos Online Perú 2026 — Free Spins',
+  title: 'Tiradas Gratis Perú 2026 — Free Spins',
   description: 'Los mejores bonos de tiradas gratis (free spins) en casinos online para jugadores peruanos. Gira sin riesgo y gana real.',
   alternates: { canonical: '/bonos/tiradas-gratis' },
 };

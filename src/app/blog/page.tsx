@@ -1,11 +1,11 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Clock, ChevronRight } from 'lucide-react';
 import Breadcrumb from '@/components/ui/Breadcrumb';
 import { getBlogPosts, categoryEmoji } from '@/lib/content-engine';
 
 export const metadata: Metadata = {
-  title: 'Blog de Casino Online Perú — Guías, Estrategias y Noticias',
+  title: 'Blog Casino Perú — Guías y Estrategias',
   description: 'Artículos, guías y estrategias de casino online para jugadores peruanos. Todo sobre bonos, tragamonedas, pagos y más.',
   alternates: { canonical: '/blog' },
 };

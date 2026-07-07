@@ -1,10 +1,10 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
 import Breadcrumb from '@/components/ui/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: 'Juegos de Casino Online en Perú 2026 — Tragamonedas, Ruleta, Blackjack',
+  title: 'Juegos de Casino Online en Perú 2026',
   description: 'Explora todos los juegos de casino online disponibles en Perú: tragamonedas, ruleta, blackjack, baccarat y casino en vivo. Guías y estrategias.',
   alternates: { canonical: '/juegos' },
 };

@@ -5,7 +5,7 @@ import Breadcrumb from '@/components/ui/Breadcrumb';
 import { casinos } from '@/lib/data/casinos';
 
 export const metadata: Metadata = {
-  title: 'Ruleta Online en Perú 2026 — Guía Completa y Mejores Casinos',
+  title: 'Ruleta Online Perú 2026 — Guía y Mejores Casinos',
   description: 'Guía completa de ruleta online en Perú: tipos de ruleta, estrategias, ventaja de la casa y los mejores casinos para jugar en 2026.',
   alternates: { canonical: '/juegos/ruleta' },
 };

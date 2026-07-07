@@ -1,11 +1,11 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumb from '@/components/ui/Breadcrumb';
 import { paymentMethods } from '@/lib/data/payments';
 import { casinos } from '@/lib/data/casinos';
 
 export const metadata: Metadata = {
-  title: 'Métodos de Pago en Casinos Online Perú 2026 — Yape, Plin, BCP',
+  title: 'Métodos de Pago Casinos Online Perú 2026',
   description: 'Guía completa de métodos de pago en casinos online para jugadores peruanos: Yape, Plin, BCP, BBVA, tarjetas y criptomonedas. Comparativa actualizada.',
   alternates: { canonical: '/metodos-de-pago' },
 };

@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://onlinecasinoperu.com"),
+  metadataBase: new URL("https://www.onlinecasinoperu.com"),
   title: {
     default: "Mejores Casinos Online en Perú 2026 | CasinoPerú.com",
     template: "%s | CasinoPerú.com",
@@ -41,10 +41,10 @@ export const metadata: Metadata = {
     title: "Mejores Casinos Online en Perú 2026",
     description:
       "Guía independiente con los mejores casinos online para jugadores peruanos. Compara bonos, métodos de pago y reseñas expertas.",
-    url: "https://onlinecasinoperu.com",
+    url: "https://www.onlinecasinoperu.com",
     images: [
       {
-        url: "https://onlinecasinoperu.com/og-image.png",
+        url: "https://www.onlinecasinoperu.com/og-image.png",
         width: 1200,
         height: 630,
         alt: "CasinoPerú.com — Mejores Casinos Online en Perú 2026",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     title: "Mejores Casinos Online en Perú 2026 | CasinoPerú.com",
     description:
       "Guía independiente con los mejores casinos online para jugadores peruanos. Compara bonos, métodos de pago y reseñas expertas.",
-    images: ["https://onlinecasinoperu.com/og-image.png"],
+    images: ["https://www.onlinecasinoperu.com/og-image.png"],
   },
   icons: {
     icon: '/images/logo-icon.svg',

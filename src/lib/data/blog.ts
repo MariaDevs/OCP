@@ -1,9 +1,9 @@
-import { BlogPost } from '@/types';
+﻿import { BlogPost } from '@/types';
 
 export const blogPosts: BlogPost[] = [
   {
     slug: 'mejores-tragamonedas-peru-2026',
-    title: 'Las 10 Mejores Tragamonedas Online en Perú para 2026',
+    title: '10 Mejores Tragamonedas Online en Perú 2026',
     excerpt: 'Descubre qué tragamonedas ofrecen el mayor RTP y las mejores posibilidades de ganar en casinos online peruanos este año.',
     content: `Las tragamonedas online son el juego más popular entre los jugadores peruanos. Con más de 1,500 títulos disponibles en los mejores casinos, elegir la correcta puede marcar la diferencia entre una sesión aburrida y una emocionante.
 
@@ -60,7 +60,7 @@ Todas las tragamonedas de esta lista están disponibles en Betsson Perú, 1xBet 
   },
   {
     slug: 'yape-plin-casino-online-peru',
-    title: 'Cómo Depositar en Casinos Online con Yape y Plin en Perú',
+    title: 'Depositar con Yape y Plin en Casinos Perú',
     excerpt: 'Guía completa para usar las billeteras digitales más populares de Perú en casinos online. Paso a paso y sin complicaciones.',
     content: `Yape y Plin son las billeteras digitales más usadas en Perú, y afortunadamente varios casinos online ya las aceptan para depósitos y retiros. Esta guía te explica exactamente cómo usarlas.
 
@@ -103,7 +103,7 @@ Usa el mismo número de teléfono en Yape/Plin que registraste en el casino. Alg
   },
   {
     slug: 'casinos-online-legales-peru',
-    title: '¿Son Legales los Casinos Online en Perú? Todo lo que Debes Saber',
+    title: 'Casinos Online en Perú: ¿Son Legales?',
     excerpt: 'Analizamos el marco legal del juego online en Perú, la Ley 27153 y qué operadores están autorizados por MINCETUR.',
     content: `Esta es probablemente la pregunta más frecuente entre los jugadores peruanos. La respuesta corta es sí, pero el marco legal merece una explicación detallada.
 
@@ -144,7 +144,7 @@ Si la seguridad legal es tu prioridad máxima, elige Codere (licencia MINCETUR).
   },
   {
     slug: 'trucos-ruleta-online',
-    title: '7 Estrategias para la Ruleta Online que Realmente Funcionan',
+    title: 'Estrategias de Ruleta Online que Funcionan',
     excerpt: 'Desde Martingala hasta D\'Alembert: analizamos las estrategias más populares de ruleta y cuáles tienen base matemática real.',
     content: `Antes de hablar de estrategias, hay que ser honestos: ninguna estrategia de ruleta elimina la ventaja matemática de la casa. Sin embargo, sí pueden maximizar tu diversión y gestionar mejor tu bankroll.
 
@@ -187,7 +187,7 @@ Decide antes de empezar: ¿Cuánto puedes perder hoy? Ese es tu límite. Divide 
   },
   {
     slug: 'bono-sin-deposito-peru-2026',
-    title: 'Bonos Sin Depósito en Perú 2026: Cómo Reclamarlos y Ganar Real',
+    title: 'Bono Sin Depósito Perú 2026: Ganar Real',
     excerpt: 'Lista actualizada de bonos sin depósito disponibles para jugadores peruanos. Condiciones, trucos para maximizarlos y advertencias.',
     content: `Los bonos sin depósito son los más buscados por los jugadores peruanos porque permiten ganar dinero real sin arriesgar el propio. Pero tienen condiciones que debes conocer.
 
@@ -230,7 +230,7 @@ Si realizas un depósito antes de completar el wagering del bono sin depósito, 
   },
   {
     slug: 'casino-movil-peru',
-    title: 'Los Mejores Casinos Móviles en Perú: Apps vs Web Móvil',
+    title: 'Casinos Móviles Perú 2026: App vs Web Móvil',
     excerpt: 'Comparamos las apps nativas contra las versiones web para móvil. ¿Cuál da mejor experiencia para el jugador peruano?',
     content: `Más del 70% de los jugadores peruanos juegan en casino online desde su smartphone. La experiencia móvil se ha convertido en un factor decisivo para elegir casino.
 
@@ -285,3 +285,4 @@ Siempre descarga APKs únicamente desde el sitio oficial del casino, nunca de ti
     image: '/images/blog/casino-movil.jpg',
   },
 ];
+

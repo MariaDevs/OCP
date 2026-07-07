@@ -6,7 +6,7 @@ import Breadcrumb from '@/components/ui/Breadcrumb';
 import { casinos } from '@/lib/data/casinos';
 
 export const metadata: Metadata = {
-  title: 'Casino en Vivo en Perú 2026 — Los Mejores con Dealers en Español',
+  title: 'Casino en Vivo Perú 2026 — Dealers en Español',
   description: 'Los mejores casinos en vivo disponibles en Perú: ruleta, blackjack y baccarat con dealers reales en español. Guía y comparativa 2026.',
   alternates: { canonical: '/juegos/en-vivo' },
 };

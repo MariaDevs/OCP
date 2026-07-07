@@ -29,7 +29,7 @@ export function casinoReviewSchema(casino: Casino, url: string) {
     author: {
       '@type': 'Organization',
       name: 'OnlineCasinoPerú',
-      url: 'https://onlinecasinoperu.com',
+      url: 'https://www.onlinecasinoperu.com',
     },
     itemReviewed: {
       '@type': 'Casino',
@@ -84,18 +84,18 @@ export function articleSchema(post: {
     description: post.excerpt,
     datePublished: post.date,
     dateModified: post.date,
-    url: `https://onlinecasinoperu.com/blog/${post.slug}`,
-    image: post.image ?? 'https://onlinecasinoperu.com/og-image.png',
+    url: `https://www.onlinecasinoperu.com/blog/${post.slug}`,
+    image: post.image ?? 'https://www.onlinecasinoperu.com/og-image.png',
     author: {
       '@type': 'Organization',
       name: 'OnlineCasinoPerú',
-      url: 'https://onlinecasinoperu.com',
+      url: 'https://www.onlinecasinoperu.com',
     },
     publisher: {
       '@type': 'Organization',
       name: 'OnlineCasinoPerú',
-      url: 'https://onlinecasinoperu.com',
-      logo: { '@type': 'ImageObject', url: 'https://onlinecasinoperu.com/images/logo.svg' },
+      url: 'https://www.onlinecasinoperu.com',
+      logo: { '@type': 'ImageObject', url: 'https://www.onlinecasinoperu.com/images/logo.svg' },
     },
     inLanguage: 'es-PE',
   };
@@ -106,8 +106,8 @@ export function organizationSchema() {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'OnlineCasinoPerú',
-    url: 'https://onlinecasinoperu.com',
-    logo: 'https://onlinecasinoperu.com/images/logo.svg',
+    url: 'https://www.onlinecasinoperu.com',
+    logo: 'https://www.onlinecasinoperu.com/images/logo.svg',
     description: 'Guía independiente de casinos online en Perú.',
     inLanguage: 'es-PE',
     sameAs: [],
@@ -119,12 +119,12 @@ export function websiteSchema() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'OnlineCasinoPerú',
-    url: 'https://onlinecasinoperu.com',
+    url: 'https://www.onlinecasinoperu.com',
     description: 'Guía independiente de casinos online en Perú. Comparamos, analizamos y reseñamos los mejores casinos online para jugadores peruanos.',
     inLanguage: 'es-PE',
     potentialAction: {
       '@type': 'SearchAction',
-      target: 'https://onlinecasinoperu.com/buscar?q={search_term_string}',
+      target: 'https://www.onlinecasinoperu.com/buscar?q={search_term_string}',
       'query-input': 'required name=search_term_string',
     },
   };

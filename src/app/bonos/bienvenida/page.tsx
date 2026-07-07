@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ExternalLink } from 'lucide-react';
@@ -7,7 +7,7 @@ import { bonuses } from '@/lib/data/bonuses';
 import { casinos } from '@/lib/data/casinos';
 
 export const metadata: Metadata = {
-  title: 'Mejores Bonos de Bienvenida en Perú 2026 — Hasta S/600',
+  title: 'Bonos Bienvenida Perú 2026 — Hasta S/600',
   description: 'Compara los mejores bonos de bienvenida en casinos online peruanos para 2026. Análisis completo de condiciones y valor real.',
   alternates: { canonical: '/bonos/bienvenida' },
 };
