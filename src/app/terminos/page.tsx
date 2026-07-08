@@ -3,7 +3,7 @@ import Breadcrumb from '@/components/ui/Breadcrumb';
 
 export const metadata: Metadata = {
   title: 'Términos y Condiciones — CasinoPerú.com',
-  description: 'Términos y condiciones de uso de CasinoPerú.com.',
+  description: 'Términos y condiciones de uso de OnlineCasinoPerú.com. Lee nuestras condiciones antes de usar el sitio, incluyendo descargos de responsabilidad y política editorial.',
   alternates: { canonical: '/terminos' },
 };
 

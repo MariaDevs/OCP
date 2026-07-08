@@ -32,9 +32,10 @@ export function casinoReviewSchema(casino: Casino, url: string) {
       url: 'https://www.onlinecasinoperu.com',
     },
     itemReviewed: {
-      '@type': 'Casino',
+      '@type': 'LocalBusiness',
       name: casino.name,
-      url: casino.affiliateUrl,
+      url: `https://www.onlinecasinoperu.com/casinos/${casino.slug}`,
+      description: casino.description,
     },
     url,
     datePublished: '2026-01-01',
@@ -110,7 +111,6 @@ export function organizationSchema() {
     logo: 'https://www.onlinecasinoperu.com/images/logo.svg',
     description: 'Guía independiente de casinos online en Perú.',
     inLanguage: 'es-PE',
-    sameAs: [],
   };
 }
 
@@ -122,10 +122,5 @@ export function websiteSchema() {
     url: 'https://www.onlinecasinoperu.com',
     description: 'Guía independiente de casinos online en Perú. Comparamos, analizamos y reseñamos los mejores casinos online para jugadores peruanos.',
     inLanguage: 'es-PE',
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: 'https://www.onlinecasinoperu.com/buscar?q={search_term_string}',
-      'query-input': 'required name=search_term_string',
-    },
   };
 }

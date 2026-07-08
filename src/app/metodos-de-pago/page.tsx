@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumb from '@/components/ui/Breadcrumb';
 import { paymentMethods } from '@/lib/data/payments';

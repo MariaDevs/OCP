@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import { websiteSchema, organizationSchema } from "@/lib/schema";
+import { websiteSchema, organizationSchema, ldJson } from "@/lib/schema";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -82,11 +82,11 @@ export default function RootLayout({
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema()) }}
+          dangerouslySetInnerHTML={{ __html: ldJson(websiteSchema()) }}
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema()) }}
+          dangerouslySetInnerHTML={{ __html: ldJson(organizationSchema()) }}
         />
       </head>
       <body className="min-h-full flex flex-col bg-[#0A0E1A] text-slate-100">
