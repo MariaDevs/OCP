@@ -224,7 +224,7 @@ export const casinos: Casino[] = [
     mobileApp: true,
     liveChat: true,
     verified: true,
-    affiliateUrl: '#',
+    affiliateUrl: 'https://record.betsson.com/_mEd0zhsfEVJWJv-piTzMMWNd7ZgqdRLk/7/',
   },
   {
     slug: '1xbet-peru',
