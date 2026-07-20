@@ -13,7 +13,7 @@ const navItems = [
     children: [
       { label: 'Todos los Casinos', href: '/casinos' },
       { label: 'Casino en Vivo', href: '/casinos?filtro=en-vivo' },
-      { label: 'Casinos con Yape', href: '/casinos?filtro=yape' },
+      { label: 'Casinos con Yape', href: '/casino-yape' },
       { label: 'Casinos con Plin', href: '/casinos?filtro=plin' },
       { label: 'Casinos de Criptomonedas', href: '/casinos?filtro=cripto' },
     ],

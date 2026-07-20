@@ -1,8 +1,33 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
+import { ChevronRight } from 'lucide-react';
 import Breadcrumb from '@/components/ui/Breadcrumb';
 import { casinos } from '@/lib/data/casinos';
+import { faqSchema, ldJson } from '@/lib/schema';
+
+const tragamonedasFaqs = [
+  {
+    question: '¿Qué tragamoneda tiene el mejor RTP en Perú?',
+    answer: 'Entre las tragamonedas más populares en Perú, Gates of Olympus de Pragmatic Play tiene un RTP de 96.5%, Sweet Bonanza de 96.48% y Book of Dead de 96.21%. Son las que ofrecen mejor retorno estadístico al jugador a largo plazo.',
+  },
+  {
+    question: '¿Puedo jugar tragamonedas gratis en casinos online peruanos?',
+    answer: 'Sí. Muchos casinos ofrecen modo demo gratuito sin necesidad de registrarse. Además, con bonos sin depósito como los S/30 de Codere o las tiradas gratis de LeoVegas y HellSpin, puedes jugar con dinero real sin depositar.',
+  },
+  {
+    question: '¿Qué significa volatilidad alta en una tragamoneda?',
+    answer: 'Volatilidad alta significa que la tragamoneda paga premios grandes pero con poca frecuencia. Gates of Olympus y Book of Dead son ejemplos de alta volatilidad — puedes pasar muchos giros sin ganar, pero cuando cae el premio suele ser grande. Baja volatilidad paga menos pero más seguido.',
+  },
+  {
+    question: '¿Cuál es el mejor casino para jugar tragamonedas en Perú?',
+    answer: 'MegaPari tiene el catálogo más grande con más de 6,000 juegos. 1xBet y HellSpin superan los 3,000 títulos. Betsson, con licencia MGA, ofrece más de 1,500 tragamonedas de los mejores proveedores con total garantía de seguridad.',
+  },
+  {
+    question: '¿Las tragamonedas online en Perú son justas?',
+    answer: 'Sí, siempre que juegues en casinos con licencia válida. Los casinos con licencia MGA o MINCETUR están obligados a usar RNG (generador de números aleatorios) certificado por auditores independientes como eCOGRA o iTech Labs, garantizando resultados aleatorios e imparciales.',
+  },
+];
 
 export const metadata: Metadata = {
   title: 'Tragamonedas Online Perú 2026 — Juega y Gana',
@@ -30,6 +55,8 @@ const providers = [
 
 export default function SlotsPage() {
   return (
+    <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ldJson(faqSchema(tragamonedasFaqs)) }} />
     <div className="max-w-7xl mx-auto px-4 py-8">
       <Breadcrumb items={[{ label: 'Juegos', href: '/juegos' }, { label: 'Tragamonedas' }]} />
 
@@ -110,7 +137,7 @@ export default function SlotsPage() {
       </section>
 
       {/* Guide */}
-      <section className="bg-slate-800/30 border border-slate-700 rounded-2xl p-6">
+      <section className="bg-slate-800/30 border border-slate-700 rounded-2xl p-6 mb-12">
         <h2 className="text-xl font-black text-white mb-4">¿Qué es el RTP en las Tragamonedas?</h2>
         <p className="text-slate-400 leading-relaxed mb-4">
           El RTP (Return to Player) es el porcentaje promedio del dinero apostado que una tragamoneda devuelve a los jugadores a largo plazo. Un RTP de 96% significa que, por cada S/100 apostado, la máquina devuelve en promedio S/96.
@@ -119,6 +146,23 @@ export default function SlotsPage() {
           <strong className="text-white">Importante:</strong> El RTP se calcula a lo largo de millones de giros. En sesiones cortas, los resultados pueden variar enormemente. Las tragamonedas de alta volatilidad pagan menos frecuentemente pero con premios más grandes. Las de baja volatilidad pagan más seguido pero con montos menores.
         </p>
       </section>
+
+      {/* FAQ */}
+      <section>
+        <h2 className="text-2xl font-black text-white mb-6">Preguntas Frecuentes — Tragamonedas Online Perú</h2>
+        <div className="space-y-3">
+          {tragamonedasFaqs.map((faq) => (
+            <details key={faq.question} className="group bg-slate-800 border border-slate-700 rounded-xl overflow-hidden">
+              <summary className="flex items-center justify-between gap-4 p-5 cursor-pointer font-semibold text-white list-none hover:text-emerald-400 transition-colors">
+                <span>{faq.question}</span>
+                <ChevronRight size={16} className="flex-shrink-0 transition-transform group-open:rotate-90 text-slate-400" />
+              </summary>
+              <div className="px-5 pb-5 text-slate-400 text-sm leading-relaxed">{faq.answer}</div>
+            </details>
+          ))}
+        </div>
+      </section>
     </div>
+    </>
   );
 }

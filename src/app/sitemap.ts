@@ -15,6 +15,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${BASE_URL}/bonos/bienvenida`, changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: `${BASE_URL}/bonos/sin-deposito`, changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: `${BASE_URL}/bonos/tiradas-gratis`, changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: `${BASE_URL}/casino-yape`, changeFrequency: 'weekly' as const, priority: 0.9 },
     { url: `${BASE_URL}/metodos-de-pago`, changeFrequency: 'monthly' as const, priority: 0.7 },
     { url: `${BASE_URL}/juegos/tragamonedas`, changeFrequency: 'weekly' as const, priority: 0.7 },
     { url: `${BASE_URL}/blog`, changeFrequency: 'daily' as const, priority: 0.8 },

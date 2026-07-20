@@ -1,10 +1,34 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, ChevronRight } from 'lucide-react';
 import Breadcrumb from '@/components/ui/Breadcrumb';
 import { bonuses } from '@/lib/data/bonuses';
 import { casinos } from '@/lib/data/casinos';
+import { faqSchema, ldJson } from '@/lib/schema';
+
+const sinDepositoFaqs = [
+  {
+    question: '¿Qué es un bono sin depósito en un casino online?',
+    answer: 'Un bono sin depósito es crédito gratuito que el casino te entrega al registrarte, sin necesidad de ingresar dinero. En Perú, Codere ofrece S/30 gratis con el código GRATIS30. Es la forma más segura de probar un casino sin arriesgar tu dinero.',
+  },
+  {
+    question: '¿Puedo retirar las ganancias de un bono sin depósito?',
+    answer: 'Sí, pero primero debes cumplir el requisito de apuesta (wagering). Por ejemplo, Codere tiene wagering x25, lo que significa que debes apostar el bono 25 veces. Una vez completado, puedes retirar las ganancias mediante Yape, Plin u otros métodos disponibles.',
+  },
+  {
+    question: '¿Cuál es el mejor bono sin depósito en Perú en 2026?',
+    answer: 'Codere ofrece el mejor bono sin depósito en Perú con S/30 gratis usando el código GRATIS30. Es especialmente valorado por tener un requisito de apuesta de solo x25, uno de los más bajos del mercado.',
+  },
+  {
+    question: '¿Los bonos sin depósito requieren verificación de identidad?',
+    answer: 'La mayoría de casinos piden verificar tu DNI peruano antes de entregar el bono sin depósito. Esto es un requisito de seguridad estándar (KYC) para prevenir el abuso de bonos. El proceso suele tardar menos de 24 horas.',
+  },
+  {
+    question: '¿Hay límite en las ganancias con un bono sin depósito?',
+    answer: 'Sí. La mayoría de casinos establecen un límite máximo de retiro de las ganancias generadas con bonos sin depósito, generalmente entre S/100 y S/500. Lee siempre los términos y condiciones completos antes de reclamar el bono.',
+  },
+];
 
 export const metadata: Metadata = {
   title: 'Bonos Sin Depósito en Perú 2026 — Juega Gratis',
@@ -16,6 +40,8 @@ export default function NodepositPage() {
   const noDepositBonuses = bonuses.filter((b) => b.type === 'sin-deposito');
 
   return (
+    <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ldJson(faqSchema(sinDepositoFaqs)) }} />
     <div className="max-w-4xl mx-auto px-4 py-8">
       <Breadcrumb items={[{ label: 'Bonos', href: '/bonos' }, { label: 'Sin Depósito' }]} />
 
@@ -88,6 +114,23 @@ export default function NodepositPage() {
           ))}
         </div>
       </section>
+
+      {/* FAQ */}
+      <section className="mt-12">
+        <h2 className="text-2xl font-black text-white mb-6">Preguntas Frecuentes — Bonos Sin Depósito</h2>
+        <div className="space-y-3">
+          {sinDepositoFaqs.map((faq) => (
+            <details key={faq.question} className="group bg-slate-800 border border-slate-700 rounded-xl overflow-hidden">
+              <summary className="flex items-center justify-between gap-4 p-5 cursor-pointer font-semibold text-white list-none hover:text-emerald-400 transition-colors">
+                <span>{faq.question}</span>
+                <ChevronRight size={16} className="flex-shrink-0 transition-transform group-open:rotate-90 text-slate-400" />
+              </summary>
+              <div className="px-5 pb-5 text-slate-400 text-sm leading-relaxed">{faq.answer}</div>
+            </details>
+          ))}
+        </div>
+      </section>
     </div>
+    </>
   );
 }
