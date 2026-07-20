@@ -190,7 +190,7 @@ export const casinos: Casino[] = [
   {
     slug: 'ivibet-peru',
     name: 'IviBet Perú',
-    logo: '/images/casinos/ivibet.png',
+    logo: '/images/casinos/lvbet.jpg',
     rating: 4.2,
     reviewCount: 389,
     badge: 'nuevo',
