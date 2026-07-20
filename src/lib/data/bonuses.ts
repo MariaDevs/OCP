@@ -172,9 +172,9 @@ export const bonuses: Bonus[] = [
     affiliateUrl: 'https://mio.novarao.com/redirect.aspx?pid=107116&bid=1466&lpid=6',
   },
   {
-    slug: 'lvbet-bienvenida',
-    casino: 'LVBet Perú',
-    casinoSlug: 'lvbet-peru',
+    slug: 'ivibet-bienvenida',
+    casino: 'IviBet Perú',
+    casinoSlug: 'ivibet-peru',
     casinoLogo: '/images/casinos/lvbet.jpg',
     type: 'bienvenida',
     title: '100% hasta S/500',
