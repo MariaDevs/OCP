@@ -35,6 +35,13 @@ export interface Casino {
   liveChat: boolean;
   verified: boolean;
   affiliateUrl: string;
+  scores?: {
+    seguridad: number;
+    juegos: number;
+    bonos: number;
+    pagos: number;
+    soporte: number;
+  };
 }
 
 export interface Bonus {

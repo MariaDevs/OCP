@@ -37,6 +37,7 @@ export const casinos: Casino[] = [
     liveChat: true,
     verified: true,
     affiliateUrl: 'https://record.betsafe.com/_mEd0zhsfEVI0JDpRKLS4nWNd7ZgqdRLk/8/',
+    scores: { seguridad: 9.5, juegos: 8.8, bonos: 8.5, pagos: 9.0, soporte: 8.8 },
   },
   {
     slug: 'rabona-peru',
@@ -74,6 +75,7 @@ export const casinos: Casino[] = [
     liveChat: true,
     verified: true,
     affiliateUrl: 'https://rbn.lynmonkel.com/?mid=65661_2214497',
+    scores: { seguridad: 8.0, juegos: 8.5, bonos: 8.3, pagos: 8.5, soporte: 7.8 },
   },
   {
     slug: '20bet-peru',
@@ -105,12 +107,13 @@ export const casinos: Casino[] = [
       'Soporte limitado en español',
     ],
     description: '20Bet es un casino y casa de apuestas con amplia cobertura deportiva y buena selección de tragamonedas. Acepta criptomonedas y métodos de pago locales.',
-    longDescription: '20Bet ofrece una experiencia completa de casino y apuestas deportivas desde 2020. Con más de 1,000 tragamonedas y cobertura deportiva extensa, es una opción atractiva para jugadores que buscan variedad. Acepta Bitcoin y USDT además de métodos de pago tradicionales.',
+    longDescription: '20Bet lleva operando desde 2020 y ha construido una sólida reputación en el mercado latinoamericano. Su catálogo supera los 1,000 títulos de tragamonedas de proveedores como Pragmatic Play, NetEnt y Microgaming. El apartado de apuestas deportivas cubre más de 30 disciplinas con cuotas competitivas y transmisión en vivo disponible. Acepta Bitcoin y USDT además de Visa, Mastercard, Yape y Plin, lo que lo convierte en una opción versátil para el jugador peruano moderno.',
     games: { slots: true, liveCasino: true, blackjack: true, roulette: true, poker: true, sportsBetting: true },
     mobileApp: true,
     liveChat: true,
     verified: true,
     affiliateUrl: 'https://mo.zenlaneo.com/redirect.aspx?pid=164247&bid=2154&lpid=2170',
+    scores: { seguridad: 7.8, juegos: 8.5, bonos: 8.2, pagos: 8.5, soporte: 7.8 },
   },
   {
     slug: 'granawin-peru',
@@ -142,12 +145,13 @@ export const casinos: Casino[] = [
       'Catálogo en expansión',
     ],
     description: 'Granawin es un casino online enfocado en el mercado latinoamericano con buen bono de bienvenida y casino en vivo disponible para jugadores peruanos.',
-    longDescription: 'Granawin nació con foco en Latinoamérica y Perú es uno de sus mercados principales. Ofrece casino en vivo, tragamonedas y métodos de pago locales como Yape y Plin. Su plataforma en español y atención al cliente en castellano lo hacen accesible para el jugador peruano.',
+    longDescription: 'Granawin nació con foco exclusivo en Latinoamérica y el mercado peruano es una de sus prioridades. Fundado en 2022, ha apostado por una plataforma completamente en español con soporte local y métodos de pago adaptados como Yape y Plin. Su casino en vivo cuenta con mesas de ruleta, blackjack y baccarat disponibles las 24 horas. Al ser un operador relativamente nuevo, el catálogo está en expansión pero ya supera los 500 juegos de los principales proveedores.',
     games: { slots: true, liveCasino: true, blackjack: true, roulette: true, poker: false, sportsBetting: false },
     mobileApp: true,
     liveChat: true,
     verified: true,
     affiliateUrl: 'https://mo.zenlaneo.com/redirect.aspx?pid=415395&bid=2169&lpid=2576',
+    scores: { seguridad: 7.8, juegos: 8.0, bonos: 8.5, pagos: 8.3, soporte: 8.0 },
   },
   {
     slug: 'hellspin-peru',
@@ -180,12 +184,13 @@ export const casinos: Casino[] = [
       'Estética no apta para todos',
     ],
     description: 'HellSpin es un casino online con diseño único y bono de bienvenida que incluye tiradas gratis. Acepta criptomonedas y métodos de pago locales para Perú.',
-    longDescription: 'HellSpin se distingue por su estética oscura y atrevida y una selección de más de 3,000 tragamonedas. El bono de bienvenida incluye tiradas gratis además del porcentaje sobre el primer depósito. Acepta criptomonedas y los principales métodos de pago peruanos.',
+    longDescription: 'HellSpin se distingue por su estética oscura y atrevida que lo separa del resto del mercado. Su catálogo supera los 3,000 tragamonedas con títulos de Pragmatic Play, Play\'n GO y Hacksaw Gaming entre otros. El bono de bienvenida combina un 100% sobre el primer depósito con 100 tiradas gratis, lo que representa una oferta muy competitiva. Acepta Bitcoin y USDT para transacciones privadas, además de Yape y Plin para el jugador peruano tradicional.',
     games: { slots: true, liveCasino: true, blackjack: true, roulette: true, poker: true, sportsBetting: false },
     mobileApp: true,
     liveChat: true,
     verified: true,
     affiliateUrl: 'https://mio.novarao.com/redirect.aspx?pid=107116&bid=1466&lpid=6',
+    scores: { seguridad: 7.8, juegos: 8.8, bonos: 8.5, pagos: 8.5, soporte: 8.0 },
   },
   {
     slug: 'ivibet-peru',
@@ -217,12 +222,13 @@ export const casinos: Casino[] = [
       'Marca menos conocida en Perú',
     ],
     description: 'IviBet es un casino online con amplia oferta de juegos, apuestas deportivas y casino en vivo. Acepta criptomonedas y métodos de pago locales para jugadores peruanos.',
-    longDescription: 'IviBet ofrece una plataforma completa con más de 3,000 juegos de casino, apuestas deportivas y un casino en vivo con dealers en español. Acepta criptomonedas y los principales métodos de pago peruanos incluyendo Yape y Plin.',
+    longDescription: 'IviBet opera desde 2021 y ofrece una plataforma todo-en-uno que combina más de 3,000 juegos de casino con una sección de apuestas deportivas completa. Su casino en vivo cuenta con dealers en español para ruleta, blackjack y baccarat, disponibles en horario extendido. La plataforma acepta criptomonedas como Bitcoin y USDT junto con Yape y Plin, lo que la convierte en una opción flexible para distintos perfiles de jugador peruano. Los retiros se procesan en 24-48 horas una vez completada la verificación.',
     games: { slots: true, liveCasino: true, blackjack: true, roulette: true, poker: true, sportsBetting: true },
     mobileApp: true,
     liveChat: true,
     verified: true,
     affiliateUrl: 'https://mio.novarao.com/redirect.aspx?pid=107117&bid=1478&lpid=46',
+    scores: { seguridad: 8.0, juegos: 8.5, bonos: 8.3, pagos: 8.5, soporte: 8.0 },
   },
   {
     slug: 'megapari-peru',
@@ -260,6 +266,7 @@ export const casinos: Casino[] = [
     liveChat: true,
     verified: true,
     affiliateUrl: 'https://refpazitag.top/L?tag=d_2486019m_25437c_PERU&site=2486019&ad=25437',
+    scores: { seguridad: 8.0, juegos: 9.8, bonos: 8.8, pagos: 9.2, soporte: 8.3 },
   },
   {
     slug: 'betobet-peru',
@@ -297,6 +304,7 @@ export const casinos: Casino[] = [
     liveChat: true,
     verified: true,
     affiliateUrl: 'https://go.betobet.online/visit/?bta=37216&nci=5537&utm_campaign=PE',
+    scores: { seguridad: 8.0, juegos: 8.5, bonos: 8.5, pagos: 8.8, soporte: 8.0 },
   },
   {
     slug: 'jackpotcity-peru',
@@ -334,6 +342,7 @@ export const casinos: Casino[] = [
     liveChat: true,
     verified: true,
     affiliateUrl: 'https://www.jackpotcitycasino.com/peru/?s=bfp23652&a=bfpadid173144',
+    scores: { seguridad: 9.5, juegos: 9.0, bonos: 8.5, pagos: 8.8, soporte: 8.8 },
   },
   {
     slug: 'leovegas-peru',
@@ -372,6 +381,7 @@ export const casinos: Casino[] = [
     liveChat: true,
     verified: true,
     affiliateUrl: 'https://ads.leovegas.com/redirect.aspx?pid=3653047&bid=13186',
+    scores: { seguridad: 9.5, juegos: 9.0, bonos: 8.8, pagos: 9.0, soporte: 9.0 },
   },
   {
     slug: 'magicred-peru',
@@ -409,6 +419,7 @@ export const casinos: Casino[] = [
     liveChat: true,
     verified: true,
     affiliateUrl: 'https://record.eshkol.com/_agC42nkdns4WqcfzuvZcQGNd7ZgqdRLk/1/',
+    scores: { seguridad: 9.2, juegos: 8.3, bonos: 8.3, pagos: 8.5, soporte: 8.3 },
   },
   {
     slug: 'spin-casino-peru',
@@ -446,6 +457,7 @@ export const casinos: Casino[] = [
     liveChat: true,
     verified: true,
     affiliateUrl: 'https://www.spincasino.com/es/pe/?s=bfp23652&a=bfpadid173146',
+    scores: { seguridad: 9.4, juegos: 8.8, bonos: 8.3, pagos: 8.7, soporte: 8.6 },
   },
   {
     slug: 'betsson-peru',
@@ -485,6 +497,7 @@ export const casinos: Casino[] = [
     liveChat: true,
     verified: true,
     affiliateUrl: 'https://record.betsson.com/_mEd0zhsfEVJWJv-piTzMMWNd7ZgqdRLk/7/',
+    scores: { seguridad: 9.8, juegos: 9.2, bonos: 9.0, pagos: 9.5, soporte: 9.3 },
   },
   {
     slug: '1xbet-peru',
@@ -524,6 +537,7 @@ export const casinos: Casino[] = [
     liveChat: true,
     verified: true,
     affiliateUrl: '#',
+    scores: { seguridad: 8.2, juegos: 9.5, bonos: 9.3, pagos: 9.0, soporte: 8.5 },
   },
   {
     slug: 'bet365-peru',
@@ -561,6 +575,7 @@ export const casinos: Casino[] = [
     liveChat: true,
     verified: true,
     affiliateUrl: '#',
+    scores: { seguridad: 9.6, juegos: 8.8, bonos: 8.5, pagos: 9.0, soporte: 9.2 },
   },
   {
     slug: 'codere-peru',
@@ -599,6 +614,7 @@ export const casinos: Casino[] = [
     liveChat: true,
     verified: true,
     affiliateUrl: '#',
+    scores: { seguridad: 9.8, juegos: 8.0, bonos: 9.0, pagos: 9.3, soporte: 9.0 },
   },
   {
     slug: 'sportaza-peru',
@@ -635,6 +651,7 @@ export const casinos: Casino[] = [
     liveChat: true,
     verified: true,
     affiliateUrl: '#',
+    scores: { seguridad: 8.0, juegos: 8.8, bonos: 8.3, pagos: 8.5, soporte: 8.5 },
   },
   {
     slug: 'wplay-peru',
@@ -670,6 +687,7 @@ export const casinos: Casino[] = [
     liveChat: true,
     verified: true,
     affiliateUrl: '#',
+    scores: { seguridad: 8.0, juegos: 8.2, bonos: 9.0, pagos: 9.0, soporte: 8.0 },
   },
 ];
 

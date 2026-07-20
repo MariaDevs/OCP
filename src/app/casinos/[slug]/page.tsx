@@ -7,7 +7,7 @@ import Breadcrumb from '@/components/ui/Breadcrumb';
 import StarRating from '@/components/ui/StarRating';
 import Badge from '@/components/ui/Badge';
 import { casinos, getCasinoBySlug } from '@/lib/data/casinos';
-import { casinoReviewSchema, breadcrumbSchema } from '@/lib/schema';
+import { casinoReviewSchema, breadcrumbSchema, ldJson } from '@/lib/schema';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -52,15 +52,15 @@ export default async function CasinoReviewPage({ params }: Props) {
   const url = `https://www.onlinecasinoperu.com/casinos/${slug}`;
   const schema = casinoReviewSchema(casino, url);
   const breadcrumbs = breadcrumbSchema([
-    { name: 'Inicio', url: 'https://onlinecasinoperu.com' },
-    { name: 'Casinos', url: 'https://onlinecasinoperu.com/casinos' },
+    { name: 'Inicio', url: 'https://www.onlinecasinoperu.com' },
+    { name: 'Casinos', url: 'https://www.onlinecasinoperu.com/casinos' },
     { name: casino.name, url },
   ]);
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ldJson(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ldJson(breadcrumbs) }} />
 
       <div className="max-w-7xl mx-auto px-4 py-8">
         <Breadcrumb items={[{ label: 'Casinos', href: '/casinos' }, { label: casino.name }]} />
@@ -166,11 +166,11 @@ export default async function CasinoReviewPage({ params }: Props) {
             <div className="bg-slate-800/60 border border-slate-700 rounded-2xl p-6">
               <h2 className="text-xl font-black text-white mb-4">Calificación Detallada</h2>
               {[
-                { label: 'Seguridad y Licencia', score: 9.5 },
-                { label: 'Variedad de Juegos', score: 9.0 },
-                { label: 'Bonos y Promociones', score: 8.8 },
-                { label: 'Métodos de Pago', score: 9.2 },
-                { label: 'Soporte al Cliente', score: 8.9 },
+                { label: 'Seguridad y Licencia', score: casino.scores?.seguridad ?? (casino.license.includes('Malta') ? 9.5 : 8.0) },
+                { label: 'Variedad de Juegos', score: casino.scores?.juegos ?? 8.5 },
+                { label: 'Bonos y Promociones', score: casino.scores?.bonos ?? 8.5 },
+                { label: 'Métodos de Pago', score: casino.scores?.pagos ?? 8.8 },
+                { label: 'Soporte al Cliente', score: casino.scores?.soporte ?? 8.5 },
                 { label: 'Experiencia Móvil', score: casino.mobileApp ? 9.5 : 8.0 },
               ].map((item) => (
                 <div key={item.label} className="mb-4">
