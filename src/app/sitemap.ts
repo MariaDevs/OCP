@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next';
 import { casinos } from '@/lib/data/casinos';
+import { comparisons } from '@/lib/data/comparisons';
 import { getBlogPosts } from '@/lib/content-engine';
 
 export const dynamic = 'force-static';
@@ -34,6 +35,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${BASE_URL}/terminos`, changeFrequency: 'yearly' as const, priority: 0.3 },
   ];
 
+  const comparisonRoutes = [
+    { url: `${BASE_URL}/comparar`, changeFrequency: 'monthly' as const, priority: 0.7 },
+    ...comparisons.map((c) => ({
+      url: `${BASE_URL}/comparar/${c.slug}`,
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    })),
+  ];
+
   const casinoRoutes = casinos.map((c) => ({
     url: `${BASE_URL}/casinos/${c.slug}`,
     changeFrequency: 'weekly' as const,
@@ -47,5 +57,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   }));
 
-  return [...staticRoutes, ...casinoRoutes, ...blogRoutes];
+  return [...staticRoutes, ...comparisonRoutes, ...casinoRoutes, ...blogRoutes];
 }

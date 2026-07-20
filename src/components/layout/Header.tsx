@@ -40,6 +40,7 @@ const navItems = [
     ],
   },
   { label: 'Pagos', href: '/metodos-de-pago' },
+  { label: 'Comparar', href: '/comparar' },
   { label: 'Blog', href: '/blog' },
 ];
 
