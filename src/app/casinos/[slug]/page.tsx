@@ -162,6 +162,99 @@ export default async function CasinoReviewPage({ params }: Props) {
               </div>
             </div>
 
+            {/* Bonus analysis */}
+            <div className="bg-slate-800/60 border border-slate-700 rounded-2xl p-6 mb-6">
+              <h2 className="text-xl font-black text-white mb-4 flex items-center gap-2">
+                <Banknote size={20} className="text-emerald-400" /> Análisis del Bono de Bienvenida
+              </h2>
+              <p className="text-slate-300 leading-relaxed mb-4">
+                {casino.name} ofrece a los nuevos jugadores peruanos un bono de bienvenida de{' '}
+                <strong className="text-emerald-400">{casino.bonus.amount}</strong> sobre el primer depósito.
+                {casino.bonus.freeSpins
+                  ? ` Además incluye ${casino.bonus.freeSpins} tiradas gratis para explorar las tragamonedas del casino.`
+                  : ''}{' '}
+                El depósito mínimo para activar el bono es de S/{casino.bonus.minDeposit}.
+              </p>
+              <p className="text-slate-300 leading-relaxed">
+                El requisito de apuesta es de <strong className="text-white">x{casino.bonus.wagering}</strong>, lo que
+                significa que debes apostar el importe del bono {casino.bonus.wagering} veces antes de poder retirar las
+                ganancias.{' '}
+                {casino.bonus.wagering <= 30
+                  ? 'Este requisito está por debajo de la media del mercado, lo que lo convierte en un bono muy favorable.'
+                  : casino.bonus.wagering <= 35
+                  ? 'Este requisito es estándar dentro del mercado de casinos online en Perú.'
+                  : 'Te recomendamos leer los términos y condiciones completos antes de reclamar el bono.'}
+                {casino.bonus.code ? (
+                  <>
+                    {' '}Usa el código promocional{' '}
+                    <strong className="text-amber-400 font-mono">{casino.bonus.code}</strong> al registrarte para
+                    activarlo.
+                  </>
+                ) : null}
+              </p>
+            </div>
+
+            {/* Security & License */}
+            <div className="bg-slate-800/60 border border-slate-700 rounded-2xl p-6 mb-6">
+              <h2 className="text-xl font-black text-white mb-4 flex items-center gap-2">
+                <Shield size={20} className="text-emerald-400" /> Seguridad y Licencia
+              </h2>
+              <p className="text-slate-300 leading-relaxed mb-4">
+                {casino.name} opera bajo la licencia de{' '}
+                <strong className="text-white">{casino.license}</strong>.{' '}
+                {casino.license.includes('Malta')
+                  ? 'La Malta Gaming Authority (MGA) es uno de los organismos reguladores más estrictos del mundo. Bajo esta licencia, el casino está obligado a mantener fondos de jugadores en cuentas separadas, someterse a auditorías regulares y garantizar juego justo mediante RNG certificados.'
+                  : casino.license.includes('MINCETUR')
+                  ? 'MINCETUR es el organismo regulador peruano, lo que significa que este operador está sujeto a la legislación local y ofrece la mayor protección posible para el jugador en Perú.'
+                  : casino.license.includes('Gibraltar')
+                  ? 'La Gibraltar Regulatory Authority es un regulador de alta reputación vinculado al sistema jurídico británico, con estrictos requisitos de capital y protección al jugador.'
+                  : 'La licencia de Curaçao eGaming permite operar legalmente en el mercado internacional. Aunque menos exigente que la MGA, ofrece un marco de protección al jugador y garantiza la legitimidad del operador.'}
+              </p>
+              <p className="text-slate-300 leading-relaxed">
+                Todos los juegos utilizan un generador de números aleatorios (RNG) certificado por auditores independientes,
+                garantizando resultados justos e imparciales en cada partida. Las transacciones están protegidas con
+                cifrado SSL de 128 bits.{' '}
+                {casino.verified
+                  ? 'Nuestro equipo editorial ha verificado la legitimidad de este operador y confirmado el correcto pago de premios a jugadores reales.'
+                  : ''}
+              </p>
+            </div>
+
+            {/* Live Casino */}
+            {casino.games.liveCasino && (
+              <div className="bg-slate-800/60 border border-slate-700 rounded-2xl p-6 mb-6">
+                <h2 className="text-xl font-black text-white mb-4 flex items-center gap-2">
+                  <Star size={20} className="text-amber-400" /> Casino en Vivo
+                </h2>
+                <p className="text-slate-300 leading-relaxed mb-4">
+                  El casino en vivo de {casino.name} ofrece una experiencia auténtica con dealers reales transmitidos en
+                  alta definición. Los jugadores peruanos pueden acceder a mesas de ruleta europea, blackjack clásico y
+                  baccarat, con opciones tanto para jugadores con presupuesto moderado como para altos apostadores.
+                </p>
+                <p className="text-slate-300 leading-relaxed">
+                  Las mesas están disponibles en horario extendido y el soporte opera en español. La tecnología de
+                  streaming garantiza baja latencia y video de alta calidad incluso en conexiones móviles, lo que permite
+                  disfrutar del casino en vivo desde cualquier dispositivo en Perú.
+                </p>
+              </div>
+            )}
+
+            {/* Customer Support */}
+            <div className="bg-slate-800/60 border border-slate-700 rounded-2xl p-6 mb-6">
+              <h2 className="text-xl font-black text-white mb-4">Atención al Cliente</h2>
+              <p className="text-slate-300 leading-relaxed mb-4">
+                {casino.name} ofrece soporte en {casino.supportLanguages.join(' e ')}.{' '}
+                {casino.liveChat
+                  ? 'El chat en vivo está disponible las 24 horas, los 7 días de la semana, y es la forma más rápida de resolver cualquier duda o incidencia con tiempos de respuesta habituales de menos de 5 minutos.'
+                  : 'El soporte se presta a través de email y formulario de contacto con tiempos de respuesta de 24 a 48 horas.'}
+              </p>
+              <p className="text-slate-300 leading-relaxed">
+                El equipo de {casino.name} está capacitado para atender consultas sobre depósitos con Yape y Plin,
+                verificación de cuentas, reclamación de bonos y resolución de disputas. Para jugadores peruanos, contar
+                con soporte en español es fundamental y este operador lo garantiza.
+              </p>
+            </div>
+
             {/* Rating breakdown */}
             <div className="bg-slate-800/60 border border-slate-700 rounded-2xl p-6">
               <h2 className="text-xl font-black text-white mb-4">Calificación Detallada</h2>
