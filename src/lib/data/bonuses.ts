@@ -175,7 +175,7 @@ export const bonuses: Bonus[] = [
     slug: 'ivibet-bienvenida',
     casino: 'IviBet Perú',
     casinoSlug: 'ivibet-peru',
-    casinoLogo: '/images/casinos/lvbet.jpg',
+    casinoLogo: '/images/casinos/ivibet.jpg',
     type: 'bienvenida',
     title: '100% hasta S/500',
     amount: 'Hasta S/500',
