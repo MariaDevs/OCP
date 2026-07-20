@@ -16,7 +16,7 @@ import CasinoCard from "@/components/ui/CasinoCard";
 import { casinos } from "@/lib/data/casinos";
 import { getBlogPosts, categoryEmoji } from "@/lib/content-engine";
 import { paymentMethods } from "@/lib/data/payments";
-import { faqSchema } from "@/lib/schema";
+import { faqSchema, ldJson } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Mejores Casinos Online en Perú 2026 | CasinoPerú.com",
@@ -80,7 +80,7 @@ export default async function HomePage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(homeFaqs)) }}
+        dangerouslySetInnerHTML={{ __html: ldJson(faqSchema(homeFaqs)) }}
       />
 
       {/* HERO */}

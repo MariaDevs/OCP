@@ -7,7 +7,7 @@ import Breadcrumb from '@/components/ui/Breadcrumb';
 import StarRating from '@/components/ui/StarRating';
 import Badge from '@/components/ui/Badge';
 import { casinos, getCasinoBySlug } from '@/lib/data/casinos';
-import { casinoReviewSchema, breadcrumbSchema, ldJson } from '@/lib/schema';
+import { casinoReviewSchema, breadcrumbSchema, faqSchema, ldJson } from '@/lib/schema';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -51,6 +51,32 @@ export default async function CasinoReviewPage({ params }: Props) {
 
   const url = `https://www.onlinecasinoperu.com/casinos/${slug}`;
   const schema = casinoReviewSchema(casino, url);
+
+  const casinoFaqs = [
+    {
+      question: `¿Es seguro jugar en ${casino.name} en Perú?`,
+      answer: `Sí, ${casino.name} opera con licencia de ${casino.license}, lo que garantiza un entorno de juego regulado y seguro. Todos los juegos utilizan RNG certificado y las transacciones están protegidas con cifrado SSL.`,
+    },
+    {
+      question: `¿Cuál es el bono de bienvenida de ${casino.name}?`,
+      answer: `${casino.name} ofrece un bono de bienvenida de ${casino.bonus.amount}${casino.bonus.freeSpins ? ` más ${casino.bonus.freeSpins} tiradas gratis` : ''}. El depósito mínimo es S/${casino.bonus.minDeposit} y el requisito de apuesta es x${casino.bonus.wagering}.`,
+    },
+    {
+      question: `¿Qué métodos de pago acepta ${casino.name} en Perú?`,
+      answer: `${casino.name} acepta los siguientes métodos de pago: ${casino.paymentMethods.join(', ')}. Los retiros se procesan en ${casino.withdrawalTime}.`,
+    },
+    {
+      question: `¿Cuánto tiempo tardan los retiros en ${casino.name}?`,
+      answer: `Los retiros en ${casino.name} se procesan en ${casino.withdrawalTime}. El monto mínimo de retiro es S/${casino.minWithdrawal}.`,
+    },
+    {
+      question: `¿Tiene ${casino.name} app móvil para jugadores peruanos?`,
+      answer: casino.mobileApp
+        ? `Sí, ${casino.name} tiene app móvil disponible para Android e iOS, optimizada para una experiencia de juego fluida desde cualquier dispositivo en Perú.`
+        : `${casino.name} no tiene app nativa, pero su sitio web está completamente optimizado para móviles y funciona perfectamente desde el navegador de tu smartphone.`,
+    },
+  ];
+
   const breadcrumbs = breadcrumbSchema([
     { name: 'Inicio', url: 'https://www.onlinecasinoperu.com' },
     { name: 'Casinos', url: 'https://www.onlinecasinoperu.com/casinos' },
@@ -61,6 +87,7 @@ export default async function CasinoReviewPage({ params }: Props) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ldJson(schema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ldJson(breadcrumbs) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ldJson(faqSchema(casinoFaqs)) }} />
 
       <div className="max-w-7xl mx-auto px-4 py-8">
         <Breadcrumb items={[{ label: 'Casinos', href: '/casinos' }, { label: casino.name }]} />
@@ -283,6 +310,21 @@ export default async function CasinoReviewPage({ params }: Props) {
                   <StarRating rating={casino.rating} size="lg" showNumber={false} />
                   <span className="text-2xl font-black text-amber-400">{casino.rating}/5</span>
                 </div>
+              </div>
+            </div>
+            {/* FAQ */}
+            <div className="bg-slate-800/60 border border-slate-700 rounded-2xl p-6 mt-6">
+              <h2 className="text-xl font-black text-white mb-4">Preguntas Frecuentes sobre {casino.name}</h2>
+              <div className="space-y-3">
+                {casinoFaqs.map((faq) => (
+                  <details key={faq.question} className="group border border-slate-700 rounded-xl overflow-hidden">
+                    <summary className="flex items-center justify-between gap-4 p-4 cursor-pointer font-semibold text-white list-none hover:text-emerald-400 transition-colors text-sm">
+                      <span>{faq.question}</span>
+                      <ChevronRight size={14} className="flex-shrink-0 transition-transform group-open:rotate-90 text-slate-400" />
+                    </summary>
+                    <div className="px-4 pb-4 text-slate-400 text-sm leading-relaxed">{faq.answer}</div>
+                  </details>
+                ))}
               </div>
             </div>
           </div>

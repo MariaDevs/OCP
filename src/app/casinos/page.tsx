@@ -1,10 +1,43 @@
 'use client';
 
 import { useState, useMemo } from 'react';
-import { SlidersHorizontal, Search } from 'lucide-react';
+import { SlidersHorizontal, Search, ChevronRight } from 'lucide-react';
 import CasinoCard from '@/components/ui/CasinoCard';
 import Breadcrumb from '@/components/ui/Breadcrumb';
 import { casinos } from '@/lib/data/casinos';
+
+const casinosFaqs = [
+  {
+    question: '¿Cuál es el mejor casino online en Perú en 2026?',
+    answer: 'Betsson es el casino mejor valorado en Perú en 2026 con una puntuación de 4.9/5. Combina licencia MGA, más de 1,500 juegos, soporte 24/7 en español y aceptación de Yape y Plin. LeoVegas y Bet365 también destacan como opciones premium.',
+  },
+  {
+    question: '¿Qué casino online es legal en Perú?',
+    answer: 'Codere es el único casino con licencia directa de MINCETUR (regulador peruano). Otros como Betsson, LeoVegas y JackpotCity operan con licencia de Malta Gaming Authority (MGA), igualmente válidas y reconocidas a nivel internacional.',
+  },
+  {
+    question: '¿Qué casino acepta Yape en Perú?',
+    answer: 'Los casinos que aceptan Yape en Perú incluyen Betsson, 1xBet, Codere, Bet365, LeoVegas, Wplay, Betsafe y MegaPari, entre otros. Es el método de pago más popular para depósitos y retiros en casinos online peruanos.',
+  },
+  {
+    question: '¿Cómo verifico si un casino online es confiable en Perú?',
+    answer: 'Verifica que tenga licencia válida visible en el pie de página (MGA, UKGC, MINCETUR o Curaçao), conexión HTTPS, políticas claras de retiro y soporte en español. Todos los casinos listados en CasinoPerú.com han pasado nuestra verificación de 8 semanas.',
+  },
+  {
+    question: '¿Puedo jugar en casinos online desde mi celular en Perú?',
+    answer: 'Sí. La mayoría de casinos tienen versión móvil optimizada o app nativa. LeoVegas destaca como el mejor casino móvil con app premiada para Android e iOS. 1xBet y Betsson también tienen excelentes apps móviles.',
+  },
+];
+
+const casinosFaqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: casinosFaqs.map((f) => ({
+    '@type': 'Question',
+    name: f.question,
+    acceptedAnswer: { '@type': 'Answer', text: f.answer },
+  })),
+};
 
 const paymentFilters = ['Todos', 'Yape', 'Plin', 'Bitcoin', 'Visa', 'BCP'];
 const bonusFilters = ['Todos', 'Bienvenida', 'Sin Depósito', 'Tiradas Gratis', 'Cripto'];
@@ -26,6 +59,8 @@ export default function CasinosPage() {
   }, [paymentFilter, bonusFilter, licenseFilter, search]);
 
   return (
+    <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(casinosFaqSchema) }} />
     <div className="max-w-7xl mx-auto px-4 py-8">
       <Breadcrumb items={[{ label: 'Casinos Online' }]} />
 
@@ -118,6 +153,23 @@ export default function CasinosPage() {
           La Malta Gaming Authority (MGA) y la UK Gambling Commission (UKGC) son los organismos reguladores más exigentes del mundo. Un casino con cualquiera de estas licencias tiene que cumplir estrictos requisitos de seguridad financiera, fairness y protección del jugador. La Curaçao eGaming License también es válida y muy común entre plataformas internacionales. La licencia de MINCETUR es la única 100% peruana.
         </p>
       </section>
+
+      {/* FAQ */}
+      <section className="mt-16">
+        <h2 className="text-white text-2xl font-bold mb-6">Preguntas Frecuentes sobre Casinos Online en Perú</h2>
+        <div className="space-y-3">
+          {casinosFaqs.map((faq) => (
+            <details key={faq.question} className="group bg-slate-800 border border-slate-700 rounded-xl overflow-hidden">
+              <summary className="flex items-center justify-between gap-4 p-5 cursor-pointer font-semibold text-white list-none hover:text-emerald-400 transition-colors">
+                <span>{faq.question}</span>
+                <ChevronRight size={16} className="flex-shrink-0 transition-transform group-open:rotate-90 text-slate-400" />
+              </summary>
+              <div className="px-5 pb-5 text-slate-400 text-sm leading-relaxed">{faq.answer}</div>
+            </details>
+          ))}
+        </div>
+      </section>
     </div>
+    </>
   );
 }

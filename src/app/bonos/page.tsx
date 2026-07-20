@@ -6,6 +6,30 @@ import Breadcrumb from '@/components/ui/Breadcrumb';
 import StarRating from '@/components/ui/StarRating';
 import { bonuses } from '@/lib/data/bonuses';
 import { casinos } from '@/lib/data/casinos';
+import { faqSchema, ldJson } from '@/lib/schema';
+
+const bonosFaqs = [
+  {
+    question: '¿Qué es el wagering o requisito de apuesta en un bono de casino?',
+    answer: 'El wagering es el número de veces que debes apostar el importe del bono antes de poder retirar las ganancias. Por ejemplo, un bono de S/100 con wagering x35 implica apostar S/3,500 en total. Cuanto más bajo el requisito, mejor para el jugador.',
+  },
+  {
+    question: '¿Cuál es el mejor bono de casino sin depósito en Perú?',
+    answer: 'Codere ofrece S/30 gratis sin depósito con el código GRATIS30, siendo el mejor bono sin depósito disponible para jugadores peruanos en 2026. No necesitas ingresar dinero para empezar a jugar.',
+  },
+  {
+    question: '¿Puedo retirar las ganancias de un bono de bienvenida?',
+    answer: 'Sí, pero primero debes cumplir el requisito de apuesta (wagering). Una vez completado, las ganancias se acreditan en tu cuenta real y puedes retirarlas mediante Yape, Plin u otros métodos disponibles.',
+  },
+  {
+    question: '¿Qué casino tiene el bono de bienvenida más alto en Perú?',
+    answer: '1xBet ofrece el bono más alto con hasta S/600 + 150 tiradas gratis usando el código PERU2026. MegaPari también destaca con hasta S/600 de bono de bienvenida.',
+  },
+  {
+    question: '¿Las tiradas gratis tienen requisitos de apuesta?',
+    answer: 'Sí, las ganancias de las tiradas gratis generalmente tienen un requisito de apuesta de x30 a x40. El valor de cada tirada gratis suele ser fijo (entre S/0.10 y S/1) y las ganancias se acreditan como bono, no como dinero real.',
+  },
+];
 
 export const metadata: Metadata = {
   title: 'Mejores Bonos de Casino Online en Perú 2026',
@@ -21,6 +45,8 @@ const bonusTypes = [
 
 export default function BonusesPage() {
   return (
+    <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ldJson(faqSchema(bonosFaqs)) }} />
     <div className="max-w-7xl mx-auto px-4 py-8">
       <Breadcrumb items={[{ label: 'Bonos de Casino' }]} />
 
@@ -96,6 +122,23 @@ export default function BonusesPage() {
           </div>
         </div>
       </section>
+
+      {/* FAQ */}
+      <section className="mt-16">
+        <h2 className="text-2xl font-black text-white mb-6">Preguntas Frecuentes sobre Bonos de Casino</h2>
+        <div className="space-y-3">
+          {bonosFaqs.map((faq) => (
+            <details key={faq.question} className="group bg-slate-800 border border-slate-700 rounded-xl overflow-hidden">
+              <summary className="flex items-center justify-between gap-4 p-5 cursor-pointer font-semibold text-white list-none hover:text-emerald-400 transition-colors">
+                <span>{faq.question}</span>
+                <ChevronRight size={16} className="flex-shrink-0 transition-transform group-open:rotate-90 text-slate-400" />
+              </summary>
+              <div className="px-5 pb-5 text-slate-400 text-sm leading-relaxed">{faq.answer}</div>
+            </details>
+          ))}
+        </div>
+      </section>
     </div>
+    </>
   );
 }
