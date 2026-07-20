@@ -340,7 +340,11 @@ La mayoría de casinos tienen un retiro mínimo de S/20 y un máximo diario de S
 - Verifica tu identidad **antes** de hacer tu primer depósito
 - Usa el mismo número de teléfono en Yape y en el casino
 - Solicita el retiro antes de las 3 PM para que el casino lo procese ese mismo día
-- Elige casinos con licencia MGA como [Betsson](/casinos/betsson-peru) o [LeoVegas](/casinos/leovegas-peru) — procesan retiros más rápido que los de Curaçao`,
+- Elige casinos con licencia MGA como [Betsson](/casinos/betsson-peru) o [LeoVegas](/casinos/leovegas-peru) — procesan retiros más rápido que los de Curaçao
+
+## ¿Qué Casinos Aceptan Yape en Perú?
+
+Consulta nuestra guía completa con todos los casinos que aceptan Yape para depósito y retiro: [Casinos con Yape en Perú](/casino-yape). Si usas BBVA o Interbank, también puedes ver los [casinos que aceptan Plin](/casino-plin).`,
     category: 'Métodos de Pago',
     author: 'Equipo Editorial',
     date: '2026-07-22',
@@ -384,7 +388,9 @@ Sí. Betsson acepta Yape y Plin para depósitos y retiros en Perú. El proceso e
 
 ## Veredicto Final
 
-Betsson es **completamente legal y seguro** para jugadores peruanos. Su licencia MGA, más de 60 años de historia, cotización bursátil y aceptación de Yape lo hacen una de las opciones más confiables disponibles en Perú. Es la razón por la que tiene la puntuación más alta (4.9/5) en nuestro comparador.`,
+Betsson es **completamente legal y seguro** para jugadores peruanos. Su licencia MGA, más de 60 años de historia, cotización bursátil y aceptación de Yape lo hacen una de las opciones más confiables disponibles en Perú. Es la razón por la que tiene la puntuación más alta (4.9/5) en nuestro comparador.
+
+Si buscas más opciones, consulta nuestra guía de [casinos con Yape en Perú](/casino-yape) y [casinos con Plin](/casino-plin) para comparar todos los operadores disponibles.`,
     category: 'Reseñas',
     author: 'Equipo Editorial',
     date: '2026-07-22',

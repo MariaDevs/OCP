@@ -253,7 +253,26 @@ export default async function HomePage() {
               </Link>
             ))}
           </div>
-          <div className="text-center mt-6">
+          {/* Yape & Plin dedicated pages */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 mb-4">
+            <Link href="/casino-yape" className="flex items-center gap-4 bg-emerald-900/20 border border-emerald-500/30 hover:border-emerald-400/60 rounded-2xl p-4 transition-all group">
+              <div className="text-3xl flex-shrink-0">📱</div>
+              <div className="flex-1">
+                <div className="font-black text-emerald-400 text-sm group-hover:text-emerald-300 transition-colors">Casinos con Yape en Perú</div>
+                <div className="text-slate-400 text-xs mt-0.5">Depósito y retiro instantáneo con tu app Yape</div>
+              </div>
+              <ChevronRight size={16} className="text-emerald-500 flex-shrink-0" />
+            </Link>
+            <Link href="/casino-plin" className="flex items-center gap-4 bg-blue-900/20 border border-blue-500/30 hover:border-blue-400/60 rounded-2xl p-4 transition-all group">
+              <div className="text-3xl flex-shrink-0">💙</div>
+              <div className="flex-1">
+                <div className="font-black text-blue-400 text-sm group-hover:text-blue-300 transition-colors">Casinos con Plin en Perú</div>
+                <div className="text-slate-400 text-xs mt-0.5">Ideal para usuarios de BBVA, Interbank y Scotiabank</div>
+              </div>
+              <ChevronRight size={16} className="text-blue-500 flex-shrink-0" />
+            </Link>
+          </div>
+          <div className="text-center mt-2">
             <Link href="/metodos-de-pago" className="inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 font-semibold transition-colors">
               Ver todos los métodos de pago <ChevronRight size={16} />
             </Link>

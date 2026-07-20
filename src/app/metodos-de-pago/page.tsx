@@ -66,17 +66,21 @@ export default function PaymentsPage() {
       {/* Quick summary cards */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-12">
         {[
-          { icon: '📱', label: 'Yape & Plin', desc: 'Instantáneo · Sin comisiones', highlight: true },
+          { icon: '📱', label: 'Yape & Plin', desc: 'Instantáneo · Sin comisiones', highlight: true, href: '/casino-yape' },
           { icon: '💳', label: 'Visa & Mastercard', desc: 'Instantáneo · Global', highlight: false },
           { icon: '🏦', label: 'Bancos Peruanos', desc: '1-3h · BCP, BBVA, Interbank', highlight: false },
           { icon: '🪙', label: 'Criptomonedas', desc: 'Rápido · Privado · Bitcoin', highlight: false },
-        ].map((item) => (
-          <div key={item.label} className={`rounded-2xl p-4 border ${item.highlight ? 'bg-emerald-900/20 border-emerald-500/30' : 'bg-slate-800/60 border-slate-700'}`}>
+        ].map((item) => {
+          const cls = `rounded-2xl p-4 border ${item.highlight ? 'bg-emerald-900/20 border-emerald-500/30 hover:border-emerald-400/60 transition-all' : 'bg-slate-800/60 border-slate-700'}`;
+          const inner = (<>
             <div className="text-3xl mb-2">{item.icon}</div>
             <div className={`font-bold text-sm ${item.highlight ? 'text-emerald-400' : 'text-white'}`}>{item.label}</div>
             <div className="text-xs text-slate-400 mt-1">{item.desc}</div>
-          </div>
-        ))}
+          </>);
+          return 'href' in item
+            ? <Link key={item.label} href={(item as { href: string }).href} className={cls}>{inner}</Link>
+            : <div key={item.label} className={cls}>{inner}</div>;
+        })}
       </div>
 
       {/* Method groups */}
@@ -128,6 +132,29 @@ export default function PaymentsPage() {
           </div>
         </section>
       ))}
+
+      {/* Yape & Plin dedicated pages CTA */}
+      <section className="mt-8 mb-8">
+        <h2 className="text-xl font-black text-white mb-4">Guías Específicas: Casinos con Yape y Plin</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <Link href="/casino-yape" className="flex items-center gap-4 bg-emerald-900/20 border border-emerald-500/30 hover:border-emerald-400/60 rounded-2xl p-5 transition-all group">
+            <div className="text-4xl flex-shrink-0">📱</div>
+            <div className="flex-1">
+              <div className="font-black text-emerald-400 group-hover:text-emerald-300 transition-colors">Casinos con Yape</div>
+              <div className="text-slate-400 text-sm mt-1">Todos los casinos que aceptan Yape · depósito y retiro</div>
+              <div className="flex items-center gap-1 text-emerald-400 text-xs mt-2 font-semibold">Ver guía completa <ChevronRight size={13} /></div>
+            </div>
+          </Link>
+          <Link href="/casino-plin" className="flex items-center gap-4 bg-blue-900/20 border border-blue-500/30 hover:border-blue-400/60 rounded-2xl p-5 transition-all group">
+            <div className="text-4xl flex-shrink-0">💙</div>
+            <div className="flex-1">
+              <div className="font-black text-blue-400 group-hover:text-blue-300 transition-colors">Casinos con Plin</div>
+              <div className="text-slate-400 text-sm mt-1">Para usuarios de BBVA, Interbank y Scotiabank</div>
+              <div className="flex items-center gap-1 text-blue-400 text-xs mt-2 font-semibold">Ver guía completa <ChevronRight size={13} /></div>
+            </div>
+          </Link>
+        </div>
+      </section>
 
       {/* SEO content */}
       <section className="mt-8 bg-slate-800/30 border border-slate-700 rounded-2xl p-6 mb-12">
