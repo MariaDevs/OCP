@@ -397,9 +397,7 @@ Si buscas más opciones, consulta nuestra guía de [casinos con Yape en Perú](/
     readTime: 6,
     image: '/images/blog/betsson-legal-peru.jpg',
   },
-  /* BATCH 2 — push week of July 27
-  {
-    slug: 'casinos-menor-wagering-peru-2026',
+  // --- BATCH 2: push week of July 27 ---
   {
     slug: 'casinos-menor-wagering-peru-2026',
     title: 'Casinos Online con Menor Wagering en Perú 2026',
@@ -571,7 +569,7 @@ Algunos bonos de bienvenida excluyen el casino en vivo de la contribución al wa
     readTime: 8,
     image: '/images/blog/casino-en-vivo-peru.jpg',
   },
-  // --- BATCH 3: push week of Aug 3 ---
+  /* --- BATCH 3: push week of Aug 3 ---
   {
     slug: 'casino-online-peru-sin-verificacion',
     title: 'Casino Online Perú Sin Verificación: Lo que Debes Saber',
