@@ -569,7 +569,7 @@ Algunos bonos de bienvenida excluyen el casino en vivo de la contribución al wa
     readTime: 8,
     image: '/images/blog/casino-en-vivo-peru.jpg',
   },
-  /* --- BATCH 3: push week of Aug 3 ---
+  // --- BATCH 3: push week of Aug 3 ---
   {
     slug: 'casino-online-peru-sin-verificacion',
     title: 'Casino Online Perú Sin Verificación: Lo que Debes Saber',
@@ -676,7 +676,7 @@ Los jackpots progresivos tienen límites especiales. Mega Moolah, por ejemplo, p
     readTime: 7,
     image: '/images/blog/limites-retiro-casino-peru.jpg',
   },
-  // --- BATCH 4: push week of Aug 10 ---
+  /* --- BATCH 4: push week of Aug 10 ---
   {
     slug: 'casinos-retiros-rapidos-peru-2026',
     title: 'Casinos Online con Retiros Más Rápidos en Perú 2026',
