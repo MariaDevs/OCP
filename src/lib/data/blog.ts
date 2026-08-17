@@ -786,7 +786,7 @@ Sí, si entiendes que es una tragamoneda de alta volatilidad diseñada para gran
     readTime: 9,
     image: '/images/blog/gates-of-olympus-peru.jpg',
   },
-  /* --- BATCH 5: push week of Aug 17 ---
+  // --- BATCH 5: push week of Aug 17 ---
   {
     slug: 'codere-peru-resena-2026',
     title: 'Codere Perú Reseña 2026: El Único Casino con Licencia MINCETUR',
@@ -872,6 +872,5 @@ Codere es la **mejor opción para jugadores que priorizan la seguridad y la lega
     readTime: 8,
     image: '/images/blog/codere-peru-resena.jpg',
   },
-  END OF BATCH 5 */
 ];
 
