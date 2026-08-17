@@ -872,5 +872,165 @@ Codere es la **mejor opción para jugadores que priorizan la seguridad y la lega
     readTime: 8,
     image: '/images/blog/codere-peru-resena.jpg',
   },
+  /* --- BATCH 6: push week of Aug 24 ---
+  {
+    slug: 'casinos-criptomonedas-peru-2026',
+    title: 'Casinos Online con Criptomonedas en Perú 2026',
+    excerpt: 'Bitcoin, USDT y Ethereum en casinos online peruanos: qué operadores los aceptan, ventajas frente a Yape/Plin y cómo depositar de forma segura.',
+    content: `Las criptomonedas ganan terreno entre los jugadores peruanos que buscan retiros sin límite de S/2,000 y mayor privacidad. Esta guía explica qué casinos las aceptan y qué debes saber antes de usarlas.
+
+## ¿Por Qué Jugar con Criptomonedas en Perú?
+
+Frente a Yape o Plin, las criptomonedas ofrecen ventajas concretas para el jugador con volumen alto:
+
+- **Sin límite de S/2,000 por transacción** — las billeteras móviles peruanas sí lo tienen
+- **Retiros más rápidos** — algunos casinos procesan cripto en minutos, no hay revisión bancaria de por medio
+- **Mayor privacidad** — no queda registrado en tu estado de cuenta bancario
+- **Sin comisiones de conversión** en casinos que operan directamente en cripto
+
+La desventaja: la volatilidad. Si depositas Bitcoin y el precio cae mientras juegas, tu saldo en soles equivalente también baja.
+
+## Qué Casinos Aceptan Cripto en Perú
+
+| Casino | Monedas | Retiro mínimo |
+|--------|---------|---------------|
+| [MegaPari Perú](/casinos/megapari-peru) | BTC, ETH, USDT, LTC | ~S/40 |
+| [HellSpin Perú](/casinos/hellspin-peru) | BTC, ETH, USDT | ~S/40 |
+| [1xBet Perú](/casinos/1xbet-peru) | BTC, ETH, USDT, y más | ~S/20 |
+
+[Betsson](/casinos/betsson-peru), [Codere](/casinos/codere-peru) y [Bet365](/casinos/bet365-peru) no aceptan criptomonedas — se enfocan en Yape, Plin y tarjeta, ver [métodos de pago](/metodos-de-pago) completos.
+
+## Cómo Depositar con Criptomonedas: Paso a Paso
+
+1. Compra BTC, ETH o USDT en un exchange (Binance, Lemon Cash)
+2. Crea tu cuenta en el casino y ve a Depósitos
+3. Selecciona la criptomoneda y copia la dirección de la billetera del casino
+4. Envía el monto desde tu exchange o wallet personal
+5. El depósito se acredita tras 1-3 confirmaciones de red (minutos a media hora)
+
+## USDT: La Opción Más Estable
+
+Para evitar la volatilidad de Bitcoin, USDT (Tether) es la opción preferida — su valor está anclado al dólar, así que tu saldo no cambia mientras juegas. Es la criptomoneda recomendada para jugadores que solo buscan evitar los límites de Yape/Plin sin exponerse a la volatilidad.
+
+## KYC en Casinos Cripto
+
+Ojo: aceptar cripto no elimina la verificación de identidad. Sigue siendo obligatorio el KYC estándar (ver [guía de verificación](/blog/como-verificar-cuenta-casino-online-peru)) antes de tu primer retiro, sin importar el método de pago.
+
+## Veredicto
+
+Si juegas montos altos y te frustran los límites de S/2,000 de Yape, [MegaPari](/casinos/megapari-peru) y [1xBet](/casinos/1xbet-peru) son las mejores opciones cripto en Perú. Para jugadores casuales, Yape y Plin siguen siendo más simples — consulta [casinos con Yape](/casino-yape) o [casinos con Plin](/casino-plin).`,
+    category: 'Métodos de Pago',
+    author: 'Equipo Editorial',
+    date: '2026-08-24',
+    readTime: 6,
+    image: '/images/blog/casinos-criptomonedas-peru.jpg',
+  },
+  {
+    slug: 'sweet-bonanza-guia-peru',
+    title: 'Sweet Bonanza: Guía Completa para Jugadores Peruanos',
+    excerpt: 'Cómo funciona Sweet Bonanza, su RTP real, la función de compra de bonus y dónde jugarla con mejor bono en Perú.',
+    content: `Sweet Bonanza de Pragmatic Play es, junto con Gates of Olympus, la tragamoneda más buscada por jugadores peruanos. Su temática de dulces y potencial de hasta 21,175x la apuesta explican su popularidad.
+
+## ¿Qué es Sweet Bonanza?
+
+Tragamoneda de 6 carretes y mecánica de cascada (sin líneas de pago tradicionales) — ganas cuando aparecen 8 o más símbolos iguales en el tablero, sin importar su posición.
+
+**Datos técnicos:**
+- **Proveedor:** Pragmatic Play
+- **RTP:** 96.51%
+- **Volatilidad:** Alta
+- **Apuesta mínima:** S/0.20
+- **Apuesta máxima:** S/125
+- **Multiplicador máximo:** 21,175x
+
+## Mecánica: Cascadas y Multiplicadores de Bomba
+
+Cada combinación ganadora hace que los símbolos desaparezcan y caigan nuevos desde arriba, permitiendo múltiples ganancias por giro. Símbolos de bomba (multiplicadores x2 a x100) pueden aparecer en cualquier cascada y se suman antes de aplicarse.
+
+## Tiradas Gratis y Compra de Bonus
+
+Se activan con 4 o más scatters (piruleta). Otorgan 10 tiradas gratis con multiplicadores de bomba acumulativos — a diferencia del juego base, no se reinician entre cascadas dentro del bonus.
+
+La función de compra de bonus cuesta 100x la apuesta y garantiza acceso directo a las tiradas gratis, disponible en [Betsson](/casinos/betsson-peru) y [1xBet](/casinos/1xbet-peru) para jugadores en Perú.
+
+## ¿Dónde Jugar Sweet Bonanza en Perú?
+
+| Casino | Bono de Bienvenida | Disponible |
+|--------|-------------------|------------|
+| [Betsson Perú](/casinos/betsson-peru) | 100% hasta S/500 + 100 FS | ✅ |
+| [1xBet Perú](/casinos/1xbet-peru) | 100% hasta S/600 + 150 FS | ✅ |
+| [LeoVegas Perú](/casinos/leovegas-peru) | 100% hasta S/500 + 200 FS | ✅ |
+| [HellSpin Perú](/casinos/hellspin-peru) | 100% hasta S/400 + 100 FS | ✅ |
+
+## Sweet Bonanza vs Gates of Olympus: ¿Cuál Elegir?
+
+Ambas comparten proveedor y mecánica de cascada, pero difieren en el bonus: Gates of Olympus acumula multiplicadores fijos de Zeus, mientras Sweet Bonanza usa bombas con rango más amplio (x2-x100) y mayor techo de pago (21,175x vs 5,000x). Si buscas potencial de pago más alto, Sweet Bonanza gana; si prefieres bonus más predecible, [Gates of Olympus](/blog/gates-of-olympus-guia-peru) es la opción.
+
+## Estrategia para Jugadores Peruanos
+
+**Bankroll:** Alta volatilidad exige al menos 100 apuestas de reserva antes de empezar. Con apuesta de S/1, ten S/100 disponibles.
+
+**Activa el bono de bienvenida antes de jugar:** las tiradas gratis reducen el riesgo mientras aprendes la mecánica — revisa nuestra [guía de bonos con menor wagering](/blog/casinos-menor-wagering-peru-2026) para elegir el mejor.
+
+## ¿Vale la Pena?
+
+Sí. El RTP de 96.51% está por encima del promedio del mercado, y el techo de 21,175x es de los más altos disponibles en tragamonedas Pragmatic Play. Ideal para jugadores que ya conocen Gates of Olympus y buscan variar.`,
+    category: 'Tragamonedas',
+    author: 'Equipo Editorial',
+    date: '2026-08-25',
+    readTime: 7,
+    image: '/images/blog/sweet-bonanza-peru.jpg',
+  },
+  {
+    slug: 'bono-bienvenida-vs-sin-deposito-peru',
+    title: 'Bono de Bienvenida vs Bono Sin Depósito: ¿Cuál Elegir en Perú?',
+    excerpt: 'Comparamos los dos tipos de bono más comunes en casinos online peruanos: cuál conviene según tu presupuesto y estilo de juego.',
+    content: `Elegir entre un bono de bienvenida (depósito) y uno sin depósito es una de las primeras decisiones que toma cualquier jugador nuevo en Perú. No hay una respuesta única — depende de tu presupuesto y de cuánto riesgo quieres asumir.
+
+## La Diferencia Básica
+
+**Bono sin depósito:** el casino te regala dinero o tiradas gratis solo por registrarte, sin que deposites un sol. Ejemplo: [Codere](/casinos/codere-peru) da S/30 gratis con el código GRATIS30.
+
+**Bono de bienvenida:** el casino iguala un porcentaje de tu primer depósito. Ejemplo: [Betsson](/casinos/betsson-peru) da 100% hasta S/500 — depositas S/500 y juegas con S/1,000.
+
+## Comparación Directa
+
+| Factor | Sin Depósito | Bienvenida |
+|--------|--------------|------------|
+| Riesgo inicial | Ninguno | Tu depósito |
+| Monto típico | S/20-S/50 | S/300-S/1,600 |
+| Wagering típico | x25-x35 | x30-x50 |
+| Ideal para | Probar el casino gratis | Jugar en serio desde el día uno |
+
+## Cuándo Elegir Bono Sin Depósito
+
+Si es tu primera vez en casinos online y quieres evaluar la plataforma sin arriesgar nada, el bono sin depósito es la entrada más segura. El de [Codere](/casinos/codere-peru) es el mejor de Perú: S/30 con wagering x25, el más bajo del mercado (ver [guía de wagering](/blog/casinos-menor-wagering-peru-2026)).
+
+Limitación: los montos son pequeños y casi siempre hay un tope de retiro (usualmente S/100-S/300), así que no esperes ganancias grandes.
+
+## Cuándo Elegir Bono de Bienvenida
+
+Si ya decidiste depositar y jugar en serio, el bono de bienvenida multiplica tu bankroll desde el inicio. [Betsson](/casinos/betsson-peru) y [LeoVegas](/casinos/leovegas-peru) ofrecen 100% hasta S/500, mientras que [1xBet](/casinos/1xbet-peru) llega a S/600. Revisa siempre el [bono de bienvenida completo](/bonos/bienvenida) antes de depositar.
+
+Cuidado con los bonos más grandes en apariencia: [JackpotCity](/casinos/jackpotcity-peru) ofrece hasta S/1,600 pero con wagering x50, mucho más difícil de liberar que uno pequeño con x25-x30.
+
+## ¿Se Pueden Usar los Dos?
+
+Sí. La estrategia más común entre jugadores peruanos experimentados:
+
+1. Reclama el bono sin depósito de [Codere](/casinos/codere-peru) para probar sin riesgo
+2. Si te gusta la plataforma, evalúa otro casino con buen bono de bienvenida para tu primer depósito real
+3. Compara siempre el wagering antes de decidir — no solo el monto del bono
+
+## Conclusión
+
+No hay un bono "mejor" en términos absolutos — el sin depósito conviene para probar sin riesgo, el de bienvenida conviene cuando ya vas a depositar en serio. Revisa siempre el wagering, no solo el monto: un bono de S/1,600 con x50 puede ser peor que uno de S/500 con x30.`,
+    category: 'Bonos',
+    author: 'Equipo Editorial',
+    date: '2026-08-26',
+    readTime: 6,
+    image: '/images/blog/bono-bienvenida-vs-sin-deposito.jpg',
+  },
+  END OF BATCH 6 */
 ];
 
