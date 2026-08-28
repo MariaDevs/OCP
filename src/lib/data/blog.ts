@@ -872,7 +872,7 @@ Codere es la **mejor opción para jugadores que priorizan la seguridad y la lega
     readTime: 8,
     image: '/images/blog/codere-peru-resena.jpg',
   },
-  /* --- BATCH 6: push week of Aug 24 ---
+  // --- BATCH 6: push week of Aug 24 ---
   {
     slug: 'casinos-criptomonedas-peru-2026',
     title: 'Casinos Online con Criptomonedas en Perú 2026',
@@ -1031,6 +1031,5 @@ No hay un bono "mejor" en términos absolutos — el sin depósito conviene para
     readTime: 6,
     image: '/images/blog/bono-bienvenida-vs-sin-deposito.jpg',
   },
-  END OF BATCH 6 */
 ];
 
