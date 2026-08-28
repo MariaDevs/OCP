@@ -1031,5 +1031,171 @@ No hay un bono "mejor" en términos absolutos — el sin depósito conviene para
     readTime: 6,
     image: '/images/blog/bono-bienvenida-vs-sin-deposito.jpg',
   },
+  /* --- BATCH 7: push week of Sep 1 ---
+  {
+    slug: 'betsson-peru-resena-2026',
+    title: 'Betsson Perú Reseña 2026: Análisis Completo',
+    excerpt: 'Reseña a fondo de Betsson Perú: licencia MGA, catálogo de juegos, métodos de pago, tiempos de retiro y nuestra valoración final.',
+    content: `Betsson es el casino con la puntuación más alta en nuestro comparador (4.9/5) y uno de los operadores más establecidos del mercado peruano. Esta es nuestra reseña completa.
+
+## Ficha Técnica de Betsson Perú
+
+| Característica | Detalle |
+|----------------|---------|
+| Licencia | Malta Gaming Authority (MGA/B2C/394/2017) |
+| Fundado | 1963 (más de 60 años) |
+| Sede | Estocolmo, Suecia (cotiza en bolsa) |
+| Bono de bienvenida | 100% hasta S/500 + 100 FS |
+| Métodos de pago | Yape, Plin, Visa, Mastercard |
+| Retiros | 24 horas |
+| Soporte | Chat en vivo en español 24/7 |
+
+## Por Qué Betsson Lidera Nuestro Ranking
+
+La combinación de licencia MGA, seis décadas de trayectoria y cotización pública en Nasdaq Stockholm hacen de Betsson el operador más transparente y auditado disponible para jugadores peruanos. Su legalidad está explicada en detalle en [¿Es legal Betsson en Perú?](/blog/es-legal-betsson-peru).
+
+## Catálogo de Juegos
+
+Con más de 1,500 títulos, Betsson tiene el catálogo más amplio del mercado peruano:
+
+- **Tragamonedas:** Gates of Olympus, Sweet Bonanza, Book of Dead y cientos de títulos Pragmatic Play y NetEnt
+- **Casino en vivo:** Ruleta, blackjack y baccarat con Evolution Gaming — ver [mejor casino en vivo](/blog/mejor-casino-en-vivo-peru-2026)
+- **Apuestas deportivas:** Liga 1 peruana, Champions League, NBA
+- **Función de compra de bonus** disponible en la mayoría de tragamonedas Pragmatic Play
+
+## Métodos de Pago
+
+Betsson acepta Yape y Plin para depósito y retiro instantáneo — ver nuestra [guía de retiro a Yape](/blog/como-retirar-dinero-casino-yape-peru). También acepta tarjetas Visa y Mastercard. No acepta criptomonedas.
+
+## Bono de Bienvenida: 100% hasta S/500 + 100 FS
+
+Wagering x35 sobre el bono — no es el más bajo del mercado (Codere ofrece x25), pero es razonable dado el tamaño del bono. Consulta nuestra [comparación de bonos](/blog/bono-bienvenida-vs-sin-deposito-peru) antes de decidir cuál te conviene.
+
+## Nuestra Valoración
+
+**Puntos fuertes:**
+- Licencia MGA, la más estricta y confiable del mercado
+- Catálogo de juegos más amplio de Perú (1,500+)
+- Retiros en 24 horas, de los más rápidos junto a Codere
+- 60+ años de trayectoria, cotización pública
+
+**Puntos débiles:**
+- Sin criptomonedas
+- Wagering del bono (x35) más alto que el de Codere (x25)
+
+**Puntuación:** 4.9/5
+
+Betsson es la opción más equilibrada del mercado peruano: seguridad máxima, catálogo enorme y retiros rápidos. La mejor opción para jugadores que priorizan variedad de juegos sobre bono sin depósito.`,
+    category: 'Reseñas',
+    author: 'Equipo Editorial',
+    date: '2026-09-01',
+    readTime: 8,
+    image: '/images/blog/betsson-peru-resena.jpg',
+  },
+  {
+    slug: 'book-of-dead-guia-peru',
+    title: 'Book of Dead: Guía Completa para Jugadores Peruanos',
+    excerpt: 'Todo sobre la tragamoneda clásica de Play\'n GO: mecánica, RTP real, símbolo expandible de Rich Wilde y dónde jugarla en Perú.',
+    content: `Book of Dead de Play'n GO es una de las tragamonedas más veneradas del mercado, con una mecánica más simple que Gates of Olympus o Sweet Bonanza pero igual de popular entre jugadores peruanos.
+
+## ¿Qué es Book of Dead?
+
+Tragamoneda clásica de 5 carretes y 10 líneas de pago fijas, ambientada en el antiguo Egipto con el explorador Rich Wilde. A diferencia de las tragamonedas de cascada modernas, usa el formato tradicional de líneas de pago.
+
+**Datos técnicos:**
+- **Proveedor:** Play'n GO
+- **RTP:** 96.21%
+- **Volatilidad:** Alta
+- **Apuesta mínima:** S/0.10
+- **Apuesta máxima:** S/100
+- **Multiplicador máximo:** 5,000x
+
+## Mecánica: Símbolo Expandible
+
+El símbolo especial (Rich Wilde) se expande para cubrir todo el carrete cuando aparece durante las tiradas gratis, generando ganancias en cadena. Es la característica que distingue a Book of Dead de tragamonedas similares.
+
+## Tiradas Gratis
+
+Se activan con 3 o más scatters (el libro). Otorgas 10 tiradas gratis, y al inicio se selecciona aleatoriamente un símbolo especial que se expandirá en cada tirada del bonus — puede ser cualquier símbolo del juego, incluyendo el de mayor pago.
+
+## ¿Dónde Jugar Book of Dead en Perú?
+
+| Casino | Bono de Bienvenida | Disponible |
+|--------|-------------------|------------|
+| [Betsson Perú](/casinos/betsson-peru) | 100% hasta S/500 + 100 FS | ✅ |
+| [Codere Perú](/casinos/codere-peru) | S/30 sin depósito | ✅ |
+| [LeoVegas Perú](/casinos/leovegas-peru) | 100% hasta S/500 + 200 FS | ✅ |
+
+## Book of Dead vs Gates of Olympus vs Sweet Bonanza
+
+Si ya conoces [Gates of Olympus](/blog/gates-of-olympus-guia-peru) y [Sweet Bonanza](/blog/sweet-bonanza-guia-peru), Book of Dead se siente distinto: menor RTP, menor multiplicador máximo, pero mecánica más simple y predecible al no depender de cascadas ni multiplicadores acumulativos. Es la mejor opción para jugadores que prefieren tragamonedas clásicas.
+
+## Estrategia para Jugadores Peruanos
+
+Alta volatilidad — recomendamos al menos 100 apuestas de bankroll. Muchos jugadores usan la función de compra de tiradas gratis (disponible en algunos casinos) para acceder directamente al bonus sin esperar el scatter natural.
+
+## ¿Vale la Pena Jugar Book of Dead?
+
+Sí, especialmente para quien busca una tragamoneda con historial probado (más de una década en el mercado) y mecánica sencilla de entender. El RTP de 96.21% es sólido, aunque menor al de Gates of Olympus (96.5%) y Sweet Bonanza (96.51%).`,
+    category: 'Tragamonedas',
+    author: 'Equipo Editorial',
+    date: '2026-09-02',
+    readTime: 6,
+    image: '/images/blog/book-of-dead-peru.jpg',
+  },
+  {
+    slug: 'jackpots-progresivos-casino-peru',
+    title: 'Jackpots Progresivos en Perú: Los Mayores Premios de Casino Online',
+    excerpt: 'Cómo funcionan los jackpots progresivos, qué tragamonedas los ofrecen y dónde jugarlas desde Perú para optar a premios millonarios.',
+    content: `Un jackpot progresivo puede convertir una apuesta de céntimos en un premio de millones. Esta guía explica cómo funcionan y dónde jugarlos en Perú.
+
+## ¿Qué es un Jackpot Progresivo?
+
+A diferencia de un premio fijo, el jackpot progresivo crece con cada apuesta realizada por todos los jugadores conectados a la misma red, en cualquier país. Un pequeño porcentaje de cada apuesta se suma al bote hasta que alguien lo gana — luego se reinicia a un valor base.
+
+Existen dos tipos:
+- **Progresivo local:** solo crece con apuestas dentro del mismo casino
+- **Progresivo en red (networked):** crece con apuestas de todos los casinos conectados a la misma red de proveedor — los que ofrecen los premios más grandes
+
+## Las Tragamonedas de Jackpot Más Populares
+
+### Mega Moolah — El "Millonario de las Tragamonedas"
+Del proveedor Microgaming, ha pagado premios que superan los €20 millones en su historial, incluyendo el récord Guinness de mayor pago en tragamonedas online. Tal como se menciona en nuestra [guía de límites de retiro](/blog/cuanto-puedo-retirar-casino-online-peru), un jackpot legítimo se paga completo sin importar el límite diario del casino.
+
+### Divine Fortune (NetEnt)
+Jackpot en red con temática griega, premios promedio entre S/500,000 y S/2,000,000.
+
+### Mega Fortune (NetEnt)
+Uno de los jackpots más grandes de la industria, con premios históricos superiores a los €17 millones.
+
+## ¿Dónde Jugar Jackpots Progresivos en Perú?
+
+| Casino | Jackpots Disponibles |
+|--------|----------------------|
+| [LeoVegas Perú](/casinos/leovegas-peru) | Mega Moolah, Divine Fortune |
+| [Betsson Perú](/casinos/betsson-peru) | Mega Fortune, Mega Moolah |
+| [1xBet Perú](/casinos/1xbet-peru) | Amplio catálogo de jackpots Microgaming |
+
+## Cómo Funciona el Pago de un Jackpot
+
+1. El jackpot se activa aleatoriamente o mediante una ronda de bonus específica
+2. El premio se acredita instantáneamente en tu cuenta
+3. El casino puede pedir verificación adicional de origen de fondos (normal en premios grandes) — ver [guía de KYC](/blog/como-verificar-cuenta-casino-online-peru)
+4. El pago puede dividirse en varias transferencias según los límites diarios del método elegido
+
+## Consejo: Apuesta Máxima para Optar al Jackpot Completo
+
+En muchas tragamonedas de jackpot, especialmente Mega Moolah, solo optas al nivel más alto del premio (Mega) si apuestas el monto máximo o activas la ronda de bonus específica. Revisa siempre las reglas antes de jugar si tu objetivo es el jackpot completo.
+
+## ¿Vale la Pena Jugar Jackpots Progresivos?
+
+Los jackpots progresivos tienen RTP base más bajo que las tragamonedas normales (una parte de cada apuesta va al bote), pero el potencial de premio es incomparable. Recomendamos dedicar solo una porción pequeña del bankroll a estas tragamonedas, y usar el resto en títulos de RTP más alto como [Gates of Olympus](/blog/gates-of-olympus-guia-peru) o [Sweet Bonanza](/blog/sweet-bonanza-guia-peru) para sesiones más consistentes.`,
+    category: 'Tragamonedas',
+    author: 'Equipo Editorial',
+    date: '2026-09-03',
+    readTime: 7,
+    image: '/images/blog/jackpots-progresivos-peru.jpg',
+  },
+  END OF BATCH 7 */
 ];
 
