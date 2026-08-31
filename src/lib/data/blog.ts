@@ -1196,5 +1196,166 @@ Los jackpots progresivos tienen RTP base más bajo que las tragamonedas normales
     readTime: 7,
     image: '/images/blog/jackpots-progresivos-peru.jpg',
   },
+  /* --- BATCH 8: push week of Sep 8 ---
+  {
+    slug: '1xbet-peru-resena-2026',
+    title: '1xBet Perú Reseña 2026: Análisis Completo',
+    excerpt: 'Reseña de 1xBet Perú: catálogo con criptomonedas, bono de bienvenida, tiempos de retiro variables y nuestra valoración final.',
+    content: `1xBet es uno de los operadores con mayor volumen de apuestas deportivas y catálogo de casino a nivel global, y una opción popular entre jugadores peruanos que buscan variedad de métodos de pago, incluyendo criptomonedas.
+
+## Ficha Técnica de 1xBet Perú
+
+| Característica | Detalle |
+|----------------|---------|
+| Licencia | Curaçao eGaming |
+| Fundado | 2007 |
+| Bono de bienvenida | 100% hasta S/600 + 150 FS |
+| Métodos de pago | Yape, Plin, tarjeta, BTC, ETH, USDT |
+| Retiros | 15 min – 3 días (según método) |
+| Soporte | Chat en vivo en español 24/7 |
+
+## Por Qué Elegir 1xBet
+
+El punto fuerte de 1xBet es la variedad: acepta más métodos de pago que casi cualquier otro operador en Perú, incluyendo tres criptomonedas — ver nuestra [guía de casinos con criptomonedas](/blog/casinos-criptomonedas-peru-2026). Su catálogo de casino y apuestas deportivas combinados es de los más grandes del mercado.
+
+## Catálogo de Juegos
+
+- **Tragamonedas:** Gates of Olympus, Sweet Bonanza, Book of Dead, con función de compra de bonus habilitada — ver [guía Gates of Olympus](/blog/gates-of-olympus-guia-peru)
+- **Casino en vivo:** Ruleta, blackjack, baccarat
+- **Apuestas deportivas:** Catálogo amplísimo, incluyendo ligas menores y eSports
+- **Jackpots progresivos:** Amplio catálogo Microgaming — ver [guía de jackpots](/blog/jackpots-progresivos-casino-peru)
+
+## Retiros: El Punto a Vigilar
+
+1xBet tiene los tiempos de retiro más variables del mercado — puede ser tan rápido como 15 minutos con criptomonedas o tardar hasta 3 días con transferencia bancaria, según detalla nuestra [comparación de retiros rápidos](/blog/casinos-retiros-rapidos-peru-2026). Si priorizas velocidad, usa cripto o Yape/Plin.
+
+## Licencia Curaçao: Qué Significa
+
+A diferencia de [Betsson](/casinos/betsson-peru) (MGA) o [Codere](/casinos/codere-peru) (MINCETUR), 1xBet opera bajo licencia de Curaçao — un regulador menos estricto pero aún así una licencia internacional legítima y ampliamente aceptada.
+
+## Nuestra Valoración
+
+**Puntos fuertes:**
+- Mayor variedad de métodos de pago, incluyendo 3 criptomonedas
+- Catálogo de apuestas deportivas líder del mercado
+- Bono de bienvenida generoso (S/600 + 150 FS)
+
+**Puntos débiles:**
+- Licencia Curaçao, menos estricta que MGA o MINCETUR
+- Tiempos de retiro muy variables según método
+
+**Puntuación:** 4.5/5
+
+1xBet es la mejor opción para jugadores que combinan casino y apuestas deportivas, o que prefieren pagar con criptomonedas.`,
+    category: 'Reseñas',
+    author: 'Equipo Editorial',
+    date: '2026-09-08',
+    readTime: 7,
+    image: '/images/blog/1xbet-peru-resena.jpg',
+  },
+  {
+    slug: 'tiradas-gratis-sin-deposito-peru-2026',
+    title: 'Tiradas Gratis Sin Depósito en Perú 2026: Mejores Ofertas',
+    excerpt: 'Casinos que regalan tiradas gratis solo por registrarte, sin depositar. Cómo reclamarlas y qué wagering tienen.',
+    content: `Las tiradas gratis sin depósito son la forma más segura de probar una tragamoneda antes de arriesgar dinero propio. Esta guía reúne las mejores ofertas disponibles para jugadores peruanos.
+
+## ¿Qué son las Tiradas Gratis Sin Depósito?
+
+El casino te otorga un número fijo de giros gratuitos en una tragamoneda específica, sin necesidad de depositar. Las ganancias generadas suelen convertirse en saldo real de bono, sujeto a wagering antes de poder retirarlas.
+
+Es distinto del [bono sin depósito en efectivo](/blog/bono-bienvenida-vs-sin-deposito-peru) (como el de S/30 de Codere) — aquí el premio son giros en una tragamoneda, no saldo directo.
+
+## Mejores Ofertas de Tiradas Gratis en Perú
+
+| Casino | Tiradas Gratis | Tragamoneda | Wagering |
+|--------|-----------------|--------------|----------|
+| [LeoVegas Perú](/casinos/leovegas-peru) | 20 FS sin depósito | Book of Dead | x35 |
+| [HellSpin Perú](/casinos/hellspin-peru) | 25 FS sin depósito | Gates of Olympus | x40 |
+| [Betsafe Perú](/casinos/betsafe-peru) | 15 FS sin depósito | Starburst | x35 |
+
+Consulta también la [página de tiradas gratis](/bonos/tiradas-gratis) para ver la oferta completa y actualizada.
+
+## Cómo Reclamar Tiradas Gratis Sin Depósito
+
+1. Regístrate en el casino elegido con tus datos reales
+2. Verifica tu correo y número de teléfono
+3. Las tiradas se acreditan automáticamente o mediante código promocional
+4. Juega las tiradas en la tragamoneda indicada — no puedes elegir otra
+5. Las ganancias van a saldo de bono sujeto a wagering
+
+## Límite de Retiro en Ganancias de Tiradas Gratis
+
+La mayoría de casinos limitan cuánto puedes retirar de las ganancias generadas por tiradas gratis sin depósito — normalmente entre S/100 y S/300, sin importar cuánto ganes. Revisa siempre los términos antes de jugar.
+
+## Tiradas Gratis Sin Depósito vs Bono de Bienvenida con FS
+
+Las ofertas sin depósito son ideales para probar sin riesgo, pero los paquetes de bienvenida (como el de [Betsson](/casinos/betsson-peru): 100% hasta S/500 + 100 FS) suelen tener mejor relación de valor si ya planeas depositar. Compáralos en nuestra [guía de bonos](/blog/bono-bienvenida-vs-sin-deposito-peru).
+
+## Conclusión
+
+Las tiradas gratis sin depósito son la mejor forma de conocer una tragamoneda nueva sin gastar un sol. No esperes ganancias grandes por el tope de retiro, pero sí es la entrada más segura al casino online en Perú.`,
+    category: 'Bonos',
+    author: 'Equipo Editorial',
+    date: '2026-09-09',
+    readTime: 6,
+    image: '/images/blog/tiradas-gratis-sin-deposito-peru.jpg',
+  },
+  {
+    slug: 'blackjack-online-peru-guia-estrategia',
+    title: 'Blackjack Online en Perú: Reglas y Estrategia Básica',
+    excerpt: 'Cómo jugar blackjack online: reglas, estrategia básica para reducir la ventaja de la casa y los mejores casinos para jugarlo en Perú.',
+    content: `El blackjack tiene la ventaja de casa más baja de todos los juegos de casino cuando se juega con estrategia óptima — tan baja como 0.5%. Esta guía explica las reglas y la estrategia básica para jugadores peruanos.
+
+## Reglas Básicas del Blackjack
+
+El objetivo es sumar 21 puntos o acercarte lo más posible sin pasarte, superando la mano del dealer:
+
+- Cartas numéricas valen su número, figuras (J, Q, K) valen 10, el As vale 1 u 11
+- Recibes 2 cartas iniciales, el dealer muestra una
+- Puedes pedir carta (Hit), plantarte (Stand), doblar tu apuesta (Double) o dividir un par (Split)
+- Si te pasas de 21, pierdes automáticamente (Bust)
+- El dealer debe pedir carta hasta llegar a 17 o más
+
+## Estrategia Básica: La Tabla que Reduce la Ventaja de la Casa
+
+La estrategia básica es una tabla matemáticamente óptima que indica la mejor decisión (pedir, plantarse, doblar o dividir) según tu mano y la carta visible del dealer. Aplicarla correctamente reduce la ventaja de la casa de aproximadamente 2% a 0.5%.
+
+**Reglas generales simplificadas:**
+- Con 17 o más, siempre plántate
+- Con 12-16, pide carta si el dealer muestra 7 o más; plántate si muestra 6 o menos
+- Siempre divide Ases y Ochos
+- Nunca dividas Dieces ni Cincos
+- Dobla con 11 si el dealer muestra 2-10
+
+## Blackjack en Vivo vs Blackjack RNG
+
+El [casino en vivo](/blog/mejor-casino-en-vivo-peru-2026) ofrece blackjack con dealer real transmitido en HD, mientras que las versiones RNG usan un generador de números aleatorios y suelen tener límites de apuesta más bajos, ideales para practicar estrategia sin presión de tiempo.
+
+## Dónde Jugar Blackjack en Perú
+
+| Casino | Modalidad | Límites |
+|--------|-----------|---------|
+| [Bet365 Perú](/casinos/bet365-peru) | En vivo, español 24h | S/5 – S/5,000 |
+| [Betsson Perú](/casinos/betsson-peru) | En vivo + RNG | S/1 – S/2,000 |
+| [LeoVegas Perú](/casinos/leovegas-peru) | En vivo, Evolution Gaming | S/2 – S/3,000 |
+
+## Errores Comunes que Aumentan la Ventaja de la Casa
+
+**Pedir seguro (insurance):** Casi siempre es matemáticamente desfavorable para el jugador, incluso cuando el dealer muestra un As.
+
+**No dividir Ases:** Es una de las jugadas más rentables de la estrategia básica — no aplicarla cuesta dinero a largo plazo.
+
+**Jugar por intuición en vez de la tabla:** La estrategia básica está probada matemáticamente; jugar "por corazonada" siempre incrementa la ventaja de la casa.
+
+## Conclusión
+
+El blackjack es el juego de casino con mejor matemática para el jugador cuando se aplica estrategia básica. Practica la tabla en versiones RNG de apuesta baja antes de pasar a mesas en vivo con límites más altos.`,
+    category: 'Guías',
+    author: 'Equipo Editorial',
+    date: '2026-09-10',
+    readTime: 7,
+    image: '/images/blog/blackjack-online-peru.jpg',
+  },
+  END OF BATCH 8 */
 ];
 
