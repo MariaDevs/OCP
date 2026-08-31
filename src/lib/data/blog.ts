@@ -1031,7 +1031,7 @@ No hay un bono "mejor" en términos absolutos — el sin depósito conviene para
     readTime: 6,
     image: '/images/blog/bono-bienvenida-vs-sin-deposito.jpg',
   },
-  /* --- BATCH 7: push week of Sep 1 ---
+  // --- BATCH 7: push week of Sep 1 ---
   {
     slug: 'betsson-peru-resena-2026',
     title: 'Betsson Perú Reseña 2026: Análisis Completo',
@@ -1196,6 +1196,5 @@ Los jackpots progresivos tienen RTP base más bajo que las tragamonedas normales
     readTime: 7,
     image: '/images/blog/jackpots-progresivos-peru.jpg',
   },
-  END OF BATCH 7 */
 ];
 
