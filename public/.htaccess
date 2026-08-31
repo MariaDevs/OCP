@@ -5,6 +5,29 @@ RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+# 301 redirects — legacy pre-migration URLs still indexed/linked, now dead.
+# Recapture their crawl equity by pointing to the closest live equivalent
+# instead of letting them hard-404.
+RewriteRule ^blackjack-online-peru/?$ /juegos/blackjack [L,R=301]
+RewriteRule ^casino-en-vivo-peru/?$ /juegos/en-vivo [L,R=301]
+RewriteRule ^poker-online-peru/?$ /juegos/poker [L,R=301]
+RewriteRule ^mejores-casinos-online-peru/?$ /casinos [L,R=301]
+RewriteRule ^casino/glatorama/?$ /casinos [L,R=301]
+RewriteRule ^uncategorized/que-significa-free-spins-guia-para-jugadores/?$ /bonos/tiradas-gratis [L,R=301]
+RewriteRule ^uncategorized/aprende-los-pasos-clave-para-identificar-casinos-seguros/?$ /blog/casino-seguro-peru-checklist-licencia-cifrado-reputacion [L,R=301]
+RewriteRule ^uncategorized/casino-seguro-online-como-elegir-el-mejor/?$ /blog/casino-seguro-peru-checklist-licencia-cifrado-reputacion [L,R=301]
+RewriteRule ^uncategorized/mincetur-casinos-online-peru-60-plataformas-legales/?$ /blog/ley-31557-peru-regulacion-juego-online-mincetur [L,R=301]
+RewriteRule ^uncategorized/por-que-jugar-casinos-legales-peru-2026/?$ /blog/casinos-online-legales-peru [L,R=301]
+RewriteRule ^uncategorized/tendencias-casinos-online-peru-2026-bonos-pagos/?$ /bonos [L,R=301]
+RewriteRule ^uncategorized/metodos-para-controlar-gastos-en-casinos-online/?$ /juego-responsable [L,R=301]
+RewriteRule ^uncategorized/guia-de-seguridad-en-juegos-online-peru-2026/?$ /juego-responsable [L,R=301]
+RewriteRule ^uncategorized/descubre-el-verdadero-rol-del-algoritmo-en-slots-online/?$ /blog/rtp-y-volatilidad-tragamonedas [L,R=301]
+RewriteRule ^uncategorized/rol-del-auditor-externo-en-casinos-online-en-peru/?$ /sobre-nosotros [L,R=301]
+RewriteRule ^uncategorized/tipos-de-torneos-de-poker-online-guia-2026/?$ /juegos/poker [L,R=301]
+RewriteRule ^uncategorized/juego-social-en-casinos-como-cambia-tu-experiencia/?$ /casinos [L,R=301]
+RewriteRule ^uncategorized/como-elegir-mejor-casino-online-peru-guia-practica/?$ /casinos [L,R=301]
+RewriteRule ^uncategorized/bonos-sin-deposito-ejemplos-claves-peru/?$ /bonos/sin-deposito [L,R=301]
+
 # Serve directory index.html for clean URLs (Next.js static export)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
