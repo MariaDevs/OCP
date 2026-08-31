@@ -28,6 +28,32 @@ function inlineBold(s: string): string {
   return esc(s).replace(/\*\*(.*?)\*\*/g, '<strong class="text-white">$1</strong>');
 }
 
+/** Category-aware CTA — points readers at the offer most relevant to what they just read,
+ * instead of a generic "browse casinos" link. Falls back to the casinos hub. */
+const CATEGORY_CTA: Record<string, { title: string; text: string; href: string; label: string }> = {
+  'Métodos de Pago': { title: '¿Listo para Depositar?', text: 'Ve qué casinos aceptan Yape y Plin con acreditación instantánea.', href: '/casino-yape', label: 'Ver Casinos con Yape' },
+  'Bonos': { title: '¿Quieres Jugar Gratis?', text: 'Reclama S/30 sin depósito en Codere, sin arriesgar tu dinero.', href: '/bonos/sin-deposito', label: 'Reclamar Bono Sin Depósito' },
+  'Reseñas': { title: '¿Cuál te Conviene Más?', text: 'Compara licencias, bonos y tiempos de retiro de todos los casinos.', href: '/casinos', label: 'Ver Todas las Reseñas' },
+  'Tragamonedas': { title: '¿Listo para Jugar?', text: 'Encuentra los casinos con el mejor catálogo de tragamonedas en Perú.', href: '/casinos', label: 'Ver Casinos Recomendados' },
+  'Casino en Vivo': { title: '¿Prefieres Dealers Reales?', text: 'Compara los mejores casinos en vivo disponibles en Perú.', href: '/juegos/en-vivo', label: 'Ver Casino en Vivo' },
+  'Guías': { title: '¿Quieres Probar sin Riesgo?', text: 'Reclama un bono sin depósito y prueba la plataforma gratis.', href: '/bonos/sin-deposito', label: 'Reclamar Bono Sin Depósito' },
+};
+const DEFAULT_CTA = { title: '¿Listo para Jugar?', text: 'Compara los mejores casinos online disponibles en Perú con bonos exclusivos.', href: '/casinos', label: 'Ver Casinos Recomendados' };
+
+function CtaCard({ category, compact }: { category: string; compact?: boolean }) {
+  const cta = CATEGORY_CTA[category] ?? DEFAULT_CTA;
+  return (
+    <div className={`bg-gradient-to-br from-emerald-900/30 to-slate-800/60 border border-emerald-500/30 rounded-2xl ${compact ? 'p-5 mb-8' : 'p-5'}`}>
+      <div className="text-2xl mb-3" aria-hidden="true">🎰</div>
+      <h3 className="font-bold text-white mb-2">{cta.title}</h3>
+      <p className="text-slate-400 text-sm mb-4">{cta.text}</p>
+      <Link href={cta.href} className="block text-center bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-bold py-2.5 rounded-xl transition-colors text-sm">
+        {cta.label}
+      </Link>
+    </div>
+  );
+}
+
 export async function generateStaticParams() {
   const posts = await getBlogPosts();
   return posts.map((p) => ({ slug: p.slug }));
@@ -142,6 +168,11 @@ export default async function BlogPostPage({ params }: Props) {
             </div>
           )}
 
+          {/* Inline CTA — placed above the fold, right after the hero. On mobile the
+              sidebar CTA renders below the entire article, so this is what most
+              readers (96% of clicks are mobile) actually see without scrolling. */}
+          <CtaCard category={post.category} compact />
+
           {/* Body: engine HTML (sanitized + affiliate-hardened at load time) or static markdown */}
           {post.html ? (
             <div className="article-html text-slate-400 leading-relaxed" dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -180,15 +211,8 @@ export default async function BlogPostPage({ params }: Props) {
             </div>
           )}
 
-          {/* CTA */}
-          <div className="bg-gradient-to-br from-emerald-900/30 to-slate-800/60 border border-emerald-500/30 rounded-2xl p-5">
-            <div className="text-2xl mb-3" aria-hidden="true">🎰</div>
-            <h3 className="font-bold text-white mb-2">¿Listo para Jugar?</h3>
-            <p className="text-slate-400 text-sm mb-4">Compara los mejores casinos online disponibles en Perú con bonos exclusivos.</p>
-            <Link href="/casinos" className="block text-center bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-bold py-2.5 rounded-xl transition-colors text-sm">
-              Ver Casinos Recomendados
-            </Link>
-          </div>
+          {/* CTA — desktop sidebar copy (mobile readers already saw the inline one above) */}
+          <CtaCard category={post.category} />
         </aside>
       </div>
     </div>
