@@ -92,6 +92,19 @@ export default function NodepositPage() {
         )}
       </div>
 
+      <section className="mb-12 prose prose-invert max-w-none">
+        <h2 className="text-2xl font-black text-white mb-4">¿Qué es un Bono Sin Depósito y Por Qué te Conviene?</h2>
+        <p className="text-slate-400 text-sm leading-relaxed mb-4">
+          Un bono sin depósito es dinero real o tiradas gratis que el casino te entrega solo por registrarte, sin necesidad de ingresar un sol propio. A diferencia del <Link href="/bonos/bienvenida" className="text-emerald-400 hover:underline">bono de bienvenida</Link> (que multiplica tu primer depósito), el bono sin depósito te deja probar la plataforma, el catálogo de juegos y los tiempos de retiro reales antes de arriesgar tu propio dinero.
+        </p>
+        <p className="text-slate-400 text-sm leading-relaxed mb-4">
+          En Perú, <Link href="/casinos/codere-peru" className="text-emerald-400 hover:underline">Codere</Link> ofrece el mejor bono sin depósito del mercado: S/30 gratis con el código GRATIS30 y un wagering de solo x25, el más bajo entre todos los operadores locales. Puedes ver cómo se compara frente a otros bonos en nuestra guía de <Link href="/blog/casinos-menor-wagering-peru-2026" className="text-emerald-400 hover:underline">casinos con menor wagering</Link>.
+        </p>
+        <p className="text-slate-400 text-sm leading-relaxed">
+          Si no estás seguro de qué tipo de bono te conviene más, lee nuestra comparación completa: <Link href="/blog/bono-bienvenida-vs-sin-deposito-peru" className="text-emerald-400 hover:underline">bono de bienvenida vs bono sin depósito</Link>. Y si quieres profundizar en trucos para maximizar tus ganancias con este tipo de bono, consulta nuestra <Link href="/blog/bono-sin-deposito-peru-2026" className="text-emerald-400 hover:underline">guía completa de bonos sin depósito en Perú</Link>.
+        </p>
+      </section>
+
       <section>
         <h2 className="text-2xl font-black text-white mb-4">¿Cómo Reclamar un Bono Sin Depósito en Perú?</h2>
         <div className="space-y-4">

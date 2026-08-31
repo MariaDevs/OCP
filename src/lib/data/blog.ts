@@ -197,9 +197,9 @@ Es un crédito que el casino te da gratuitamente al registrarte, sin que tengas 
 
 ## Cómo Reclamar un Bono Sin Depósito en Perú
 
-1. **Elige el casino** de nuestra lista de bonos sin depósito
+1. **Elige el casino** de nuestra [lista actualizada de bonos sin depósito](/bonos/sin-deposito)
 2. **Regístrate** con datos reales (el casino verificará tu identidad)
-3. **Ingresa el código** si es requerido (como GRATIS30 en Codere)
+3. **Ingresa el código** si es requerido (como GRATIS30 en [Codere](/casinos/codere-peru))
 4. **El crédito aparece** automáticamente en tu cuenta
 5. **Cumple el wagering** antes de solicitar retiro
 
@@ -221,7 +221,9 @@ El wagering es la cantidad de veces que debes apostar el bono. Ejemplo: S/30 de 
 
 ## Advertencia Importante
 
-Si realizas un depósito antes de completar el wagering del bono sin depósito, algunos casinos cancelan el bono. Lee los términos antes de depositar.`,
+Si realizas un depósito antes de completar el wagering del bono sin depósito, algunos casinos cancelan el bono. Lee los términos antes de depositar.
+
+Si en cambio ya planeas depositar en serio, compara este tipo de bono contra un [bono de bienvenida](/blog/bono-bienvenida-vs-sin-deposito-peru) antes de decidir cuál conviene más a tu situación.`,
     category: 'Bonos',
     author: 'Equipo Editorial',
     date: '2026-05-15',
@@ -342,6 +344,10 @@ La mayoría de casinos tienen un retiro mínimo de S/20 y un máximo diario de S
 - Solicita el retiro antes de las 3 PM para que el casino lo procese ese mismo día
 - Elige casinos con licencia MGA como [Betsson](/casinos/betsson-peru) o [LeoVegas](/casinos/leovegas-peru) — procesan retiros más rápido que los de Curaçao
 
+## Antes de Depositar: Prueba Gratis con un Bono Sin Depósito
+
+Si aún no tienes cuenta en ningún casino, puedes verificar tu identidad y probar la plataforma sin arriesgar un sol usando un [bono sin depósito](/bonos/sin-deposito) — Codere, por ejemplo, da S/30 gratis solo por registrarte. Es la forma más segura de conocer los tiempos de retiro reales antes de depositar dinero propio.
+
 ## ¿Qué Casinos Aceptan Yape en Perú?
 
 Consulta nuestra guía completa con todos los casinos que aceptan Yape para depósito y retiro: [Casinos con Yape en Perú](/casino-yape). Si usas BBVA o Interbank, también puedes ver los [casinos que aceptan Plin](/casino-plin).`,
@@ -430,7 +436,7 @@ Cuanto más bajo el wagering, más fácil es liberar el bono.
 
 ## El Mejor Bono Sin Depósito: Codere (x25)
 
-[Codere](/casinos/codere-peru) ofrece el wagering más bajo del mercado peruano con x25 en su bono sin depósito de S/30. Esto significa que solo necesitas apostar S/750 para liberar las ganancias. Es también el único operador con licencia MINCETUR, lo que lo hace el más seguro para jugadores locales.
+[Codere](/casinos/codere-peru) ofrece el wagering más bajo del mercado peruano con x25 en su bono sin depósito de S/30. Esto significa que solo necesitas apostar S/750 para liberar las ganancias. Es también el único operador con licencia MINCETUR, lo que lo hace el más seguro para jugadores locales. Consulta la [lista completa de bonos sin depósito en Perú](/bonos/sin-deposito) para comparar todas las ofertas disponibles.
 
 ## Truco: Juegos que Contribuyen al Wagering
 
@@ -1004,7 +1010,7 @@ Sí. El RTP de 96.51% está por encima del promedio del mercado, y el techo de 2
 
 ## Cuándo Elegir Bono Sin Depósito
 
-Si es tu primera vez en casinos online y quieres evaluar la plataforma sin arriesgar nada, el bono sin depósito es la entrada más segura. El de [Codere](/casinos/codere-peru) es el mejor de Perú: S/30 con wagering x25, el más bajo del mercado (ver [guía de wagering](/blog/casinos-menor-wagering-peru-2026)).
+Si es tu primera vez en casinos online y quieres evaluar la plataforma sin arriesgar nada, el bono sin depósito es la entrada más segura. El de [Codere](/casinos/codere-peru) es el mejor de Perú: S/30 con wagering x25, el más bajo del mercado (ver [guía de wagering](/blog/casinos-menor-wagering-peru-2026)). Consulta la [lista completa de bonos sin depósito](/bonos/sin-deposito) para ver todas las ofertas activas.
 
 Limitación: los montos son pequeños y casi siempre hay un tope de retiro (usualmente S/100-S/300), así que no esperes ganancias grandes.
 
