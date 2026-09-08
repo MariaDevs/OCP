@@ -1202,7 +1202,7 @@ Los jackpots progresivos tienen RTP base más bajo que las tragamonedas normales
     readTime: 7,
     image: '/images/blog/jackpots-progresivos-peru.jpg',
   },
-  /* --- BATCH 8: push week of Sep 8 ---
+  // --- BATCH 8: push week of Sep 8 ---
   {
     slug: '1xbet-peru-resena-2026',
     title: '1xBet Perú Reseña 2026: Análisis Completo',
@@ -1362,7 +1362,6 @@ El blackjack es el juego de casino con mejor matemática para el jugador cuando 
     readTime: 7,
     image: '/images/blog/blackjack-online-peru.jpg',
   },
-  END OF BATCH 8 */
   /* --- BATCH 9: push week of Sep 15 ---
   {
     slug: 'como-depositar-con-plin-casino-online-peru',
