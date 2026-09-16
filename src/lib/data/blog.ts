@@ -1362,7 +1362,7 @@ El blackjack es el juego de casino con mejor matemática para el jugador cuando 
     readTime: 7,
     image: '/images/blog/blackjack-online-peru.jpg',
   },
-  /* --- BATCH 9: push week of Sep 15 ---
+  // --- BATCH 9: push week of Sep 15 ---
   {
     slug: 'como-depositar-con-plin-casino-online-peru',
     title: 'Cómo Depositar con Plin en un Casino Online Perú 2026',
@@ -1514,6 +1514,5 @@ Cumplir el wagering rápido no depende de la suerte — depende de elegir el jue
     readTime: 7,
     image: '/images/blog/cumplir-wagering-rapido.jpg',
   },
-  END OF BATCH 9 */
 ];
 
