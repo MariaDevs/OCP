@@ -13,7 +13,7 @@ export const bonuses: Bonus[] = [
     minDeposit: 20,
     validity: 30,
     rating: 4.9,
-    affiliateUrl: '#',
+    affiliateUrl: 'https://record.betsson.com/_mEd0zhsfEVJWJv-piTzMMWNd7ZgqdRLk/7/',
   },
   {
     slug: '1xbet-bienvenida',
@@ -28,7 +28,8 @@ export const bonuses: Bonus[] = [
     validity: 30,
     code: 'PERU2026',
     rating: 4.7,
-    affiliateUrl: '#',
+    // TEMP fallback -> MegaPari (sister brand) until the 1xBet link is supplied
+    affiliateUrl: 'https://refpazitag.top/L?tag=d_2486019m_25437c_PERU&site=2486019&ad=25437',
   },
   {
     slug: 'codere-sin-deposito',
@@ -43,7 +44,8 @@ export const bonuses: Bonus[] = [
     validity: 7,
     code: 'GRATIS30',
     rating: 4.8,
-    affiliateUrl: '#',
+    // TEMP fallback -> Betsafe until the Codere link is supplied
+    affiliateUrl: 'https://record.betsafe.com/_mEd0zhsfEVI0JDpRKLS4nWNd7ZgqdRLk/8/',
   },
   {
     slug: 'bet365-bienvenida',
@@ -57,7 +59,8 @@ export const bonuses: Bonus[] = [
     minDeposit: 20,
     validity: 30,
     rating: 4.8,
-    affiliateUrl: '#',
+    // TEMP fallback -> Betsson until the Bet365 link is supplied
+    affiliateUrl: 'https://record.betsson.com/_mEd0zhsfEVJWJv-piTzMMWNd7ZgqdRLk/7/',
   },
   {
     slug: 'sportaza-tiradas',
@@ -71,7 +74,8 @@ export const bonuses: Bonus[] = [
     minDeposit: 20,
     validity: 7,
     rating: 4.5,
-    affiliateUrl: '#',
+    // TEMP fallback -> Rabona (sister brand) until the Sportaza link is supplied
+    affiliateUrl: 'https://rbn.lynmonkel.com/?mid=65661_2214497',
   },
   {
     slug: 'wplay-bienvenida',
@@ -85,7 +89,8 @@ export const bonuses: Bonus[] = [
     minDeposit: 10,
     validity: 30,
     rating: 4.4,
-    affiliateUrl: '#',
+    // TEMP fallback -> 20Bet until the Wplay link is supplied
+    affiliateUrl: 'https://mo.zenlaneo.com/redirect.aspx?pid=164247&bid=2154&lpid=2170',
   },
   {
     slug: 'betsafe-bienvenida',

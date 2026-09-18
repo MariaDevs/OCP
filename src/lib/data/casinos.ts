@@ -536,7 +536,8 @@ export const casinos: Casino[] = [
     mobileApp: true,
     liveChat: true,
     verified: true,
-    affiliateUrl: '#',
+    // TEMP fallback -> MegaPari (sister brand) until the 1xBet link is supplied
+    affiliateUrl: 'https://refpazitag.top/L?tag=d_2486019m_25437c_PERU&site=2486019&ad=25437',
     scores: { seguridad: 8.2, juegos: 9.5, bonos: 9.3, pagos: 9.0, soporte: 8.5 },
   },
   {
@@ -574,7 +575,8 @@ export const casinos: Casino[] = [
     mobileApp: true,
     liveChat: true,
     verified: true,
-    affiliateUrl: '#',
+    // TEMP fallback -> Betsson until the Bet365 link is supplied
+    affiliateUrl: 'https://record.betsson.com/_mEd0zhsfEVJWJv-piTzMMWNd7ZgqdRLk/7/',
     scores: { seguridad: 9.6, juegos: 8.8, bonos: 8.5, pagos: 9.0, soporte: 9.2 },
   },
   {
@@ -613,7 +615,8 @@ export const casinos: Casino[] = [
     mobileApp: true,
     liveChat: true,
     verified: true,
-    affiliateUrl: '#',
+    // TEMP fallback -> Betsafe until the Codere link is supplied
+    affiliateUrl: 'https://record.betsafe.com/_mEd0zhsfEVI0JDpRKLS4nWNd7ZgqdRLk/8/',
     scores: { seguridad: 9.8, juegos: 8.0, bonos: 9.0, pagos: 9.3, soporte: 9.0 },
   },
   {
@@ -650,7 +653,8 @@ export const casinos: Casino[] = [
     mobileApp: false,
     liveChat: true,
     verified: true,
-    affiliateUrl: '#',
+    // TEMP fallback -> Rabona (sister brand) until the Sportaza link is supplied
+    affiliateUrl: 'https://rbn.lynmonkel.com/?mid=65661_2214497',
     scores: { seguridad: 8.0, juegos: 8.8, bonos: 8.3, pagos: 8.5, soporte: 8.5 },
   },
   {
@@ -686,7 +690,8 @@ export const casinos: Casino[] = [
     mobileApp: false,
     liveChat: true,
     verified: true,
-    affiliateUrl: '#',
+    // TEMP fallback -> 20Bet until the Wplay link is supplied
+    affiliateUrl: 'https://mo.zenlaneo.com/redirect.aspx?pid=164247&bid=2154&lpid=2170',
     scores: { seguridad: 8.0, juegos: 8.2, bonos: 9.0, pagos: 9.0, soporte: 8.0 },
   },
 ];
