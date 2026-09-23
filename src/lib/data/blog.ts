@@ -1514,5 +1514,163 @@ Cumplir el wagering rápido no depende de la suerte — depende de elegir el jue
     readTime: 7,
     image: '/images/blog/cumplir-wagering-rapido.jpg',
   },
+  /* --- BATCH 10: push week of Sep 22 ---
+  {
+    slug: 'betsafe-peru-resena-2026',
+    title: 'Betsafe Perú Reseña 2026: ¿Es Confiable?',
+    excerpt: 'Reseña completa de Betsafe Perú: licencia MGA, bono de bienvenida, métodos de pago con Yape y Plin, tiempos de retiro y nuestra valoración final.',
+    content: `Betsafe es uno de los operadores con más trayectoria disponibles en Perú, pero muchos jugadores se preguntan si realmente es confiable. Esta reseña responde esa pregunta con datos concretos.
+
+## ¿Es Confiable Betsafe Perú?
+
+Sí. Betsafe opera desde **2006** con licencia de la **Malta Gaming Authority (MGA)**, el regulador más exigente del sector. Esa licencia obliga al operador a mantener los fondos de los jugadores en cuentas separadas, usar generadores de números aleatorios auditados y resolver disputas ante un organismo independiente.
+
+Es el mismo grupo empresarial detrás de [Betsson](/casinos/betsson-peru), lo que explica la solidez de su plataforma y la consistencia en los pagos.
+
+## Ficha Técnica de Betsafe Perú
+
+| Característica | Detalle |
+|----------------|---------|
+| Licencia | Malta Gaming Authority (MGA) |
+| Fundado | 2006 |
+| Bono de bienvenida | 100% hasta S/500 (wagering x30) |
+| Métodos de pago | Yape, Plin, Visa, Mastercard, BCP, BBVA |
+| Retiro mínimo | S/20 |
+| Tiempo de retiro | 24-48 horas |
+| Soporte | Chat en vivo en español |
+
+## Bono de Bienvenida: 100% hasta S/500
+
+El wagering de x30 está por debajo del promedio del mercado peruano y es más accesible que el x35 de [Betsson](/casinos/betsson-peru) o el x50 de JackpotCity. Para liberar un bono completo de S/500 necesitas apostar S/15,000 — revisa nuestra [guía para cumplir el wagering más rápido](/blog/como-cumplir-wagering-mas-rapido-casino-online) antes de activarlo.
+
+## Métodos de Pago: Yape y Plin Incluidos
+
+Betsafe acepta las dos billeteras móviles peruanas. Los depósitos son instantáneos y los retiros se procesan en 24-48 horas una vez verificada la cuenta. Consulta nuestras guías de [retiro a Yape](/blog/como-retirar-dinero-casino-yape-peru) y [depósito con Plin](/blog/como-depositar-con-plin-casino-online-peru) para el paso a paso.
+
+## Puntos Fuertes y Débiles
+
+**A favor:**
+- Licencia MGA, la más estricta del sector
+- Casino y apuestas deportivas en una sola plataforma
+- Wagering x30, más bajo que la media
+- Yape y Plin para depósito y retiro
+
+**En contra:**
+- Sin app nativa para iOS en Perú
+- Catálogo de juegos menor que el de [Betsson](/casinos/betsson-peru) o [1xBet](/casinos/1xbet-peru)
+
+## Veredicto: 4.5/5
+
+Betsafe es una opción confiable y sin sorpresas para el jugador peruano que prioriza seguridad sobre tamaño de catálogo. Si buscas el catálogo más amplio, [Betsson](/blog/betsson-peru-resena-2026) sigue siendo superior; si buscas el wagering más bajo, revisa el [bono sin depósito de Codere](/bonos/sin-deposito).`,
+    category: 'Reseñas',
+    author: 'Equipo Editorial',
+    date: '2026-09-22',
+    readTime: 7,
+    image: '/images/blog/betsafe-peru-resena.jpg',
+  },
+  {
+    slug: '20bet-peru-resena-2026',
+    title: '20Bet Perú Reseña 2026: Casino y Apuestas con Cripto',
+    excerpt: 'Análisis de 20Bet Perú: bono de bienvenida, catálogo deportivo, pagos con Bitcoin y USDT, tiempos de retiro y nuestra valoración.',
+    content: `20Bet combina casino online y apuestas deportivas con soporte para criptomonedas, una combinación poco común entre los operadores disponibles en Perú. Esta es nuestra reseña completa.
+
+## Ficha Técnica de 20Bet Perú
+
+| Característica | Detalle |
+|----------------|---------|
+| Licencia | Curaçao eGaming |
+| Fundado | 2020 |
+| Bono de bienvenida | 100% hasta S/400 (wagering x35) |
+| Métodos de pago | Yape, Plin, Visa, Mastercard, Bitcoin, USDT |
+| Retiro mínimo | S/20 |
+| Tiempo de retiro | 24-72 horas |
+| Soporte | Chat en vivo en español |
+
+## Catálogo: Más de 1,000 Tragamonedas
+
+20Bet trabaja con Pragmatic Play, NetEnt y Microgaming, así que encontrarás los títulos más buscados en Perú como [Gates of Olympus](/blog/gates-of-olympus-guia-peru) y [Sweet Bonanza](/blog/sweet-bonanza-guia-peru). El casino en vivo cubre ruleta, blackjack y baccarat.
+
+## Apuestas Deportivas: Su Punto Fuerte
+
+Más de 30 disciplinas con cuotas competitivas y transmisión en vivo. Para el jugador peruano que combina fútbol y casino en la misma cuenta, es de las opciones más completas del mercado.
+
+## Criptomonedas: Bitcoin y USDT
+
+Además de Yape y Plin, 20Bet acepta Bitcoin y USDT. Esto evita el límite de S/2,000 por transacción que imponen las billeteras móviles peruanas — útil si manejas montos altos. Nuestra [guía de casinos con criptomonedas](/blog/casinos-criptomonedas-peru-2026) explica el proceso completo.
+
+## Puntos Fuertes y Débiles
+
+**A favor:**
+- Catálogo deportivo muy amplio con buenas cuotas
+- Acepta Bitcoin y USDT junto con Yape y Plin
+- Interfaz rápida y clara
+
+**En contra:**
+- Licencia Curaçao, menos estricta que MGA o MINCETUR
+- Wagering x35 en el bono de bienvenida
+- Retiros de hasta 72 horas, más lentos que [Betsson](/casinos/betsson-peru) o [Codere](/casinos/codere-peru)
+
+## Veredicto: 4.2/5
+
+20Bet encaja bien si apuestas a deportes y casino por igual, o si prefieres pagar con cripto. Si tu prioridad son los retiros rápidos, compara antes con nuestra [guía de casinos con retiros más rápidos](/blog/casinos-retiros-rapidos-peru-2026).`,
+    category: 'Reseñas',
+    author: 'Equipo Editorial',
+    date: '2026-09-23',
+    readTime: 6,
+    image: '/images/blog/20bet-peru-resena.jpg',
+  },
+  {
+    slug: 'ivibet-peru-resena-2026',
+    title: 'IviBet Perú Reseña 2026: 3,000 Juegos y Cripto',
+    excerpt: 'Reseña de IviBet Perú: catálogo de más de 3,000 juegos, casino en vivo en español, pagos con Yape, Plin y cripto, y nuestra valoración final.',
+    content: `IviBet es una de las marcas más recientes disponibles para jugadores peruanos, con un catálogo que supera los 3,000 juegos. Esta reseña cubre lo que ofrece y dónde se queda corta.
+
+## Ficha Técnica de IviBet Perú
+
+| Característica | Detalle |
+|----------------|---------|
+| Licencia | Curaçao eGaming |
+| Fundado | 2021 |
+| Bono de bienvenida | 100% hasta S/500 (wagering x35) |
+| Métodos de pago | Yape, Plin, Visa, Mastercard, Bitcoin, USDT |
+| Retiro mínimo | S/20 |
+| Tiempo de retiro | 24-48 horas |
+| Soporte | Chat en vivo en español |
+
+## Catálogo: Más de 3,000 Juegos
+
+Es de los catálogos más grandes disponibles en Perú, por encima de [Codere](/casinos/codere-peru) (~800 juegos) y comparable a [Betsson](/casinos/betsson-peru). Incluye tragamonedas, mesas RNG, casino en vivo y apuestas deportivas en la misma cuenta.
+
+## Casino en Vivo con Dealers en Español
+
+IviBet ofrece ruleta, blackjack y baccarat con dealers hispanohablantes en horario extendido. Si el casino en vivo es tu prioridad, compara antes con nuestra [guía de mejores casinos en vivo](/blog/mejor-casino-en-vivo-peru-2026).
+
+## Pagos: Yape, Plin y Criptomonedas
+
+Acepta las dos billeteras móviles peruanas más usadas y también Bitcoin y USDT. Los retiros se procesan en 24-48 horas tras completar la [verificación KYC](/blog/como-verificar-cuenta-casino-online-peru).
+
+## Puntos Fuertes y Débiles
+
+**A favor:**
+- Más de 3,000 juegos, de los catálogos más amplios de Perú
+- Casino en vivo con dealers en español
+- Yape, Plin y criptomonedas
+- Retiros en 24-48 horas
+
+**En contra:**
+- Licencia Curaçao en lugar de MGA o MINCETUR
+- Marca poco conocida todavía en Perú
+- Wagering x35, por encima del x25 de [Codere](/casinos/codere-peru)
+
+## Veredicto: 4.2/5
+
+IviBet es una buena opción si buscas variedad de juegos y flexibilidad de pago. Si prefieres una marca con más trayectoria y licencia europea, [Betsafe](/blog/betsafe-peru-resena-2026) o [Betsson](/blog/betsson-peru-resena-2026) son alternativas más conservadoras.`,
+    category: 'Reseñas',
+    author: 'Equipo Editorial',
+    date: '2026-09-24',
+    readTime: 6,
+    image: '/images/blog/ivibet-peru-resena.jpg',
+  },
+  END OF BATCH 10 */
 ];
 
