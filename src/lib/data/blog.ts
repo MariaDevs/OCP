@@ -1514,7 +1514,7 @@ Cumplir el wagering rápido no depende de la suerte — depende de elegir el jue
     readTime: 7,
     image: '/images/blog/cumplir-wagering-rapido.jpg',
   },
-  /* --- BATCH 10: push week of Sep 22 ---
+  // --- BATCH 10: push week of Sep 22 ---
   {
     slug: 'betsafe-peru-resena-2026',
     title: 'Betsafe Perú Reseña 2026: ¿Es Confiable?',
@@ -1671,6 +1671,5 @@ IviBet es una buena opción si buscas variedad de juegos y flexibilidad de pago.
     readTime: 6,
     image: '/images/blog/ivibet-peru-resena.jpg',
   },
-  END OF BATCH 10 */
 ];
 
