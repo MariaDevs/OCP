@@ -1671,14 +1671,13 @@ IviBet es una buena opción si buscas variedad de juegos y flexibilidad de pago.
     readTime: 6,
     image: '/images/blog/ivibet-peru-resena.jpg',
   },
-  /* --- BATCH 11: push week of Sep 29 — Betsafe cluster ---
-     Cluster hub is the existing /blog/betsafe-peru-resena-2026 (batch 10),
-     which already owns "betsafe peru reseña" + "¿es confiable?" in its title.
-     These three target adjacent brand queries instead, so they support the
-     hub rather than compete with it:
+  // --- BATCH 11: push week of Sep 29 — Betsafe cluster ---
+  /* Cluster hub is /blog/betsafe-peru-resena-2026 (batch 10), which already
+     owns "betsafe peru reseña" + "¿es confiable?" in its title. These three
+     target adjacent brand queries so they support the hub, not compete:
        opiniones -> "betsafe opiniones" (GSC pos 29.7)
        bono      -> "betsafe bono" (commercial step)
-       retiro    -> "betsafe retiro" (mirrors the Yape-retiro post shape)
+       retiro    -> "betsafe retiro" (mirrors the Yape-retiro post shape) */
   {
     slug: 'betsafe-opiniones-peru',
     title: 'Betsafe Opiniones: Qué Dicen los Jugadores Peruanos',
@@ -1823,6 +1822,5 @@ Si usas Yape con otros operadores, nuestra [guía general de retiro a Yape](/blo
     readTime: 6,
     image: '/images/blog/retiro-betsafe-peru.jpg',
   },
-  END OF BATCH 11 */
 ];
 
