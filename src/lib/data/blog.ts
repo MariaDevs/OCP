@@ -1671,5 +1671,158 @@ IviBet es una buena opción si buscas variedad de juegos y flexibilidad de pago.
     readTime: 6,
     image: '/images/blog/ivibet-peru-resena.jpg',
   },
+  /* --- BATCH 11: push week of Sep 29 — Betsafe cluster ---
+     Cluster hub is the existing /blog/betsafe-peru-resena-2026 (batch 10),
+     which already owns "betsafe peru reseña" + "¿es confiable?" in its title.
+     These three target adjacent brand queries instead, so they support the
+     hub rather than compete with it:
+       opiniones -> "betsafe opiniones" (GSC pos 29.7)
+       bono      -> "betsafe bono" (commercial step)
+       retiro    -> "betsafe retiro" (mirrors the Yape-retiro post shape)
+  {
+    slug: 'betsafe-opiniones-peru',
+    title: 'Betsafe Opiniones: Qué Dicen los Jugadores Peruanos',
+    excerpt: 'Opiniones reales sobre Betsafe Perú: qué valoran los jugadores, las quejas más frecuentes y en qué se diferencia de otros operadores del mercado.',
+    content: `Antes de registrarte en cualquier casino conviene saber qué dicen quienes ya juegan ahí. Esto es lo que opinan los jugadores peruanos sobre Betsafe, tanto lo bueno como lo malo.
+
+## Lo Que Más Valoran los Jugadores
+
+**Los pagos llegan.** Es el punto que más se repite. Betsafe opera bajo licencia de la Malta Gaming Authority desde 2006 y pertenece al mismo grupo que [Betsson](/casinos/betsson-peru), con un historial de pagos sin incidentes relevantes. La licencia MGA obliga a mantener el dinero de los jugadores en cuentas separadas del capital operativo del operador.
+
+**Yape y Plin funcionan de verdad.** No todos los casinos que anuncian billeteras móviles las tienen operativas para retiro. En Betsafe funcionan en ambos sentidos, con acreditación instantánea al depositar.
+
+**La plataforma no se cae.** Los jugadores destacan la estabilidad en móvil, algo especialmente relevante en Perú, donde la mayoría juega desde el celular.
+
+## Las Quejas Más Frecuentes
+
+**El wagering x30 del bono.** No es el más alto del mercado, pero tampoco el más bajo: [Codere](/casinos/codere-peru) exige x25 en su bono sin depósito. Varios jugadores activan el bono sin leer las condiciones y luego descubren que no pueden retirar hasta completarlo.
+
+**No hay app nativa para iOS en Perú.** Se juega desde el navegador del celular, que funciona bien, pero quien espera una app de la App Store se lleva una decepción.
+
+**El catálogo es menor que el de los grandes.** Frente a los más de 1,500 títulos de [Betsson](/casinos/betsson-peru) o los más de 3,000 de [IviBet](/casinos/ivibet-peru), Betsafe se queda corto para quien busca variedad extrema.
+
+## Cómo Interpretar las Opiniones Que Leas
+
+Mucha reseña negativa de casinos online se reduce a dos causas que no son culpa del operador:
+
+- **Verificación incompleta:** el retiro no se procesa hasta completar el [KYC](/blog/como-verificar-cuenta-casino-online-peru). Es un requisito legal, no un obstáculo inventado por el casino.
+- **Bono activo sin cumplir:** con wagering pendiente los retiros quedan bloqueados. Nuestra [guía para cumplir el wagering](/blog/como-cumplir-wagering-mas-rapido-casino-online) explica cómo liberarlo más rápido.
+
+Desconfía de las opiniones extremas en ambas direcciones. Las reseñas perfectas suelen ser promocionales; las catastróficas, casos de condiciones no leídas.
+
+## Nuestra Valoración
+
+Betsafe obtiene 4.5/5 en nuestro análisis. Es un operador sólido y sin sorpresas, más recomendable para quien prioriza seguridad y pagos puntuales que para quien busca el catálogo más grande. El análisis completo está en nuestra [reseña de Betsafe Perú](/blog/betsafe-peru-resena-2026).`,
+    category: 'Reseñas',
+    author: 'Equipo Editorial',
+    date: '2026-09-29',
+    readTime: 6,
+    image: '/images/blog/betsafe-opiniones-peru.jpg',
+  },
+  {
+    slug: 'bono-bienvenida-betsafe-como-reclamarlo',
+    title: 'Bono de Bienvenida Betsafe: Cómo Reclamarlo Paso a Paso',
+    excerpt: 'Cómo activar el bono de bienvenida de Betsafe Perú (100% hasta S/500), qué wagering tiene y los errores que pueden invalidarlo.',
+    content: `El bono de bienvenida de Betsafe duplica tu primer depósito hasta S/500. Esta guía explica el proceso exacto para reclamarlo y las condiciones que conviene conocer antes de activarlo.
+
+## Qué Ofrece el Bono
+
+| Característica | Detalle |
+|----------------|---------|
+| Tipo | Bono de bienvenida sobre el primer depósito |
+| Importe | 100% hasta S/500 |
+| Wagering | x30 |
+| Depósito mínimo | S/20 |
+| Métodos válidos | Yape, Plin, Visa, Mastercard, BCP, BBVA |
+
+Con un depósito de S/200 juegas con S/400. Para liberar las ganancias de ese bono necesitas apostar S/6,000 en total (S/200 × 30).
+
+## Paso a Paso: Cómo Activarlo
+
+1. **Regístrate en [Betsafe](/casinos/betsafe-peru)** con tus datos reales — deben coincidir exactamente con tu DNI
+2. **Verifica tu cuenta antes de depositar** — el [KYC](/blog/como-verificar-cuenta-casino-online-peru) evita bloqueos posteriores en el retiro
+3. **Ve a la sección de Depósitos** y elige Yape, Plin o tarjeta
+4. **Deposita al menos S/20** — por debajo de ese monto el bono no se activa
+5. **Acepta el bono cuando la plataforma lo ofrezca** — en algunos casos hay que marcarlo explícitamente durante el depósito
+6. **Revisa tu saldo de bono**, que aparece separado del saldo real
+
+## Errores Que Invalidan el Bono
+
+**Depositar por debajo del mínimo.** Menos de S/20 no activa la promoción y no es reversible.
+
+**No aceptar el bono durante el depósito.** Si la plataforma lo ofrece como casilla opcional y no la marcas, el depósito entra como saldo normal.
+
+**Intentar retirar con wagering pendiente.** Cancela el bono y las ganancias asociadas. Revisa primero nuestra [guía para cumplir el wagering más rápido](/blog/como-cumplir-wagering-mas-rapido-casino-online).
+
+**Datos que no coinciden con el DNI.** El bono se cancela al verificar la identidad, aunque el depósito ya esté hecho.
+
+## ¿Conviene Frente a Otros Bonos?
+
+El x30 de Betsafe está por debajo de la media del mercado peruano, mejor que el x35 de [Betsson](/casinos/betsson-peru) o [1xBet](/casinos/1xbet-peru) y muy por debajo del x50 de JackpotCity. Aun así, si prefieres no arriesgar dinero propio, el [bono sin depósito de Codere](/bonos/sin-deposito) exige solo x25 sobre S/30 gratis.
+
+Compara ambos formatos en nuestra guía de [bono de bienvenida vs bono sin depósito](/blog/bono-bienvenida-vs-sin-deposito-peru), y revisa la [reseña completa de Betsafe](/blog/betsafe-peru-resena-2026) antes de decidir.`,
+    category: 'Bonos',
+    author: 'Equipo Editorial',
+    date: '2026-09-30',
+    readTime: 6,
+    image: '/images/blog/bono-betsafe-peru.jpg',
+  },
+  {
+    slug: 'como-retirar-dinero-betsafe-peru',
+    title: 'Cómo Retirar Dinero de Betsafe en Perú 2026',
+    excerpt: 'Guía paso a paso para retirar tus ganancias de Betsafe a Yape, Plin o cuenta bancaria. Tiempos reales, límites y errores que retrasan el pago.',
+    content: `Retirar de Betsafe es sencillo si cumples los requisitos previos. Esta guía cubre el proceso completo, los tiempos reales y los errores que más retrasan los pagos.
+
+## Antes de tu Primer Retiro
+
+Betsafe exige verificación de identidad (KYC) antes de procesar cualquier retiro. Necesitarás:
+
+- **DNI peruano** (ambas caras, foto legible)
+- **Selfie** sosteniendo tu documento
+- **Comprobante de domicilio** de los últimos 3 meses
+
+El proceso tarda entre 1 y 24 horas y se hace una sola vez. Nuestra [guía de verificación KYC](/blog/como-verificar-cuenta-casino-online-peru) detalla cada documento.
+
+## Paso a Paso: Cómo Retirar
+
+1. **Inicia sesión** en tu cuenta de [Betsafe](/casinos/betsafe-peru)
+2. **Ve a Caja o Retiros**
+3. **Selecciona el método** — Yape, Plin o transferencia bancaria (BCP, BBVA)
+4. **Ingresa el monto**, respetando el mínimo de S/20
+5. **Confirma la solicitud**
+6. **Recibe el dinero** en 24-48 horas
+
+## Tiempos y Límites Reales
+
+| Método | Tiempo | Mínimo |
+|--------|--------|--------|
+| Yape | 24-48 horas | S/20 |
+| Plin | 24-48 horas | S/20 |
+| Transferencia BCP / BBVA | 24-72 horas | S/20 |
+
+Ten en cuenta que Yape y Plin limitan la recepción a S/2,000 por transacción. Si tu retiro supera ese monto, Betsafe lo divide en varias transferencias. Para importes altos, la transferencia bancaria evita el fraccionamiento.
+
+## Qué Retrasa un Retiro
+
+**Verificación sin completar.** Es la causa número uno. Hazla antes de depositar, no cuando quieras cobrar.
+
+**Bono activo con wagering pendiente.** Bloquea el retiro hasta completarlo o cancelarlo, perdiendo las ganancias del bono.
+
+**Número de Yape distinto al registrado.** El teléfono vinculado debe coincidir con el de tu cuenta en el casino.
+
+**Solicitar el viernes por la tarde.** Las solicitudes de fin de semana suelen procesarse el lunes.
+
+## Cómo se Compara con Otros Casinos
+
+Las 24-48 horas de Betsafe están en la media alta del mercado peruano. [Codere](/casinos/codere-peru) y [Betsson](/casinos/betsson-peru) procesan en 24 horas, mientras que operadores con licencia de Curaçao pueden tardar hasta 72. El ranking completo está en nuestra [guía de casinos con retiros más rápidos](/blog/casinos-retiros-rapidos-peru-2026).
+
+Si usas Yape con otros operadores, nuestra [guía general de retiro a Yape](/blog/como-retirar-dinero-casino-yape-peru) cubre el proceso en todas las plataformas disponibles en Perú.`,
+    category: 'Métodos de Pago',
+    author: 'Equipo Editorial',
+    date: '2026-10-01',
+    readTime: 6,
+    image: '/images/blog/retiro-betsafe-peru.jpg',
+  },
+  END OF BATCH 11 */
 ];
 
