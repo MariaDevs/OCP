@@ -352,6 +352,11 @@ export default async function HomePage() {
               </details>
             ))}
           </div>
+          <div className="text-center mt-8">
+            <Link href="/casino-online-peru" className="inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 font-semibold transition-colors">
+              ¿Nunca has jugado? Aprende cómo funciona un casino online en Perú <ChevronRight size={16} />
+            </Link>
+          </div>
         </div>
       </section>
 
