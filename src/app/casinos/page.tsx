@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useMemo } from 'react';
+import Link from 'next/link';
 import { SlidersHorizontal, Search, ChevronRight } from 'lucide-react';
 import CasinoCard from '@/components/ui/CasinoCard';
 import Breadcrumb from '@/components/ui/Breadcrumb';
@@ -20,8 +21,8 @@ const casinosFaqs = [
     answer: 'Los casinos que aceptan Yape en Perú incluyen Betsson, 1xBet, Codere, Bet365, LeoVegas, Wplay, Betsafe y MegaPari, entre otros. Es el método de pago más popular para depósitos y retiros en casinos online peruanos.',
   },
   {
-    question: '¿Cómo verifico si un casino online es confiable en Perú?',
-    answer: 'Verifica que tenga licencia válida visible en el pie de página (MGA, UKGC, MINCETUR o Curaçao), conexión HTTPS, políticas claras de retiro y soporte en español. Todos los casinos listados en CasinoPerú.com han pasado nuestra verificación de 8 semanas.',
+    question: '¿Cómo se ordenan y filtran los casinos de esta lista?',
+    answer: 'La lista muestra por defecto los operadores ordenados por nuestra puntuación global, que combina seguridad, catálogo de juegos, bonos, pagos y soporte. Puedes acotarla con los filtros por método de pago (Yape, Plin, Bitcoin), tipo de bono y licencia. Todos los operadores incluidos han pasado antes nuestra verificación de 8 semanas.',
   },
   {
     question: '¿Puedo jugar en casinos online desde mi celular en Perú?',
@@ -66,12 +67,16 @@ export default function CasinosPage() {
 
       <div className="mt-6 mb-8">
         <h1 className="text-4xl font-black text-white mb-3">
-          Mejores Casinos Online en Perú 2026
+          Casinos Online en Perú 2026: Lista Completa
         </h1>
         <p className="text-slate-400 max-w-3xl">
-          Hemos analizado más de 50 casinos online disponibles en Perú. A continuación encontrarás
-          solo los que superaron nuestro proceso de verificación de seguridad, fairness y calidad.
-          Actualizado junio 2026.
+          Directorio completo de operadores disponibles en Perú que superaron nuestra verificación de
+          seguridad, fairness y calidad. Usa los filtros para acotar por método de pago, tipo de bono o
+          licencia. ¿Buscas solo nuestro top recomendado? Míralo en la{' '}
+          <Link href="/" className="text-emerald-400 hover:underline">
+            selección de mejores casinos
+          </Link>
+          . Actualizado junio 2026.
         </p>
       </div>
 
