@@ -11,7 +11,10 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/', '/admin/'],
       },
     ],
-    sitemap: 'https://onlinecasinoperu.com/sitemap.xml',
-    host: 'https://onlinecasinoperu.com',
+    // Canonical host is www (see the canonical tags and sitemap <loc> values).
+    // Pointing these at the bare domain sent crawlers through a 308 hop on the
+    // one file they use to discover everything.
+    sitemap: 'https://www.onlinecasinoperu.com/sitemap.xml',
+    host: 'https://www.onlinecasinoperu.com',
   };
 }
