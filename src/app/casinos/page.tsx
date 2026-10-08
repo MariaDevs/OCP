@@ -76,6 +76,10 @@ export default function CasinosPage() {
           <Link href="/" className="text-emerald-400 hover:underline">
             selección de mejores casinos
           </Link>
+          . ¿Nunca has jugado online? Empieza por{' '}
+          <Link href="/casino-online-peru" className="text-emerald-400 hover:underline">
+            cómo funciona un casino online
+          </Link>
           . Actualizado junio 2026.
         </p>
       </div>

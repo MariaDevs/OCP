@@ -24,6 +24,9 @@ const footerLinks = {
     { label: 'Casino en Vivo', href: '/juegos/en-vivo' },
   ],
   Información: [
+    // Beginner-intent anchor on purpose: the homepage owns "mejores casinos
+    // online peru" and /casinos owns the plural, so this must not repeat either.
+    { label: 'Cómo Funciona un Casino Online', href: '/casino-online-peru' },
     { label: 'Sobre Nosotros', href: '/sobre-nosotros' },
     { label: 'Métodos de Pago', href: '/metodos-de-pago' },
     { label: 'Blog', href: '/blog' },

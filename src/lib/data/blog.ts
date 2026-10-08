@@ -115,6 +115,8 @@ La Ley N° 27153 de 1999 y sus modificatorias regulan los juegos de casino y tra
 
 **MINCETUR** (Ministerio de Comercio Exterior y Turismo) es el organismo regulador del juego en Perú. Actualmente, [Codere](/casinos/codere-peru) es el único operador de casino online con licencia directa de MINCETUR para operar digitalmente en Perú.
 
+Si estás empezando desde cero, nuestra guía de [cómo funciona un casino online en Perú](/casino-online-peru) cubre la legalidad, los métodos de pago y los pasos previos a tu primer depósito.
+
 ## ¿Puedo Jugar en Casinos Internacionales desde Perú?
 
 Sí. Aunque no tienen licencia peruana, muchos casinos internacionales operan legalmente en Perú con licencias de:
@@ -347,6 +349,8 @@ La mayoría de casinos tienen un retiro mínimo de S/20 y un máximo diario de S
 ## Antes de Depositar: Prueba Gratis con un Bono Sin Depósito
 
 Si aún no tienes cuenta en ningún casino, puedes verificar tu identidad y probar la plataforma sin arriesgar un sol usando un [bono sin depósito](/bonos/sin-deposito) — Codere, por ejemplo, da S/30 gratis solo por registrarte. Es la forma más segura de conocer los tiempos de retiro reales antes de depositar dinero propio.
+
+¿Es tu primera vez en un casino online? Nuestra guía sobre [cómo funciona un casino online en Perú](/casino-online-peru) explica el proceso completo desde el registro hasta el primer retiro.
 
 ## ¿Qué Casinos Aceptan Yape en Perú?
 
