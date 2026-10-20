@@ -184,7 +184,7 @@ export default function AboutPage() {
         {/* Methodology */}
         <section className="mb-12">
           <h2 className="text-2xl font-black text-white mb-2">Nuestra Metodología de Análisis</h2>
-          <p className="text-slate-400 text-sm mb-6">Cada casino pasa por un proceso de evaluación de 8 semanas antes de ser publicado en el sitio. No publicamos reseñas de casinos que no hemos probado con dinero real.</p>
+          <p className="text-slate-400 text-sm mb-6">Antes de publicar una reseña analizamos la licencia del operador, las condiciones completas de sus bonos y los métodos de pago que acepta en Perú. Cuando además hemos probado la plataforma con dinero real —depósito, juego y retiro— lo indicamos en la reseña correspondiente. Aparecer en el sitio no implica que recomendemos a un operador: los que no publican licencia de juego se señalan expresamente como tales.</p>
           <div className="space-y-4">
             {methodology.map((step) => (
               <div key={step.title} className="bg-slate-800/60 border border-slate-700 rounded-xl p-5 flex gap-4">

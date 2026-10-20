@@ -44,7 +44,7 @@ const homeFaqs = [
   {
     question: "¿Cómo sé si un casino online es seguro en Perú?",
     answer:
-      "Verifica que tenga licencia válida (MGA, UKGC, Curaçao o MINCETUR), conexión SSL encriptada, políticas de juego responsable y soporte en español. Todos los casinos que recomendamos han sido verificados.",
+      "Verifica que tenga licencia válida (MGA, UKGC, Curaçao o MINCETUR), conexión SSL encriptada, políticas de juego responsable y soporte en español. En nuestro comparador indicamos la licencia de cada operador y marcamos como Sin licencia a los que no publican ninguna, para que puedas comprobarlo tú mismo antes de registrarte.",
   },
   {
     question: "¿En qué moneda puedo jugar en casinos online desde Perú?",

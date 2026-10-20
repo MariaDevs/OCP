@@ -594,7 +594,13 @@ No existe ningún casino legal y confiable que permita retiros sin verificación
 - Confirmar la mayoría de edad del jugador
 - Cumplir con las normativas internacionales
 
-Los casinos que prometen "sin verificación" suelen ser ilegales o fraudulentos. Evítalos.
+## "Sin Verificación" No Siempre Significa Fraude, pero Sí Menos Protección
+
+Conviene distinguir dos casos. Un casino con licencia (MGA, MINCETUR o Curaçao) **siempre** te pedirá verificar tu identidad antes del primer retiro: si uno con licencia promete lo contrario, desconfía.
+
+Aparte existen los casinos cripto sin licencia de juego, que permiten jugar de forma anónima porque no responden ante ningún regulador. No son necesariamente estafas —algunos llevan años pagando sin incidencias— pero la diferencia es importante: si un día no te pagan, no hay autoridad ante la que reclamar, ni fondos segregados, ni auditoría independiente de los juegos. Es un riesgo que asumes tú solo.
+
+En nuestro comparador señalamos estos operadores con la etiqueta **Sin licencia**, como [Betpanda](/casinos/betpanda-peru), para que sepas exactamente qué estás eligiendo. Si la protección regulatoria es tu prioridad, quédate con las opciones con licencia que listamos más abajo.
 
 ## Lo Que Sí Puedes Hacer: Casinos con Verificación Rápida
 

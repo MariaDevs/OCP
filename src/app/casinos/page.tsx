@@ -22,7 +22,7 @@ const casinosFaqs = [
   },
   {
     question: '¿Cómo se ordenan y filtran los casinos de esta lista?',
-    answer: 'La lista muestra por defecto los operadores ordenados por nuestra puntuación global, que combina seguridad, catálogo de juegos, bonos, pagos y soporte. Puedes acotarla con los filtros por método de pago (Yape, Plin, Bitcoin), tipo de bono y licencia. Todos los operadores incluidos han pasado antes nuestra verificación de 8 semanas.',
+    answer: 'La lista muestra los operadores ordenados según nuestro criterio editorial, que combina seguridad, catálogo de juegos, bonos, pagos y soporte. Puedes acotarla con los filtros por método de pago (Yape, Plin, Bitcoin), tipo de bono y licencia. Aparecer en esta lista no es un sello de garantía: incluimos operadores con distintos niveles de regulación y señalamos de forma visible los que no publican licencia de juego, para que la comparación sea tuya.',
   },
   {
     question: '¿Puedo jugar en casinos online desde mi celular en Perú?',
@@ -70,9 +70,9 @@ export default function CasinosPage() {
           Casinos Online en Perú 2026: Lista Completa
         </h1>
         <p className="text-slate-400 max-w-3xl">
-          Directorio completo de operadores disponibles en Perú que superaron nuestra verificación de
-          seguridad, fairness y calidad. Usa los filtros para acotar por método de pago, tipo de bono o
-          licencia. ¿Buscas solo nuestro top recomendado? Míralo en la{' '}
+          Directorio de operadores disponibles en Perú, analizados por nuestro equipo editorial. Los que no
+          publican licencia de juego aparecen marcados como <strong className="text-amber-400">Sin licencia</strong>.
+          Usa los filtros para acotar por método de pago, tipo de bono o licencia. ¿Buscas solo nuestro top recomendado? Míralo en la{' '}
           <Link href="/" className="text-emerald-400 hover:underline">
             selección de mejores casinos
           </Link>
@@ -152,7 +152,10 @@ export default function CasinosPage() {
       <section className="mt-16 prose-casino max-w-none">
         <h2 className="text-white text-2xl font-bold mb-4">¿Cómo Elegimos los Mejores Casinos Online en Perú?</h2>
         <p className="text-slate-400 leading-relaxed mb-4">
-          En CasinoPerú.com evaluamos cada casino a través de un proceso riguroso de 8 semanas. Nuestro equipo crea cuentas reales, hace depósitos con Yape, Plin y tarjetas bancarias, juega con dinero real y solicita retiros para medir la velocidad y fiabilidad del casino.
+          En CasinoPerú.com analizamos cada casino antes de publicarlo: comprobamos qué licencia declara y ante qué
+          regulador responde, leemos las condiciones del bono (wagering, plazos y juegos excluidos) y revisamos qué
+          métodos de pago acepta realmente en Perú. En los operadores que probamos con dinero real —creando cuenta,
+          depositando con Yape o Plin y solicitando un retiro— lo indicamos en su reseña.
         </p>
         <p className="text-slate-400 leading-relaxed mb-4">
           Los criterios más importantes para nuestra evaluación son: la seguridad y validez de la licencia, la variedad y calidad de los juegos, la generosidad y claridad de los bonos, la disponibilidad de métodos de pago peruanos como Yape y Plin, y la calidad del soporte en español.
