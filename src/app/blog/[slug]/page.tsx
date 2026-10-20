@@ -23,9 +23,37 @@ function esc(s: string): string {
     .replace(/"/g, '&quot;');
 }
 
-/** `**bold**` -> <strong> on already-escaped text. */
-function inlineBold(s: string): string {
-  return esc(s).replace(/\*\*(.*?)\*\*/g, '<strong class="text-white">$1</strong>');
+/**
+ * Inline markdown -> HTML, on already-escaped text.
+ *
+ * Posts are authored with `**bold**` and `[text](/path)`. Links were never
+ * rendered, so every post displayed raw `[Betsson](/casinos/betsson-peru)` to
+ * readers and passed no internal link equity. Escaping still happens first, so
+ * only the patterns matched below can produce markup.
+ *
+ * Hrefs are restricted to site-relative paths and absolute https URLs; anything
+ * else (javascript:, data:, protocol-relative) is left as plain text.
+ */
+function inlineMd(s: string): string {
+  return esc(s)
+    .replace(/\*\*(.*?)\*\*/g, '<strong class="text-white">$1</strong>')
+    .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (whole, label: string, href: string) => {
+      const internal = /^\/(?!\/)[\w\-./?#=&%]*$/.test(href);
+      const external = /^https:\/\/[\w\-.]+[\w\-./?#=&%]*$/.test(href);
+      if (!internal && !external) return whole;
+      const attrs = external ? ' target="_blank" rel="noopener noreferrer"' : '';
+      return `<a href="${href}" class="text-emerald-400 hover:underline"${attrs}>${label}</a>`;
+    });
+}
+
+/** A markdown pipe table: a header row, a `|---|---|` divider, then body rows. */
+function isTableBlock(block: string): boolean {
+  const lines = block.split('\n');
+  return lines.length >= 2 && lines[0].trim().startsWith('|') && /^\s*\|[\s:|-]+\|\s*$/.test(lines[1]);
+}
+
+function tableCells(line: string): string[] {
+  return line.trim().replace(/^\|/, '').replace(/\|$/, '').split('|').map((c) => c.trim());
 }
 
 /** Category-aware CTA — points readers at the offer most relevant to what they just read,
@@ -101,11 +129,50 @@ function StaticBody({ content }: { content: string }) {
         if (block.startsWith('**') && block.endsWith('**')) {
           return <p key={i} className="font-semibold text-slate-200">{block.replace(/\*\*/g, '')}</p>;
         }
+        // Pipe table. Wrapped in overflow-x-auto so wide comparison tables
+        // scroll on mobile instead of forcing the page sideways.
+        if (isTableBlock(block)) {
+          const [headerLine, , ...bodyLines] = block.split('\n');
+          const headers = tableCells(headerLine);
+          const rows = bodyLines.filter((l) => l.trim().startsWith('|')).map(tableCells);
+          return (
+            <div key={i} className="overflow-x-auto my-6">
+              <table className="w-full text-sm border-collapse">
+                <thead>
+                  <tr className="border-b border-slate-600">
+                    {headers.map((h, hi) => (
+                      <th key={hi} className="text-left font-bold text-white py-2 pr-4 whitespace-nowrap">
+                        <span dangerouslySetInnerHTML={{ __html: inlineMd(h) }} />
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {rows.map((cells, ri) => (
+                    <tr key={ri} className="border-b border-slate-800 last:border-0">
+                      {cells.map((c, ci) => (
+                        <td key={ci} className="py-2 pr-4 text-slate-300 align-top">
+                          <span dangerouslySetInnerHTML={{ __html: inlineMd(c) }} />
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          );
+        }
         if (block.startsWith('1. ') || block.startsWith('2. ')) {
           const items = block.split('\n');
           return (
             <ol key={i} className="list-decimal list-inside space-y-1">
-              {items.map((item, j) => <li key={j} className="text-slate-300">{item.replace(/^\d+\.\s/, '')}</li>)}
+              {items.map((item, j) => (
+                <li
+                  key={j}
+                  className="text-slate-300"
+                  dangerouslySetInnerHTML={{ __html: inlineMd(item.replace(/^\d+\.\s/, '')) }}
+                />
+              ))}
             </ol>
           );
         }
@@ -118,13 +185,13 @@ function StaticBody({ content }: { content: string }) {
               {items.map((item, j) => (
                 <li key={j} className="flex items-start gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-2 flex-shrink-0" />
-                  <span dangerouslySetInnerHTML={{ __html: inlineBold(item.replace(/^- /, '')) }} />
+                  <span dangerouslySetInnerHTML={{ __html: inlineMd(item.replace(/^- /, '')) }} />
                 </li>
               ))}
             </ul>
           );
         }
-        return <p key={i} dangerouslySetInnerHTML={{ __html: inlineBold(block) }} />;
+        return <p key={i} dangerouslySetInnerHTML={{ __html: inlineMd(block) }} />;
       })}
     </>
   );
