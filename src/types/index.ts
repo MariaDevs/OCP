@@ -14,6 +14,13 @@ export interface Casino {
     code?: string;
   };
   license: string;
+  /**
+   * False when the operator has no public gaming licence (e.g. only a company
+   * registration). Omit/true for regulated operators. Pages must not claim a
+   * regulated, audited or "verified safe" environment when this is false.
+   */
+  licensed?: boolean;
+  /** 0 = unknown; the spec row is hidden rather than showing a guessed year. */
   founded: number;
   paymentMethods: string[];
   supportLanguages: string[];

@@ -41,9 +41,10 @@ export default function StarRating({ rating, maxRating = 5, size = 'md', showNum
           {rating.toFixed(1)}
         </span>
       )}
-      {reviewCount && (
+      {/* Ternary, not &&: a reviewCount of 0 would otherwise render a literal "0". */}
+      {reviewCount ? (
         <span className="text-slate-400 text-xs">({reviewCount.toLocaleString('es-PE')} reseñas)</span>
-      )}
+      ) : null}
     </div>
   );
 }

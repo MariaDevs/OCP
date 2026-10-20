@@ -52,10 +52,14 @@ export default async function CasinoReviewPage({ params }: Props) {
   const url = `https://www.onlinecasinoperu.com/casinos/${slug}`;
   const schema = casinoReviewSchema(casino, url);
 
+  const isLicensed = casino.licensed !== false;
+
   const casinoFaqs = [
     {
       question: `¿Es seguro jugar en ${casino.name} en Perú?`,
-      answer: `Sí, ${casino.name} opera con licencia de ${casino.license}, lo que garantiza un entorno de juego regulado y seguro. Todos los juegos utilizan RNG certificado y las transacciones están protegidas con cifrado SSL.`,
+      answer: isLicensed
+        ? `Sí, ${casino.name} opera con licencia de ${casino.license}, lo que garantiza un entorno de juego regulado y seguro. Todos los juegos utilizan RNG certificado y las transacciones están protegidas con cifrado SSL.`
+        : `${casino.name} no publica ninguna licencia de juego: solo consta ${casino.license}. Una empresa registrada no equivale a un operador regulado, así que no existe un organismo ante el que reclamar si hay un problema con un pago. Si la protección regulatoria es tu prioridad, elige un operador con licencia MGA o MINCETUR.`,
     },
     {
       question: `¿Cuál es el bono de bienvenida de ${casino.name}?`,
@@ -67,7 +71,7 @@ export default async function CasinoReviewPage({ params }: Props) {
     },
     {
       question: `¿Cuánto tiempo tardan los retiros en ${casino.name}?`,
-      answer: `Los retiros en ${casino.name} se procesan en ${casino.withdrawalTime}. El monto mínimo de retiro es S/${casino.minWithdrawal}.`,
+      answer: `Los retiros en ${casino.name} se procesan en ${casino.withdrawalTime}.${casino.minWithdrawal ? ` El monto mínimo de retiro es S/${casino.minWithdrawal}.` : ''}`,
     },
     {
       question: `¿Tiene ${casino.name} app móvil para jugadores peruanos?`,
@@ -227,6 +231,20 @@ export default async function CasinoReviewPage({ params }: Props) {
                 <Shield size={20} className="text-emerald-400" /> Seguridad y Licencia
               </h2>
               <p className="text-slate-300 leading-relaxed mb-4">
+                {!isLicensed ? (
+                  <>
+                    {casino.name} <strong className="text-white">no publica ninguna licencia de juego</strong>. En su
+                    web solo figura {casino.license}, que es un registro mercantil y no una autorización de juego:
+                    Costa Rica no emite licencias de este tipo. Esto significa que ningún regulador supervisa sus
+                    pagos ni sus juegos, y que no hay una autoridad independiente ante la que reclamar si surge un
+                    problema. Para comparar, {' '}
+                    <Link href="/casinos/codere-peru" className="text-emerald-400 hover:underline">Codere</Link>{' '}
+                    tiene licencia MINCETUR y{' '}
+                    <Link href="/casinos/betsson-peru" className="text-emerald-400 hover:underline">Betsson</Link>{' '}
+                    licencia MGA.
+                  </>
+                ) : (
+                  <>
                 {casino.name} opera bajo la licencia de{' '}
                 <strong className="text-white">{casino.license}</strong>.{' '}
                 {casino.license.includes('Malta')
@@ -236,14 +254,26 @@ export default async function CasinoReviewPage({ params }: Props) {
                   : casino.license.includes('Gibraltar')
                   ? 'La Gibraltar Regulatory Authority es un regulador de alta reputación vinculado al sistema jurídico británico, con estrictos requisitos de capital y protección al jugador.'
                   : 'La licencia de Curaçao eGaming permite operar legalmente en el mercado internacional. Aunque menos exigente que la MGA, ofrece un marco de protección al jugador y garantiza la legitimidad del operador.'}
+                  </>
+                )}
               </p>
               <p className="text-slate-300 leading-relaxed">
-                Todos los juegos utilizan un generador de números aleatorios (RNG) certificado por auditores independientes,
-                garantizando resultados justos e imparciales en cada partida. Las transacciones están protegidas con
-                cifrado SSL de 128 bits.{' '}
-                {casino.verified
-                  ? 'Nuestro equipo editorial ha verificado la legitimidad de este operador y confirmado el correcto pago de premios a jugadores reales.'
-                  : ''}
+                {isLicensed ? (
+                  <>
+                    Todos los juegos utilizan un generador de números aleatorios (RNG) certificado por auditores independientes,
+                    garantizando resultados justos e imparciales en cada partida. Las transacciones están protegidas con
+                    cifrado SSL de 128 bits.{' '}
+                    {casino.verified
+                      ? 'Nuestro equipo editorial ha verificado la legitimidad de este operador y confirmado el correcto pago de premios a jugadores reales.'
+                      : ''}
+                  </>
+                ) : (
+                  <>
+                    Sin un regulador detrás, no podemos confirmar que los juegos estén auditados por un laboratorio
+                    independiente ni que exista un procedimiento formal de resolución de disputas. Juega aquí solo si
+                    aceptas ese riesgo y nunca con más dinero del que puedas permitirte perder.
+                  </>
+                )}
               </p>
             </div>
 
@@ -376,12 +406,13 @@ export default async function CasinoReviewPage({ params }: Props) {
             <div className="bg-slate-800/60 border border-slate-700 rounded-2xl p-4">
               <h3 className="font-bold text-white mb-3 text-sm">Datos Rápidos</h3>
               <div className="space-y-2 text-sm">
-                {[
-                  ['Fundado', casino.founded.toString()],
-                  ['Retiro mínimo', `S/${casino.minWithdrawal}`],
+                {([
+                  // 0 = unknown: hide the row rather than print a guessed value.
+                  casino.founded ? ['Fundado', casino.founded.toString()] : null,
+                  casino.minWithdrawal ? ['Retiro mínimo', `S/${casino.minWithdrawal}`] : null,
                   ['App móvil', casino.mobileApp ? '✅ Disponible' : '❌ No disponible'],
                   ['Chat en vivo', casino.liveChat ? '✅ 24/7' : '❌ No disponible'],
-                ].map(([key, val]) => (
+                ].filter(Boolean) as [string, string][]).map(([key, val]) => (
                   <div key={key} className="flex justify-between text-slate-400 border-b border-slate-800 pb-2 last:border-0 last:pb-0">
                     <span>{key}</span>
                     <strong className="text-slate-200">{val}</strong>

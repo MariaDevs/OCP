@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { CheckCircle2, XCircle, ExternalLink, Shield, Clock, Banknote } from 'lucide-react';
+import { CheckCircle2, XCircle, ExternalLink, Shield, ShieldOff, Clock, Banknote } from 'lucide-react';
 import { Casino } from '@/types';
 import StarRating from './StarRating';
 import Badge from './Badge';
@@ -68,7 +68,13 @@ export default function CasinoCard({ casino, rank, compact = false }: CasinoCard
             </h3>
             <StarRating rating={casino.rating} reviewCount={casino.reviewCount} size="sm" />
             <div className="flex items-center gap-3 mt-2 text-xs text-slate-400">
-              <span className="flex items-center gap-1"><Shield size={11} className="text-emerald-400" />{casino.license.split(' ')[0]}</span>
+              {/* Unlicensed operators must not get a shield + a word lifted from
+                  their company name, which reads as a regulator. */}
+              {casino.licensed === false ? (
+                <span className="flex items-center gap-1 text-amber-400"><ShieldOff size={11} />Sin licencia</span>
+              ) : (
+                <span className="flex items-center gap-1"><Shield size={11} className="text-emerald-400" />{casino.license.split(' ')[0]}</span>
+              )}
               <span className="flex items-center gap-1"><Clock size={11} className="text-emerald-400" />{casino.withdrawalTime}</span>
             </div>
           </div>
