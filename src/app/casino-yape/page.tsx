@@ -76,6 +76,13 @@ export default function CasinoYapePage() {
           <p className="text-slate-400 max-w-3xl text-lg leading-relaxed">
             Yape es el método de pago favorito de los peruanos para casinos online. Depósitos instantáneos, sin comisiones y sin compartir datos bancarios. Aquí tienes los mejores casinos que lo aceptan.
           </p>
+          <p className="text-slate-400 max-w-3xl mt-3">
+            ¿Tu banco es BBVA, Interbank o Scotiabank? Entonces te conviene{' '}
+            <Link href="/casino-plin" className="text-emerald-400 hover:underline">
+              casino con Plin en Perú
+            </Link>
+            , donde listamos los operadores que aceptan esa billetera.
+          </p>
         </div>
 
         {/* Features */}

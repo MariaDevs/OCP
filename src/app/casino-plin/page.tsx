@@ -7,7 +7,8 @@ import { casinos } from '@/lib/data/casinos';
 import { faqSchema, ldJson } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Casino Online con Plin en Perú 2026 — Depósito y Retiro',
+  // Leads with the exact target query ("casino con plin peru", 90/mo, KD 3).
+  title: 'Casino con Plin en Perú 2026: Dónde Jugar y Cómo Depositar',
   description: 'Los mejores casinos online que aceptan Plin en Perú 2026. Deposita y retira con Plin de forma instantánea y sin comisiones. Guía actualizada.',
   alternates: { canonical: '/casino-plin' },
 };
@@ -71,7 +72,7 @@ export default function CasinoPlinPage() {
             <span className="text-blue-400 font-semibold">📱 Depósito instantáneo con Plin</span>
           </div>
           <h1 className="text-4xl font-black text-white mb-4">
-            Casinos Online que Aceptan Plin en Perú 2026
+            Casino con Plin en Perú 2026: Casinos que lo Aceptan
           </h1>
           <p className="text-slate-400 max-w-3xl text-lg leading-relaxed">
             Plin es la billetera digital preferida de los usuarios de BBVA, Interbank y Scotiabank en Perú. Depósitos instantáneos, sin comisiones y sin compartir datos bancarios en los mejores casinos online.

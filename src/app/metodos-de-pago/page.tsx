@@ -16,8 +16,11 @@ const pagosFaqs = [
     answer: 'Los retiros por Yape en casinos online peruanos se procesan normalmente en 24 horas una vez aprobada la solicitud. Algunos casinos como Betsson y Codere pueden procesar en menos tiempo. Siempre debes haber completado la verificación KYC antes de tu primer retiro.',
   },
   {
-    question: '¿Qué casinos aceptan Plin en Perú?',
-    answer: 'Los casinos que aceptan Plin en Perú incluyen Betsson, Codere, LeoVegas, JackpotCity, Spin Casino, Betsafe, Wplay y MagicRed, entre otros. Plin funciona igual que Yape con depósitos instantáneos y sin comisiones.',
+    // Deliberately short: the full "which casinos accept Plin" answer lives on
+    // /casino-plin. Duplicating it here had this page ranking (badly, pos ~40)
+    // for the same query and splitting signals with the dedicated page.
+    question: '¿Plin tiene comisiones en los casinos online?',
+    answer: 'No. Los depósitos y retiros con Plin no tienen comisiones ni del casino ni de la aplicación, igual que con Yape. El depósito se acredita en segundos y el retiro suele tardar entre 24 y 48 horas una vez verificada la cuenta. La lista completa de operadores que lo aceptan está en nuestra guía de casinos con Plin en Perú.',
   },
   {
     question: '¿Puedo usar Bitcoin en casinos online en Perú?',
