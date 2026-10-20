@@ -124,8 +124,10 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
-          <p>© 2026 CasinoPerú.com — Todos los derechos reservados</p>
-          <div className="flex items-center gap-4">
+          <p className="text-center sm:text-left">© 2026 CasinoPerú.com — Todos los derechos reservados</p>
+          {/* flex-wrap: eight links in one non-wrapping row overflowed 375px,
+              which made every page on the site scroll sideways on mobile. */}
+          <div className="flex flex-wrap items-center justify-center sm:justify-end gap-x-4 gap-y-2">
             <Link href="/privacidad" className="hover:text-slate-300 transition-colors">Privacidad</Link>
             <Link href="/terminos" className="hover:text-slate-300 transition-colors">Términos</Link>
             <Link href="/cookies" className="hover:text-slate-300 transition-colors">Cookies</Link>
