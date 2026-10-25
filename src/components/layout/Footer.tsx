@@ -15,6 +15,7 @@ const footerLinks = {
     { label: 'Bonos Sin Depósito', href: '/bonos/sin-deposito' },
     { label: 'Tiradas Gratis', href: '/bonos/tiradas-gratis' },
     { label: 'Códigos Promocionales', href: '/bonos?filtro=codigos' },
+    { label: 'Calculadora de Wagering', href: '/calculadora-wagering' },
   ],
   Juegos: [
     { label: 'Tragamonedas', href: '/juegos/tragamonedas' },

@@ -421,7 +421,7 @@ El wagering es el número de veces que debes apostar el importe del bono antes d
 - Bono de S/200 con wagering x35 = debes apostar S/7,000 antes de retirar
 - Bono de S/200 con wagering x20 = debes apostar S/4,000 antes de retirar
 
-Cuanto más bajo el wagering, más fácil es liberar el bono.
+Cuanto más bajo el wagering, más fácil es liberar el bono. Puedes comprobarlo con cualquier bono en nuestra [calculadora de wagering](/calculadora-wagering), que además estima cuánto cuesta de media completarlo.
 
 ## Ranking de Casinos por Wagering en Perú
 
@@ -1483,6 +1483,8 @@ Con wagering x25, es el requisito más bajo del mercado peruano — la mayoría 
 ## Repaso Rápido: ¿Qué es el Wagering?
 
 Es el número de veces que debes apostar el importe del bono antes de poder retirar las ganancias. Un bono de S/30 con wagering x25 exige apostar S/750 en total. Si no lo tienes claro, revisa primero nuestra [guía de bonos con menor wagering](/blog/casinos-menor-wagering-peru-2026).
+
+Para hacer el cálculo con tus propias cifras —y ver cuánto cuesta de media liberar el bono— usa nuestra [calculadora de wagering](/calculadora-wagering).
 
 ## Técnica 1: Juega Solo en Tragamonedas
 
